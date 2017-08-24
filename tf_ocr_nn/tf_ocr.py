@@ -55,15 +55,33 @@ def tf_ocr_train(train_method, train_step, result_process):
     ys = tf.placeholder(tf.float32, [None, 54])
     keep_prob = tf.placeholder(tf.float32)
 
-    predict = add_layer(xs, 400, 54, n_layer=1, activation_function=tf.nn.softmax)
+    model_path = 'model.ckpt'
+
+    #layer1
+    W1 =   tf.Variable(tf.random_normal([400, 128]))
+    bias1 = tf.Variable(tf.zeros([1, 128]) + 0.1)
+    layer1 = tf.nn.sigmoid(tf.matmul(xs, W1) + bias1)
+
+    #layer2
+    W2 =  tf.Variable(tf.random_normal([128, 128]))
+    bias2 = tf.Variable(tf.zeros([1, 128]) + 0.1)
+    layer2 = tf.nn.sigmoid(tf.matmul(layer1, W2) + bias2)
+
+    #layer3
+    W3 = tf.Variable(tf.random_normal([128, 54]))
+    bias3 = tf.Variable(tf.zeros([1, 54]) + 0.1)
+    predict = tf.nn.softmax(tf.matmul(layer2, W3) + bias3)
 
     #cross entropy
-    cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), reduction_indices=[1]))
+    cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), \
+                reduction_indices=[1]))
     #cross = tf.reduce_mean(tf.reduce_mean(-tf.reduce_sum(ys*tf.log(predict), reduction_indices=[1])))
     #train = tf.train.AdamOptimizer(1e-4).minimize(cross)
     #train = tf.train.GradientDescentOptimizer(0.2).minimize(cross)
 
     train = train_method(train_step).minimize(cross)
+
+    saver = tf.train.Saver()
 
     img, label, cnt = read_and_decode('train.tfrecords')
     #img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=1500,
@@ -90,9 +108,13 @@ def tf_ocr_train(train_method, train_step, result_process):
                 #print(label_t_val)
                 cross_sess = sess.run(cross, feed_dict={xs: img_val, ys: label_val, keep_prob: 1})
                 accuracy_sess = compare_accuracy(img_t_val, label_t_val)
-                print(cross_sess)
+                #print(sess.run(predict[0], feed_dict={xs: img_val, ys: label_val, keep_prob: 1}))
+                #print(cross_sess)
                 #print(accuracy_sess)
+                #print(sess.run(bias1))
+                #print(sess.run(bias2))
                 result_process(i, cross_sess, accuracy_sess)
+        saver.save(sess, model_path)
         sess.close()
 
 if __name__ == '__main__':
@@ -100,4 +122,4 @@ if __name__ == '__main__':
         print('%d:' %cnt)
         print(cross)
         print(accuracy)
-    tf_ocr_train(tf.train.GradientDescentOptimizer, 0.2, print_result)
+    tf_ocr_train(tf.train.AdagradOptimizer, 0.2, print_result)

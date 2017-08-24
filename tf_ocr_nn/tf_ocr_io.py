@@ -41,6 +41,10 @@ def init():
 def save_result(cnt, cross, accuracy):
     global line
     global buf
+    print("%d: " %cnt)
+    print(cross)
+    print(accuracy)
+
     with open(result_name, 'r') as f:
         for line in f.readlines():
             if line.find('times_' + str(cnt)) >= 0:
