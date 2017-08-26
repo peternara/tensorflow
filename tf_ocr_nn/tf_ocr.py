@@ -1,7 +1,11 @@
 import tensorflow as tf
 import numpy as np
+import sys
 
-def tf_ocr_train(train_method, train_step, result_process):
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+
+def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
     def read_and_decode(tf_record_path):  # read iris_contact.tfrecords
         filename_queue = tf.train.string_input_producer([tf_record_path])  # create a queue
@@ -93,33 +97,50 @@ def tf_ocr_train(train_method, train_step, result_process):
     img_t, label_t, cnt_t = read_and_decode('test.tfrecords')
     img_t_batch, label_t_batch, cnt_t_batch = tf.train.batch([img_t, label_t, cnt_t], batch_size=270,
                                 capacity=270)
+    if method == 'train':
+        with tf.Session() as sess:
+            coord = tf.train.Coordinator()
+            threads = tf.train.start_queue_runners(coord=coord)
+            sess.run(tf.global_variables_initializer())
+            tf.train.start_queue_runners(sess=sess)
 
-    with tf.Session() as sess:
-        sess.run(tf.global_variables_initializer())
-        tf.train.start_queue_runners(sess=sess)
-
-        for i in range(10000):
-            img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
-            np.set_printoptions(threshold=np.inf)
-            sess.run(train, feed_dict={xs: img_val, ys: label_val, keep_prob:1})
-            if i%50 == 0:
-                #print('%d:' %i)
+            for i in range(10000):
+                img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
+                np.set_printoptions(threshold=np.inf)
+                sess.run(train, feed_dict={xs: img_val, ys: label_val, keep_prob:1})
+                if i%50 == 0:
+                    #print('%d:' %i)
+                    img_t_val, label_t_val, cnt_t_val = sess.run([img_t_batch, label_t_batch, cnt_t_batch])
+                    #print(label_t_val)
+                    cross_sess = sess.run(cross, feed_dict={xs: img_val, ys: label_val, keep_prob: 1})
+                    accuracy_sess = compare_accuracy(img_t_val, label_t_val)
+                    #print(sess.run(predict[0], feed_dict={xs: img_val, ys: label_val, keep_prob: 1}))
+                    #print(cross_sess)
+                    #print(accuracy_sess)
+                    #print(sess.run(bias1))
+                    #print(sess.run(bias2))
+                    result_process(i, cross_sess, accuracy_sess)
+            saver.save(sess, model_path)
+            coord.request_stop()
+            coord.join(threads)
+    elif method == 'test':
+        with tf.Session() as sess:
+            coord = tf.train.Coordinator()
+            threads = tf.train.start_queue_runners(coord=coord)
+            sess.run(tf.global_variables_initializer())
+            tf.train.start_queue_runners(sess=sess)
+            saver.restore(sess, model_path)
+            for i in range(10):
                 img_t_val, label_t_val, cnt_t_val = sess.run([img_t_batch, label_t_batch, cnt_t_batch])
-                #print(label_t_val)
-                cross_sess = sess.run(cross, feed_dict={xs: img_val, ys: label_val, keep_prob: 1})
                 accuracy_sess = compare_accuracy(img_t_val, label_t_val)
-                #print(sess.run(predict[0], feed_dict={xs: img_val, ys: label_val, keep_prob: 1}))
-                #print(cross_sess)
-                #print(accuracy_sess)
-                #print(sess.run(bias1))
-                #print(sess.run(bias2))
-                result_process(i, cross_sess, accuracy_sess)
-        saver.save(sess, model_path)
-        sess.close()
+                print(accuracy_sess)
+            coord.request_stop()
+            coord.join(threads)
+
 
 if __name__ == '__main__':
     def print_result(cnt, cross, accuracy):
         print('%d:' %cnt)
         print(cross)
         print(accuracy)
-    tf_ocr_train(tf.train.AdagradOptimizer, 0.2, print_result)
+    tf_ocr_train(tf.train.AdagradOptimizer, 0.2, print_result, method=sys.argv[1])

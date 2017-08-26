@@ -112,6 +112,6 @@ def plot_result(result_csv, result_plot):
 if __name__ == '__main__':
     init()
     for i in range(7):
-        tf_ocr.tf_ocr_train(train_method_list[i], train_step_list[i], save_result)
+        tf_ocr.tf_ocr_train(train_method_list[i], train_step_list[i], save_result, method='train')
     save_csv(result_name, csv_name)
     plot_result(csv_name, result_fig)
