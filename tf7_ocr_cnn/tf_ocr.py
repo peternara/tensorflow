@@ -120,11 +120,11 @@ def tf_ocr_train(train_method, train_step, result_process, method='train', cnt=1
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
 
-            for i in range(2000):
+            for i in range(3000):
                 img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
                 np.set_printoptions(threshold=np.inf)
                 sess.run(train, feed_dict={xs: img_val, ys: label_val, keep_prob:0.5})
-                if i%5 == 0:
+                if i%50 == 0:
                     img_t_val, label_t_val, cnt_t_val = sess.run([img_t_batch, label_t_batch, cnt_t_batch])
                     cross_sess = sess.run(cross, feed_dict={xs: img_val, ys: label_val, keep_prob: 1})
                     accuracy_sess = compare_accuracy(img_t_val, label_t_val)
