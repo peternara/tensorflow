@@ -42,7 +42,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         max_idx_l = tf.argmax(tf.reshape(v_ys, [-1, MAX_CAPTCHA, CHAR_SET_LEN]), 2)
         correct_pred = tf.equal(max_idx_p, max_idx_l)
         accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
-
+        #print(sess.run(max_idx_l))
+        #print(sess.run(max_idx_p))
         result = sess.run(accuracy, feed_dict={xs: v_xs, ys: v_ys, keep_prob: 1})
         return result
 
@@ -155,7 +156,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                                                                capacity=3000, min_after_dequeue=1000, num_threads=1)
 
     img_t, label_t, cnt_t = read_and_decode('test.tfrecords')
-    img_t_batch, label_t_batch, cnt_t_batch = tf.train.batch([img_t, label_t, cnt_t], batch_size=10,
+    img_t_batch, label_t_batch, cnt_t_batch = tf.train.batch([img_t, label_t, cnt_t], batch_size=1,
                                 capacity=10)
     if method == 'train':
         with tf.Session() as sess:
