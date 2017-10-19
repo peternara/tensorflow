@@ -10,6 +10,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict1
     global predict2
+    global batch_size
+    batch_size = 200
 
     def read_and_decode(tf_record_path):  # read iris_contact.tfrecords
         filename_queue = tf.train.string_input_producer([tf_record_path])  # create a queue
@@ -34,7 +36,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
 
     def compare_accuracy(v_xs, v_ys):
         # global predict
-        y_pre = sess.run(predict, feed_dict={xs: v_xs, keep_prob: 1})
+        y_pre = sess.run(predict1, feed_dict={xs: v_xs, keep_prob: 1})
         y_pre = tf.reshape(y_pre, [-1, 54, 6])
         v_ys = tf.reshape(v_ys, [-1, 54, 6])
         max_idx_p = tf.argmax(y_pre, axis=1)
@@ -108,16 +110,16 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     h_fc6 = tf.reshape(h_fc6, [-1, 25, 5, 32])
 
     #deconv 1
-    W_conv7 = weight_variable('W8', [5, 5, 32, 16])
+    W_conv7 = weight_variable('W8', [5, 5, 16, 32])
     b_conv7 = bias_variable('b8', [16])
-    deconv1 = tf.nn.conv2d_transpose(value=h_fc6, filter=W_conv7, output_shape=[-1, 50, 10, 16],
+    deconv1 = tf.nn.conv2d_transpose(value=h_fc6, filter=W_conv7, output_shape=[batch_size, 50, 10, 16],
                                      strides=[1, 2, 2, 1], padding='SAME')
     deconv1 = tf.nn.relu(tf.nn.bias_add(deconv1, b_conv7))
     deconv1 = tf.nn.dropout(deconv1, keep_prob)
 
-    W_conv8 = weight_variable('W9', [5, 5, 16, 1])
+    W_conv8 = weight_variable('W9', [5, 5, 1, 16])
     b_conv8 = bias_variable('b9', [1])
-    deconv2 = tf.nn.conv2d_transpose(value=deconv1, filter=W_conv8, output_shape=[-1, 100, 20, 1],
+    deconv2 = tf.nn.conv2d_transpose(value=deconv1, filter=W_conv8, output_shape=[batch_size, 100, 20, 1],
                                      strides=[1, 2, 2, 1], padding='SAME')
     deconv2 = tf.nn.bias_add(deconv2, b_conv8)
     predict2 = tf.reshape(deconv2, [-1, 100*20])
@@ -129,15 +131,15 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     #cross1 = tf.reduce_mean(-tf.reduce_sum(ys * tf.log(tf.clip_by_value(predict1, 1e-10, 1.0)), \
     #                                      reduction_indices=[1]))
     cross1 = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict1, labels=ys))
-    cross2 = tf.reduce_mean(tf.pow(tf.subtract(predict2, x_image), 2.0))
-    cross = tf.add(cross1 + cross2)
+    cross2 = tf.reduce_mean(tf.pow(tf.subtract(predict2, xs), 2.0))
+    cross = tf.add(cross1, cross2)
 
     train = train_method(train_step).minimize(cross)
 
     saver = tf.train.Saver()
 
     img, label, cnt = read_and_decode('train.tfrecords')
-    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=200, capacity=1500,
+    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=batch_size, capacity=1500,
                                                                min_after_dequeue=1000, num_threads=1)
     # use full batch size
     # img_batch, label_batch, cnt_batch = tf.train.batch([img, label, cnt], batch_size=586, capacity=586)
@@ -157,6 +159,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                 img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
                 np.set_printoptions(threshold=np.inf)
                 sess.run(train, feed_dict={xs: img_val, ys: label_val, keep_prob: 0.5})
+                tt = sess.run(tf.pow(tf.subtract(predict2, xs), 2.0), feed_dict={xs: img_val, ys:label_val, keep_prob:1})
                 if i % 5 == 0:
                     print('cnt: %d' % i)
                     img_t_val, label_t_val, cnt_t_val = sess.run([img_t_batch, label_t_batch, cnt_t_batch])
