@@ -68,6 +68,19 @@ def random_image_generator(label):
         total_width = 200 - start - width + 10
         start = start + width - 10
 
+    #gassuian noise
+    noise1 = np.random.normal(1, 0.2, (50, 200))
+
+    #salt and papper noise
+    noise2 = np.ones((50, 200), dtype=int)
+    for i in range(10):
+        noise2 = noise2 * np.random.randint(0, 2, (50, 200))
+    noise = noise2 * 250
+    noise = noise * (total_img == 0).astype(int)
+
+    total_img = noise1 * total_img + noise
+    total_img.astype(int)
+
     cv2.imwrite(GENERATE_DIR + ''.join(label) + '.png', total_img)
 
 def get_single_image_path(label):
@@ -78,5 +91,5 @@ def get_single_image_path(label):
         return path
 
 if __name__ == "__main__":
-    for i in range(0, 1000):
+    for i in range(0, 5000):
         random_image_generator(random_label_generator())
