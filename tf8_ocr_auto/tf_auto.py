@@ -139,8 +139,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     saver = tf.train.Saver()
 
     img, label, cnt = read_and_decode('train.tfrecords')
-    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=batch_size, capacity=1500,
-                                                               min_after_dequeue=1000, num_threads=1)
+    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=batch_size, capacity=7000,
+                                                               min_after_dequeue=6000, num_threads=1)
     # use full batch size
     # img_batch, label_batch, cnt_batch = tf.train.batch([img, label, cnt], batch_size=586, capacity=586)
 

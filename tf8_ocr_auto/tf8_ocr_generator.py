@@ -91,5 +91,6 @@ def get_single_image_path(label):
         return path
 
 if __name__ == "__main__":
-    for i in range(0, 5000):
+    cnt = sys.argv[1]
+    for i in range(0, int(cnt)):
         random_image_generator(random_label_generator())

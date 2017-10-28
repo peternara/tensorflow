@@ -32,9 +32,13 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         #global predict
         y_pre = sess.run(predict, feed_dict={xs: v_xs, keep_prob: 1})
         y_pre = tf.reshape(y_pre, [-1, 54, 6])
-        max_idx_p = tf.argmax(y_pre, 2)
-        max_idx_l = tf.argmax(tf.reshape(v_ys, [-1, 54, 6]), 2)
+        max_idx_p = tf.argmax(y_pre, 1)
+        max_idx_l = tf.argmax(tf.reshape(v_ys, [-1, 54, 6]), 1)
+        #print(sess.run(y_pre))
+        #print(sess.run(max_idx_p))
+        #print(sess.run(max_idx_l))
         correct_predict = tf.equal(max_idx_p, max_idx_l)
+        #print(sess.run(correct_predict))
         accuracy = tf.reduce_mean(tf.cast(correct_predict, tf.float32))
         result = sess.run(accuracy, feed_dict={xs: v_xs, ys: v_ys, keep_prob: 1})
         return result
@@ -82,36 +86,37 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     h_pool11 = tf.nn.dropout(h_conv11, keep_prob)'''
 
     # 5X5 patch, size:1 height:32
-    W_conv1 = weight_variable('W1', [5, 5, 1, 32])
-    b_conv1 = bias_variable('b1', [32])
+    W_conv1 = weight_variable('W1', [5, 5, 1, 8])
+    b_conv1 = bias_variable('b1', [8])
     h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
     h_pool1 = max_pooling_2x2(h_conv1)  # output 50 * 10 * 16
-    h_pool2 = tf.nn.dropout(h_pool1, keep_prob)
+    h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
 
     #conv layer2
     # 5X5 patch, size:1 height:32
-    W_conv2 = weight_variable('W2', [5, 5, 32, 64])
-    b_conv2 = bias_variable('b2', [64])
+    W_conv2 = weight_variable('W2', [5, 5, 8, 16])
+    b_conv2 = bias_variable('b2', [16])
     h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
     h_pool2 = max_pooling_2x2(h_conv2)  # output 25 * 5 * 32
     h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
-    #h_pool2_flat = tf.reshape(h_pool2, [-1, 25 * 5 * 64])
+    h_pool2_flat = tf.reshape(h_pool2, [-1, 25 * 5 * 16])
 
     #conv layer2
     # 5X5 patch, size:1 height:32
-    W_conv3 = weight_variable('W3', [5, 5, 64, 64])
+    '''W_conv3 = weight_variable('W3', [5, 5, 64, 64])
     b_conv3 = bias_variable('b3', [64])
     h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
     h_conv3 = tf.nn.dropout(h_conv3, keep_prob)
     h_pool2_flat = tf.reshape(h_conv3, [-1, 25 * 5 * 64])
-
+    '''
 
     # full connect layer3
-    W_fc3 = weight_variable('W4', [25 * 5 * 64, 1024])
+    W_fc3 = weight_variable('W4', [25 * 5 * 16, 1024])
     b_fc3 = bias_variable('b4', [1024])
     h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool2_flat, W_fc3), b_fc3))
     h_fc3 = tf.nn.dropout(h_fc3, keep_prob)
-    
+
+    '''
     #full connect layer4
     W_fc4 = weight_variable('W5', [1024, 324])
     b_fc4 = bias_variable('b5', [324])
@@ -154,12 +159,12 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     #fc4_6 = tf.matmul(h_fc3, W_fc4_6) + b_fc4_6
     
     predict = tf.concat([fc4_1, fc4_2, fc4_3, fc4_4, fc4_5, fc4_6], 1)
-    '''
+
   
     #cross entropy
-    cross = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict, labels=ys))
-    #cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), \
-    #           reduction_indices=[1]))
+    #cross = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict, labels=ys))
+    cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), \
+               reduction_indices=[1]))
     #cross = tf.reduce_mean(tf.reduce_mean(-tf.reduce_sum(ys*tf.log(predict), reduction_indices=[1])))
     #train = tf.train.AdamOptimizer(1e-4).minimize(cross)
     #train = tf.train.GradientDescentOptimizer(0.2).minimize(cross)
@@ -169,7 +174,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     saver = tf.train.Saver()
 
     img, label, cnt = read_and_decode('train.tfrecords')
-    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=200, capacity=1500, min_after_dequeue=1000, num_threads=1)
+    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=200, capacity=6000, min_after_dequeue=4000, num_threads=1)
     #use full batch size
     #img_batch, label_batch, cnt_batch = tf.train.batch([img, label, cnt], batch_size=586, capacity=586)
 
