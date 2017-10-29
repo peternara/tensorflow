@@ -8,8 +8,8 @@ import os.path
 
 LABEL_FILE = 'label.txt'
 PNG_DIR = 'png'
-TRAIN_IMAGE_DIR = './source/train/'
-TEST_IMAGE_DIR = './source/test/'
+TRAIN_IMAGE_DIR = './source/org/train/'
+TEST_IMAGE_DIR = './source/org/test/'
 
 sample_list = [
         '2', '3', '4', '5', '6', '7',
@@ -32,9 +32,9 @@ def tfrecord(input, output):
     l_label = f_label.readlines()
     for parent, dirnames, filenames in os.walk(pnt_path):
         for filename in filenames:
-            print(cnt)
+            imgname = str(cnt+1) + '.png'
             # image
-            fullname = os.path.join(parent, filename)
+            fullname = os.path.join(parent, imgname)
             img_org = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
             img = cv2.resize(img_org, (100, 20), interpolation=cv2.INTER_CUBIC)
             img_raw = img.tobytes()
