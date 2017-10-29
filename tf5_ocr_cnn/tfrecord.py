@@ -10,6 +10,7 @@ LABEL_FILE = 'label.txt'
 PNG_DIR = 'png'
 TRAIN_IMAGE_DIR = './source/org/train/'
 TEST_IMAGE_DIR = './source/org/test/'
+NOISE_ENABLE = 1
 
 sample_list = [
         '2', '3', '4', '5', '6', '7',
@@ -56,6 +57,36 @@ def tfrecord(input, output):
             }))
             writer.write(train.SerializeToString())  # 序列化为字符串'''
             cnt = cnt + 1
+
+    if output == "train.tfrecords" and NOISE_ENABLE == 1:
+        for parent, dirnames, filenames in os.walk('./generator/'):
+            for filename in filenames:
+                print(cnt)
+                # image
+                fullname = os.path.join(parent, filename)
+                img_org = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
+                img = cv2.resize(img_org, (100, 20), interpolation=cv2.INTER_CUBIC)
+                img_raw = img.tobytes()
+
+                # label
+                label = filename[:-4]
+                print(label)
+                label_raw = np.zeros(324)  # 54 * 6
+                label_raw = label_raw.astype(np.uint8)
+                for i in range(6):
+                    # print(label[i])
+                    label_raw[sample_list.index(label[i]) + 54 * i] = 1
+                # print(label_raw)
+                label_raw = np.reshape(label_raw, [1, 324])
+                label_raw = label_raw.tostring()  # 这里是把ｃ换了一种格式存储
+                train = tf.train.Example(features=tf.train.Features(feature={
+                    'cnt': tf.train.Feature(int64_list=tf.train.Int64List(value=[cnt])),
+                    'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw])),
+                    'label': tf.train.Feature(bytes_list=tf.train.BytesList(value=[label_raw]))
+                }))
+                writer.write(train.SerializeToString())  # 序列化为字符串'''
+                cnt = cnt + 1
+
     writer.close()
 
 
