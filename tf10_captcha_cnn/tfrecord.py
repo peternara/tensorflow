@@ -23,29 +23,28 @@ def tfrecord(input, output):
             fullname = os.path.join(parent, filename)
             img_org = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
             ret, img = cv2.threshold(img_org, 150, 255, cv2.THRESH_BINARY)
-            #img = cv2.resize(img_org, (100, 20), interpolation=cv2.INTER_CUBIC)
+            #img = cv2.resize(img, (100, 20), interpolation=cv2.INTER_CUBIC)
             img_raw = img.tobytes()
 
             #label
             label = filename[:-4]
             print(label)
-            if len(label) != 6:
-                continue
-            label_raw = np.zeros(CHAR_SET_TOTAL) #54 * 6
-            label_raw = label_raw.astype(np.uint8)
-            for i in range(6):
-                #print(label[i])
-                label_raw[ord(label[i]) - ord('a') + CHAR_SET_LEN*i] = 1
-            #print(label_raw)
-            label_raw = np.reshape(label_raw, [1, CHAR_SET_TOTAL])
-            label_raw = label_raw.tostring()  # 这里是把ｃ换了一种格式存储
-            train = tf.train.Example(features=tf.train.Features(feature={
-                'cnt': tf.train.Feature(int64_list=tf.train.Int64List(value=[cnt])),
-                'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw])),
-                'label': tf.train.Feature(bytes_list=tf.train.BytesList(value=[label_raw]))
-            }))
-            writer.write(train.SerializeToString())  # 序列化为字符串'''
-            cnt = cnt + 1
+            if len(label) == 6:
+                label_raw = np.zeros(CHAR_SET_TOTAL) #54 * 6
+                label_raw = label_raw.astype(np.uint8)
+                for i in range(6):
+                    #print(label[i])
+                    label_raw[ord(label[i]) - ord('a') + CHAR_SET_LEN*i] = 1
+                #print(label_raw)
+                label_raw = np.reshape(label_raw, [1, CHAR_SET_TOTAL])
+                label_raw = label_raw.tostring()  # 这里是把ｃ换了一种格式存储
+                train = tf.train.Example(features=tf.train.Features(feature={
+                    'cnt': tf.train.Feature(int64_list=tf.train.Int64List(value=[cnt])),
+                    'img_raw': tf.train.Feature(bytes_list=tf.train.BytesList(value=[img_raw])),
+                    'label': tf.train.Feature(bytes_list=tf.train.BytesList(value=[label_raw]))
+                }))
+                writer.write(train.SerializeToString())  # 序列化为字符串'''
+                cnt = cnt + 1
     writer.close()
 
 
