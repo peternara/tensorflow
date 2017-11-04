@@ -7,6 +7,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 label_num = 6
 label_idx = 26
 label_len = label_idx * label_num
+IMAGE_WIDTH = 450
+IMAGE_HEIGHT = 114
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
@@ -23,8 +25,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                                            })  # return image and label
 
         img = tf.decode_raw(features['img_raw'], tf.uint8)
-        img = tf.reshape(img, [2000])  # reshape image
-        img = tf.cast(img, tf.float32) * (1. / 255)
+        img = tf.reshape(img, [IMAGE_HEIGHT*IMAGE_WIDTH])  # reshape image
+        #img = tf.cast(img, tf.float32) * (1. / 255)
         label = tf.decode_raw(features['label'], tf.uint8)
         label = tf.reshape(label, [label_len])
         label = tf.cast(label, tf.float32)
@@ -59,10 +61,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
     #define placeholder
-    xs = tf.placeholder(tf.float32, [None, 2000])
+    xs = tf.placeholder(tf.float32, [None, IMAGE_WIDTH*IMAGE_HEIGHT])
     ys = tf.placeholder(tf.float32, [None, label_len])
     keep_prob = tf.placeholder(tf.float32)
-    x_image = tf.reshape(xs, [-1, 100, 20, 1])
+    x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
 
     model_path = 'model.ckpt'
 
@@ -88,11 +90,11 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     b_conv3 = bias_variable('b3', [64])
     h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
     h_conv3 = tf.nn.dropout(h_conv3, keep_prob)
-    h_pool2_flat = tf.reshape(h_conv3, [-1, 25 * 5 * 64])
+    h_pool2_flat = tf.reshape(h_conv3, [-1, 15 * 57 * 64])
 
 
     # full connect layer3
-    W_fc3 = weight_variable('W4', [25 * 5 * 64, 1024])
+    W_fc3 = weight_variable('W4', [15 * 57 * 64, 1024])
     b_fc3 = bias_variable('b4', [1024])
     h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool2_flat, W_fc3), b_fc3))
     h_fc3 = tf.nn.dropout(h_fc3, keep_prob)
