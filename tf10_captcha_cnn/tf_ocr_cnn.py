@@ -1,7 +1,8 @@
 import tensorflow as tf
 import numpy as np
 import sys
-
+import random
+from PIL import Image
 import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -15,6 +16,40 @@ IMAGE_HEIGHT = 114
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
+
+    def get_name_and_image():
+        all_image = os.listdir('./captcha4/')
+        random_file = random.randint(0, 3429)
+        base = os.path.basename('./captcha4/' + all_image[random_file])
+        name = os.path.splitext(base)[0]
+        image = Image.open('./captcha4/' + all_image[random_file])
+        image = np.array(image)
+        return name, image
+
+    def name2vec(name):
+        vector = np.zeros(label_len)
+        for i, c in enumerate(name):
+            idx = i * 26 + ord(c) - 97
+            vector[idx] = 1
+        return vector
+
+    def vec2name(vec):
+        name = []
+        for i in vec:
+            a = chr(i + 97)
+            name.append(a)
+        return "".join(name)
+
+    # 生成一个训练batch
+    def get_next_batch(batch_size=64):
+        batch_x = np.zeros([batch_size, IMAGE_HEIGHT * IMAGE_WIDTH])
+        batch_y = np.zeros([batch_size, label_len])
+
+        for i in range(batch_size):
+            name, image = get_name_and_image()
+            batch_x[i, :] = 1 * (image.flatten())
+            batch_y[i, :] = name2vec(name)
+        return batch_x, batch_y
 
     def read_and_decode(tf_record_path):  # read iris_contact.tfrecords
         filename_queue = tf.train.string_input_producer([tf_record_path])  # create a queue
@@ -109,8 +144,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
 
     saver = tf.train.Saver()
 
-    img, label, cnt = read_and_decode('train.tfrecords')
-    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=100, capacity=2800, min_after_dequeue=200, num_threads=1)
+    #img, label, cnt = read_and_decode('train.tfrecords')
+    #img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=100, capacity=2800, min_after_dequeue=200, num_threads=1)
     # use full batch size
     #img_batch, label_batch, cnt_batch = tf.train.batch([img, label, cnt], batch_size=100, capacity=586)
 
@@ -125,7 +160,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             tf.train.start_queue_runners(sess=sess)
             pre_dict = 0
             for i in range(10000):
-                img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
+                #img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
+                img_val, label_val = get_next_batch(64)
                 np.set_printoptions(threshold=np.inf)
                 sess.run(train, feed_dict={xs: img_val, ys: label_val, keep_prob: 0.5})
                 if i % 5 == 0:
