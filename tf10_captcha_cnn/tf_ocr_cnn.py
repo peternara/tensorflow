@@ -85,8 +85,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
 
     # conv layer3
     # 5X5 patch, size:1 height:64
-    W_conv3 = weight_variable('W2', [5, 5, 64, 64])
-    b_conv3 = bias_variable('b2', [64])
+    W_conv3 = weight_variable('W3', [5, 5, 64, 64])
+    b_conv3 = bias_variable('b3', [64])
     h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
     h_pool3 = max_pooling_2x2(h_conv3)  # output 25 * 5 * 32
     h_pool3 = tf.nn.dropout(h_pool3, keep_prob)
