@@ -7,6 +7,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 label_num = 4
 label_idx = 8
 label_len = label_idx * label_num
+IMAGE_WIDTH = 100
+IMAGE_HEIGHT = 20
+
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
@@ -23,7 +26,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                                            })  # return image and label
 
         img = tf.decode_raw(features['img_raw'], tf.uint8)
-        img = tf.reshape(img, [2000])  # reshape image
+        img = tf.reshape(img, [IMAGE_HEIGHT*IMAGE_WIDTH])  # reshape image
         img = tf.cast(img, tf.float32) * (1. / 255)
         label = tf.decode_raw(features['label'], tf.uint8)
         label = tf.reshape(label, [label_len])
@@ -69,10 +72,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
     #define placeholder
-    xs = tf.placeholder(tf.float32, [None, 2000])
+    xs = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT*IMAGE_WIDTH])
     ys = tf.placeholder(tf.float32, [None, label_len])
     keep_prob = tf.placeholder(tf.float32)
-    x_image = tf.reshape(xs, [-1, 100, 20, 1])
+    x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
 
     model_path = 'model.ckpt'
 
