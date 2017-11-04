@@ -77,94 +77,36 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     model_path = 'model.ckpt'
 
     # 5X5 patch, size:1 height:32
-    W_conv1 = weight_variable('W1', [5, 5, 1, 8])
-    b_conv1 = bias_variable('b1', [8])
+    W_conv1 = weight_variable('W1', [5, 5, 1, 16])
+    b_conv1 = bias_variable('b1', [16])
     h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
     h_pool1 = max_pooling_2x2(h_conv1)  # output 50 * 10 * 16
     h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
 
     #conv layer2
     # 5X5 patch, size:1 height:32
-    W_conv2 = weight_variable('W2', [5, 5, 8, 16])
-    b_conv2 = bias_variable('b2', [16])
+    W_conv2 = weight_variable('W2', [5, 5, 16, 32])
+    b_conv2 = bias_variable('b2', [32])
     h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
     h_pool2 = max_pooling_2x2(h_conv2)  # output 25 * 5 * 32
     h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
-    h_pool2_flat = tf.reshape(h_pool2, [-1, 25 * 5 * 16])
-
-    #conv layer2
-    # 5X5 patch, size:1 height:32
-    '''W_conv3 = weight_variable('W3', [5, 5, 64, 64])
-    b_conv3 = bias_variable('b3', [64])
-    h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
-    h_conv3 = tf.nn.dropout(h_conv3, keep_prob)
-    h_pool2_flat = tf.reshape(h_conv3, [-1, 25 * 5 * 64])
-    '''
+    h_pool2_flat = tf.reshape(h_pool2, [-1, 25 * 5 * 32])
 
     # full connect layer3
-    W_fc3 = weight_variable('W4', [25 * 5 * 16, 1024])
+    W_fc3 = weight_variable('W4', [25 * 5 * 32, 1024])
     b_fc3 = bias_variable('b4', [1024])
     h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool2_flat, W_fc3), b_fc3))
     h_fc3 = tf.nn.dropout(h_fc3, keep_prob)
 
     # full connect layer3
-    W_fc4 = weight_variable('W5', [1024, 256])
-    b_fc4 = bias_variable('b5', [256])
-    h_fc4 = tf.nn.relu(tf.add(tf.matmul(h_fc3, W_fc4), b_fc4))
-    h_fc4 = tf.nn.dropout(h_fc4, keep_prob)
-
-    '''
-    #full connect layer4
-    W_fc4 = weight_variable('W5', [1024, 324])
-    b_fc4 = bias_variable('b5', [324])
+    W_fc4 = weight_variable('W5', [1024, label_len])
+    b_fc4 = bias_variable('b5', [label_len])
     predict = tf.add(tf.matmul(h_fc3, W_fc4), b_fc4)
 
-    '''
-    # full connect layer4-1
-    W_fc4_1 = weight_variable('W51', [256, label_idx])
-    b_fc4_1 = bias_variable('b51', [label_idx])
-    fc4_1 = tf.nn.softmax(tf.matmul(h_fc4, W_fc4_1) + b_fc4_1)
-    #fc4_1 = tf.matmul(h_fc3, W_fc4_1) + b_fc4_1
-    # full connect layer4-2
-    W_fc4_2 = weight_variable('W52', [256, label_idx])
-    b_fc4_2 = bias_variable('b52', [label_idx])
-    fc4_2 = tf.nn.softmax(tf.matmul(h_fc4, W_fc4_2) + b_fc4_2)
-    #fc4_2 = tf.matmul(h_fc3, W_fc4_2) + b_fc4_2    
- 
-    # full connect layer4-3
-    W_fc4_3 = weight_variable('W53', [256, label_idx])
-    b_fc4_3 = bias_variable('b53', [label_idx])
-    fc4_3 = tf.nn.softmax(tf.matmul(h_fc4, W_fc4_3) + b_fc4_3)
-    #fc4_3 = tf.matmul(h_fc3, W_fc4_3) + b_fc4_3
-
-    # full connect layer4-4
-    W_fc4_4 = weight_variable('W54', [256, label_idx])
-    b_fc4_4 = bias_variable('b54', [label_idx])
-    fc4_4 = tf.nn.softmax(tf.matmul(h_fc4, W_fc4_4) + b_fc4_4)
-    #fc4_4 = tf.matmul(h_fc3, W_fc4_4) + b_fc4_4
-
-    '''# full connect layer4-5
-    W_fc4_5 = weight_variable('W55', [1024, 54])
-    b_fc4_5 = bias_variable('b55', [54])
-    fc4_5 = tf.nn.softmax(tf.matmul(h_fc3, W_fc4_5) + b_fc4_5)
-    #fc4_5 = tf.matmul(h_fc3, W_fc4_5) + b_fc4_5
-
-    # full connect layer4-6
-    W_fc4_6 = weight_variable('W56', [1024, 54])
-    b_fc4_6 = bias_variable('b56', [54])
-    fc4_6 = tf.nn.softmax(tf.matmul(h_fc3, W_fc4_6) + b_fc4_6)
-    #fc4_6 = tf.matmul(h_fc3, W_fc4_6) + b_fc4_6'''
-    
-    predict = tf.concat([fc4_1, fc4_2, fc4_3, fc4_4], 1)
-
-  
     #cross entropy
-    #cross = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict, labels=ys))
-    cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), \
-               reduction_indices=[1]))
-    #cross = tf.reduce_mean(tf.reduce_mean(-tf.reduce_sum(ys*tf.log(predict), reduction_indices=[1])))
-    #train = tf.train.AdamOptimizer(1e-4).minimize(cross)
-    #train = tf.train.GradientDescentOptimizer(0.2).minimize(cross)
+    cross = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict, labels=ys))
+    #cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), \
+    #           reduction_indices=[1]))
 
     train = train_method(train_step).minimize(cross)
 
@@ -172,12 +114,9 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
 
     img, label, cnt = read_and_decode('train.tfrecords')
     img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=200, capacity=8000, min_after_dequeue=2000, num_threads=4)
-    #use full batch size
-    #img_batch, label_batch, cnt_batch = tf.train.batch([img, label, cnt], batch_size=586, capacity=586)
 
     img_t, label_t, cnt_t = read_and_decode('test.tfrecords')
     img_t_batch, label_t_batch, cnt_t_batch = tf.train.shuffle_batch([img_t, label_t, cnt_t], batch_size=20, capacity=500, min_after_dequeue=200, num_threads=1)
-    #img_t_batch, label_t_batch, cnt_t_batch = tf.train.batch([img_t, label_t, cnt_t], batch_size=935, capacity=935)
     if method == 'train':
         with tf.Session() as sess:
             coord = tf.train.Coordinator()
@@ -210,11 +149,6 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                                 pre_dict = cross_sess
                         else:
                              pre_dict = cross_sess 
-                    #print(sess.run(predict[0], feed_dict={xs: img_val, ys: label_val, keep_prob: 1}))
-                    #print(cross_sess)
-                    #print(accuracy_sess)
-                    #print(sess.run(bias1))
-                    #print(sess.run(bias2))
                     result_process(i, cross_sess, accuracy_sess)
             saver.save(sess, model_path)
             coord.request_stop()
