@@ -7,8 +7,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 label_num = 4
 label_idx = 8
 label_len = label_idx * label_num
-IMAGE_WIDTH = 100
-IMAGE_HEIGHT = 20
+IMAGE_WIDTH = 200
+IMAGE_HEIGHT = 50
 
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
@@ -93,10 +93,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
     h_pool2 = max_pooling_2x2(h_conv2)  # output 25 * 5 * 32
     h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
-    h_pool2_flat = tf.reshape(h_pool2, [-1, 25 * 5 * 32])
+    h_pool2_flat = tf.reshape(h_pool2, [-1, 50 * 13 * 32])
 
     # full connect layer3
-    W_fc3 = weight_variable('W4', [25 * 5 * 32, 1024])
+    W_fc3 = weight_variable('W4', [50 * 13 * 32, 1024])
     b_fc3 = bias_variable('b4', [1024])
     h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool2_flat, W_fc3), b_fc3))
     h_fc3 = tf.nn.dropout(h_fc3, keep_prob)

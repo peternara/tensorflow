@@ -21,8 +21,8 @@ def tfrecord(input, output):
         for filename in filenames:
             # image
             fullname = os.path.join(parent, filename)
-            img_org = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
-            img = cv2.resize(img_org, (100, 20), interpolation=cv2.INTER_CUBIC)
+            img = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
+            #img = cv2.resize(img, (100, 20), interpolation=cv2.INTER_CUBIC)
             ret, img = cv2.threshold(img, 180, 255, cv2.THRESH_BINARY)
             img_raw = img.tobytes()
 
