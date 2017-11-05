@@ -4,11 +4,11 @@ import sys
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
-label_num = 4
-label_idx = 8
+label_num = 6  #4
+label_idx = 54 #8
 label_len = label_idx * label_num
-IMAGE_WIDTH = 200
-IMAGE_HEIGHT = 50
+IMAGE_WIDTH = 100 #200
+IMAGE_HEIGHT = 20 #50
 
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):

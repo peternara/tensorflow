@@ -8,25 +8,37 @@ import random
 LABEL_FILE = 'label.txt'
 PNG_DIR = 'png'
 SAMPLE_DIR = './sample/'
-GENERATE_DIR = './generator/'
+#GENERATE_DIR = './generator/'
+
+'''sample_list = [
+        '2', '3', '4', '5', '6', '7',
+        '8', '9']'''
 
 sample_list = [
-    '2', '3', '4', '5', '6', '7', '8', '9'
-]
+        '2', '3', '4', '5', '6', '7',
+        '8', '9', 'a', 'b', 'c', 'd',
+        'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'm', 'n', 'p', 'q', 'r',
+        's', 't', 'u', 'v', 'w', 'x',
+        'y', 'z', 'A', 'B', 'C', 'D',
+        'E', 'F', 'G', 'H', 'K', 'M',
+        'N', 'P', 'Q', 'R', 'S', 'T',
+        'U', 'V', 'W', 'X', 'Y', 'Z']
 
-sample_len = 4
+sample_len = 6
+sample_idx = 54
 
 def random_label_generator():
     list = []
     for i in range(0, sample_len):
-        list.append(sample_list[random.randint(0, 7)])
+        list.append(sample_list[random.randint(0, sample_idx-1)])
     print(list)
     return list
 
 #single img 35*50 (5gap - 25image - 5gap)
 #full img 200*50
 
-def random_image_generator(idx, label):
+def random_image_generator(idx, label, path):
     total_width = 200
     start = 0
     total_img = np.zeros((50,200), np.uint8)
@@ -76,7 +88,7 @@ def random_image_generator(idx, label):
     total_img = noise1 * total_img + noise
     total_img.astype(int)
 
-    cv2.imwrite(GENERATE_DIR + str(idx) + '_' + ''.join(label) + '.png', total_img)
+    cv2.imwrite(path + '/' + str(idx) + '_' + ''.join(label) + '.png', total_img)
 
 def get_single_image_path(label):
     image_path = SAMPLE_DIR + label
@@ -86,6 +98,8 @@ def get_single_image_path(label):
         return path
 
 if __name__ == "__main__":
-    cnt = sys.argv[1]
+    path = sys.argv[1]
+    cnt = sys.argv[2]
+
     for i in range(0, int(cnt)):
-        random_image_generator(i, random_label_generator())
+        random_image_generator(i, random_label_generator(), path)
