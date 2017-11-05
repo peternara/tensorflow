@@ -37,9 +37,9 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     def compare_accuracy(v_xs, v_ys):
         #global predict
         y_pre = sess.run(predict, feed_dict={xs: v_xs, keep_prob: 1})
-        y_pre = tf.reshape(y_pre, [-1, label_idx, label_num])
-        max_idx_p = tf.argmax(y_pre, 1)
-        max_idx_l = tf.argmax(tf.reshape(v_ys, [-1, label_idx, label_num]), 1)
+        y_pre = tf.reshape(y_pre, [-1, label_num, label_idx])
+        max_idx_p = tf.argmax(y_pre, 2)
+        max_idx_l = tf.argmax(tf.reshape(v_ys, [-1, label_num, label_idx]), 2)
         #print(sess.run(y_pre))
         #print(sess.run(max_idx_p))
         #print(sess.run(max_idx_l))
@@ -80,25 +80,35 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     model_path = 'model.ckpt'
 
     # 5X5 patch, size:1 height:32
-    W_conv1 = weight_variable('W1', [5, 5, 1, 16])
-    b_conv1 = bias_variable('b1', [16])
+    W_conv1 = weight_variable('W1', [5, 5, 1, 32])
+    b_conv1 = bias_variable('b1', [32])
     h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
     h_pool1 = max_pooling_2x2(h_conv1)  # output 50 * 10 * 16
     h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
 
     #conv layer2
     # 5X5 patch, size:1 height:32
-    W_conv2 = weight_variable('W2', [5, 5, 16, 32])
-    b_conv2 = bias_variable('b2', [32])
+    W_conv2 = weight_variable('W2', [5, 5, 32, 64])
+    b_conv2 = bias_variable('b2', [64])
     h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
     h_pool2 = max_pooling_2x2(h_conv2)  # output 25 * 5 * 32
     h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
-    h_pool2_flat = tf.reshape(h_pool2, [-1, 50 * 13 * 32])
+    #h_pool2_flat = tf.reshape(h_pool2, [-1, 50 * 13 * 32])
+
+
+    #conv layer2
+    # 5X5 patch, size:1 height:32
+    W_conv3 = weight_variable('W3', [5, 5, 64, 64])
+    b_conv3 = bias_variable('b3', [64])
+    h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
+    h_pool3 = max_pooling_2x2(h_conv3)  # output 25 * 5 * 32
+    h_pool3 = tf.nn.dropout(h_pool3, keep_prob)
+    h_pool3_flat = tf.reshape(h_pool3, [-1, 25 * 7 * 64])
 
     # full connect layer3
-    W_fc3 = weight_variable('W4', [50 * 13 * 32, 1024])
+    W_fc3 = weight_variable('W4', [25 * 7 * 64, 1024])
     b_fc3 = bias_variable('b4', [1024])
-    h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool2_flat, W_fc3), b_fc3))
+    h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool3_flat, W_fc3), b_fc3))
     h_fc3 = tf.nn.dropout(h_fc3, keep_prob)
 
     # full connect layer3
