@@ -10,7 +10,12 @@ LABEL_FILE = 'label.txt'
 PNG_DIR = 'png'
 TRAIN_IMAGE_DIR = './source/org/train/'
 TEST_IMAGE_DIR = './source/org/test/'
-NOISE_ENABLE = 1
+GENERATOR_IMAGE_DIR = './source/generator/'
+NOISE_ENABLE = 0
+label_idx = 54
+label_len = 6
+IMAGE_WIDTH = 100
+IMAGE_HEIGHT = 20
 
 sample_list = [
         '2', '3', '4', '5', '6', '7',
@@ -27,28 +32,30 @@ sample_list = [
 def tfrecord(input, output):
     cnt = 0
     writer = tf.python_io.TFRecordWriter(output)
-    pnt_path = input + PNG_DIR
+    png_path = input + PNG_DIR
+    print(png_path)
     label_path = input + LABEL_FILE
     f_label = open(label_path, 'r')
     l_label = f_label.readlines()
-    for parent, dirnames, filenames in os.walk(pnt_path):
+    for parent, dirnames, filenames in os.walk(png_path):
         for filename in filenames:
             imgname = str(cnt+1) + '.png'
             # image
             fullname = os.path.join(parent, imgname)
             img_org = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
-            img = cv2.resize(img_org, (100, 20), interpolation=cv2.INTER_CUBIC)
+            img = cv2.resize(img_org, (IMAGE_WIDTH, IMAGE_HEIGHT), interpolation=cv2.INTER_CUBIC)
             img_raw = img.tobytes()
 
             #label
             label = l_label[cnt][-7:-1]
-            label_raw = np.zeros(324) #54 * 6
+            print("%d: %s" % (cnt, label))
+            label_raw = np.zeros(IMAGE_WIDTH*IMAGE_HEIGHT) #54 * 6
             label_raw = label_raw.astype(np.uint8)
-            for i in range(6):
+            for i in range(label_len):
                 #print(label[i])
-                label_raw[sample_list.index(label[i]) + 54*i] = 1
+                label_raw[sample_list.index(label[i]) + label_idx*i] = 1
             #print(label_raw)
-            label_raw = np.reshape(label_raw, [1, 324])
+            label_raw = np.reshape(label_raw, [1, IMAGE_WIDTH*IMAGE_HEIGHT])
             label_raw = label_raw.tostring()  # 这里是把ｃ换了一种格式存储
             train = tf.train.Example(features=tf.train.Features(feature={
                 'cnt': tf.train.Feature(int64_list=tf.train.Int64List(value=[cnt])),
@@ -57,27 +64,30 @@ def tfrecord(input, output):
             }))
             writer.write(train.SerializeToString())  # 序列化为字符串'''
             cnt = cnt + 1
+    writer.close()
 
     if output == "train.tfrecords" and NOISE_ENABLE == 1:
-        for parent, dirnames, filenames in os.walk('./generator/'):
+        writer = tf.python_io.TFRecordWriter('generator.tfrecords')
+        cnt = 0
+        for parent, dirnames, filenames in os.walk(GENERATOR_IMAGE_DIR):
             for filename in filenames:
-                print(cnt)
                 # image
                 fullname = os.path.join(parent, filename)
-                img_org = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
-                img = cv2.resize(img_org, (100, 20), interpolation=cv2.INTER_CUBIC)
+                img = cv2.imread(fullname, cv2.IMREAD_GRAYSCALE)
+                img = cv2.resize(img, (IMAGE_WIDTH, IMAGE_HEIGHT), interpolation=cv2.INTER_CUBIC)
+                # ret, img = cv2.threshold(img, 180, 255, cv2.THRESH_BINARY)
                 img_raw = img.tobytes()
 
                 # label
-                label = filename[:-4]
-                print(label)
-                label_raw = np.zeros(324)  # 54 * 6
+                label = filename[-(4 + label_len):-4]
+                print("%d: %s" % (cnt, label))
+                label_raw = np.zeros(label_idx * label_len)  # 8 * 3
                 label_raw = label_raw.astype(np.uint8)
-                for i in range(6):
+                for i in range(label_len):
                     # print(label[i])
-                    label_raw[sample_list.index(label[i]) + 54 * i] = 1
+                    label_raw[sample_list.index(label[i]) + label_idx * i] = 1
                 # print(label_raw)
-                label_raw = np.reshape(label_raw, [1, 324])
+                label_raw = np.reshape(label_raw, [1, label_idx * label_len])
                 label_raw = label_raw.tostring()  # 这里是把ｃ换了一种格式存储
                 train = tf.train.Example(features=tf.train.Features(feature={
                     'cnt': tf.train.Feature(int64_list=tf.train.Int64List(value=[cnt])),
@@ -86,8 +96,7 @@ def tfrecord(input, output):
                 }))
                 writer.write(train.SerializeToString())  # 序列化为字符串'''
                 cnt = cnt + 1
-
-    writer.close()
+        writer.close()
 
 
 if __name__ == '__main__':
