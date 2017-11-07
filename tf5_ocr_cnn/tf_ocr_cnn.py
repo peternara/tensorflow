@@ -9,7 +9,7 @@ label_idx = 54 #8
 label_len = label_idx * label_num
 IMAGE_WIDTH = 100 #200
 IMAGE_HEIGHT = 20 #50
-NOISE_ENABLE = 0
+NOISE_ENABLE = 1
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict

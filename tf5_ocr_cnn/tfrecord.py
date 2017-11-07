@@ -49,13 +49,13 @@ def tfrecord(input, output):
             #label
             label = l_label[cnt][-7:-1]
             print("%d: %s" % (cnt, label))
-            label_raw = np.zeros(IMAGE_WIDTH*IMAGE_HEIGHT) #54 * 6
+            label_raw = np.zeros(label_idx*label_len) #54 * 6
             label_raw = label_raw.astype(np.uint8)
             for i in range(label_len):
                 #print(label[i])
                 label_raw[sample_list.index(label[i]) + label_idx*i] = 1
             #print(label_raw)
-            label_raw = np.reshape(label_raw, [1, IMAGE_WIDTH*IMAGE_HEIGHT])
+            label_raw = np.reshape(label_raw, [1, label_idx*label_len])
             label_raw = label_raw.tostring()  # 这里是把ｃ换了一种格式存储
             train = tf.train.Example(features=tf.train.Features(feature={
                 'cnt': tf.train.Feature(int64_list=tf.train.Int64List(value=[cnt])),
