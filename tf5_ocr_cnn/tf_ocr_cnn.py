@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import sys
+import time
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
@@ -10,6 +11,7 @@ label_len = label_idx * label_num
 IMAGE_WIDTH = 100 #200
 IMAGE_HEIGHT = 20 #50
 NOISE_ENABLE = 1
+LOG_PATH = './log/'
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
@@ -125,6 +127,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     img_t_batch, label_t_batch, cnt_t_batch = tf.train.shuffle_batch([img_t, label_t, cnt_t], batch_size=20, capacity=250, min_after_dequeue=50, num_threads=1)
     if method == 'train':
         with tf.Session() as sess:
+            current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
+            fp = open(LOG_PATH + current_time + ".txt", 'w+')
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
@@ -142,10 +146,14 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                 sess.run(train, feed_dict={xs: img_val, ys: label_val, keep_prob:0.5})
                 if i%5 == 0:
                     print('cnt: %d' %i)
+                    str = 'cnt: %d' %i + '\n'
                     img_t_val, label_t_val, cnt_t_val = sess.run([img_t_batch, label_t_batch, cnt_t_batch])
                     #print(label_t_val)
                     cross_sess = sess.run(cross, feed_dict={xs: img_val, ys: label_val, keep_prob: 1})
                     accuracy_sess = compare_accuracy(img_val, label_val)
+                    str += "cross_sess: %f" %cross_sess + '\n'
+                    str += "train accuracy: %f" %accuracy_sess + '\n'
+                    str += "test accuracy: %f" %accuracy_sess + '\n'
                     print("cross_sess: %f" %cross_sess)
                     print("train accuracy: %f" %accuracy_sess)
                     accuracy_sess = compare_accuracy(img_t_val, label_t_val)
@@ -154,6 +162,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                         break
                     if i%500 == 0:
                         print("pre cross: %f and current cross: %f" %(pre_dict, cross_sess))
+                        str += "pre cross: %f and current cross: %f" %(pre_dict, cross_sess) + '\n'
                         if i != 0:
                             if pre_dict >= cross_sess + 0.002:
                                 pre_dict = cross_sess
@@ -162,9 +171,12 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                         else:
                              pre_dict = cross_sess
                     result_process(i, cross_sess, accuracy_sess)
+                    fp.write(str)
+                    fp.flush()
             saver.save(sess, model_path)
             coord.request_stop()
             coord.join(threads)
+            fp.close()
     elif method == 'test':
         with tf.Session() as sess:
             coord = tf.train.Coordinator()
