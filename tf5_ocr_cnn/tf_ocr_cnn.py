@@ -153,11 +153,11 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                     accuracy_sess = compare_accuracy(img_val, label_val)
                     str += "cross_sess: %f" %cross_sess + '\n'
                     str += "train accuracy: %f" %accuracy_sess + '\n'
-                    str += "test accuracy: %f" %accuracy_sess + '\n'
                     print("cross_sess: %f" %cross_sess)
                     print("train accuracy: %f" %accuracy_sess)
                     accuracy_sess = compare_accuracy(img_t_val, label_t_val)
                     print("test accuracy: %f" %accuracy_sess)
+                    str += "test accuracy: %f" %accuracy_sess + '\n'
                     if accuracy_sess > 0.99:
                         break
                     if i%500 == 0:
