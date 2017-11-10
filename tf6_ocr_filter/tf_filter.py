@@ -8,7 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 IMAGE_WIDTH = 100 #200
 IMAGE_HEIGHT = 20 #50
-batch_size = 64
+batch_size = 1
 LOG_PATH = './log/'
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
@@ -40,7 +40,9 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     def compare_accuracy(v_xs, v_ys):
         # global predict
         y_pre = sess.run(predict, feed_dict={xs: v_xs, keep_prob: 1})
-        correct_predict = tf.equal(y_pre, v_ys)
+        pre = y_pre > 0.5
+        pre = sess.run(tf.cast(pre, tf.float32))
+        correct_predict = tf.equal(pre, v_ys)
         accuracy = tf.reduce_mean(tf.cast(correct_predict, tf.float32))
         result = sess.run(accuracy)
         return result
@@ -83,19 +85,19 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     #deconv 1
     W_conv7 = weight_variable('W8', [5, 5, 16, 32])
     b_conv7 = bias_variable('b8', [16])
-    deconv1 = tf.nn.conv2d_transpose(value=h_pool2, filter=W_conv7, output_shape=[batch_size, 50, 10, 16],
+    deconv1 = tf.nn.conv2d_transpose(value=h_pool2, filter=W_conv7, output_shape=[batch_size, 10, 50, 16],
                                      strides=[1, 2, 2, 1], padding='SAME')
     deconv1 = tf.nn.relu(tf.nn.bias_add(deconv1, b_conv7))
     deconv1 = tf.nn.dropout(deconv1, keep_prob)
 
     W_conv8 = weight_variable('W9', [5, 5, 1, 16])
     b_conv8 = bias_variable('b9', [1])
-    deconv2 = tf.nn.conv2d_transpose(value=deconv1, filter=W_conv8, output_shape=[batch_size, 100, 20, 1],
+    deconv2 = tf.nn.conv2d_transpose(value=deconv1, filter=W_conv8, output_shape=[batch_size, 20, 100, 1],
                                      strides=[1, 2, 2, 1], padding='SAME')
     deconv2 = tf.nn.bias_add(deconv2, b_conv8)
-    predict2 = tf.reshape(deconv2, [-1, 100*20])
+    predict = tf.reshape(deconv2, [-1, 100*20])
 
-    cross = tf.reduce_mean(tf.pow(tf.subtract(predict2, xs), 2.0))
+    cross = tf.reduce_mean(tf.pow(tf.subtract(predict, xs), 2.0))
     train = train_method(train_step).minimize(cross)
 
     saver = tf.train.Saver()
@@ -103,9 +105,6 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     img_in, img_out, cnt = read_and_decode('train.tfrecords')
     img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
                                                                min_after_dequeue=80, num_threads=1)
-    img_in_t, img_out_t, cnt_t = read_and_decode('test.tfrecords')
-    img_in_t_batch, img_out_t_batch, cnt_t_batch = tf.train.shuffle_batch([img_in_t, img_out_t, cnt_t], batch_size=batch_size,
-                                                                     capacity=250, min_after_dequeue=80, num_threads=1)
     if method == 'train':
         with tf.Session() as sess:
             current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
@@ -122,17 +121,13 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                 if i % 5 == 0:
                     print('cnt: %d' % i)
                     str = 'cnt: %d' % i + '\n'
-                    img_in_t_val, img_out_t_val, cnt_t_val = sess.run([img_in_t_batch, img_out_t_batch, cnt_t_batch])
                     # print(label_t_val)
-                    cross_sess = sess.run(cross, feed_dict={xs: img_in_t_val, ys: img_out_t_val, keep_prob: 1})
+                    cross_sess = sess.run(cross, feed_dict={xs: img_in_val, ys: img_out_val, keep_prob: 1})
                     accuracy_sess = compare_accuracy(img_in_val, img_out_val)
                     print("cross_sess: %f" % cross_sess)
                     print("train accuracy: %f" % accuracy_sess)
                     str += "cross_sess: %f" %cross_sess + '\n'
                     str += "train accuracy: %f" %accuracy_sess + '\n'
-                    accuracy_sess = compare_accuracy(img_in_t_val, img_out_t_val)
-                    print("test accuracy: %f" % accuracy_sess)
-                    str += "test accuracy: %f" % accuracy_sess + '\n'
                     if accuracy_sess > 0.99:
                         break
                     if i % 500 == 0:
@@ -159,10 +154,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
             saver.restore(sess, model_path)
-            for i in range(1):
-                img_in_t_val, img_out_t_val, cnt_t_val = sess.run([img_in_t_batch, img_out_t_batch, cnt_t_batch])
-                accuracy_sess = compare_accuracy(img_in_t_val, img_out_t_val)
-                predict_t = sess.run(predict, feed_dict={xs: img_in_t_val, ys: img_out_t_val, keep_prob: 1})
+            #for i in range(1):
             coord.request_stop()
             coord.join(threads)
 
