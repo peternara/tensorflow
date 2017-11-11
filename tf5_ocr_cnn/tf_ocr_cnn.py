@@ -118,10 +118,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
 
     if NOISE_ENABLE == 1:
         img_n, label_n, cnt_n = read_and_decode('generator.tfrecords')
-        img_n_batch, label_n_batch, cnt_n_batch = tf.train.shuffle_batch([img_n, label_n, cnt_n], batch_size=100, capacity=8000,
+        img_n_batch, label_n_batch, cnt_n_batch = tf.train.shuffle_batch([img_n, label_n, cnt_n], batch_size=200, capacity=8000,
                                                                    min_after_dequeue=2000, num_threads=2)
     img, label, cnt = read_and_decode('train.tfrecords')
-    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=100, capacity=500, min_after_dequeue=40, num_threads=2)
+    img_batch, label_batch, cnt_batch = tf.train.shuffle_batch([img, label, cnt], batch_size=64, capacity=500, min_after_dequeue=40, num_threads=2)
 
     img_t, label_t, cnt_t = read_and_decode('test.tfrecords')
     img_t_batch, label_t_batch, cnt_t_batch = tf.train.shuffle_batch([img_t, label_t, cnt_t], batch_size=20, capacity=250, min_after_dequeue=50, num_threads=1)
@@ -138,6 +138,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                 if NOISE_ENABLE == 1:
                     img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
                     img_n_val, label_n_val, cnt_n_val = sess.run([img_n_batch, label_n_batch, cnt_n_batch])
+                    #img_val = img_n_val
+                    #label_val = label_n_val
                     img_val = np.row_stack((img_val, img_n_val))
                     label_val = np.row_stack((label_val, label_n_val))
                 else:
