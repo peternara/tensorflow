@@ -59,54 +59,56 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     def max_pooling_2x2(x):
         return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
-    # define placeholder
-    xs = tf.placeholder(tf.float32, [None, 2000])
-    ys = tf.placeholder(tf.float32, [None, 2000])
-    keep_prob = tf.placeholder(tf.float32)
-    x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
+    graph = tf.Graph()
+    with graph.as_default():
+        # define placeholder
+        xs = tf.placeholder(tf.float32, [None, 2000])
+        ys = tf.placeholder(tf.float32, [None, 2000])
+        keep_prob = tf.placeholder(tf.float32)
+        x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
 
-    model_path = 'model.ckpt'
+        model_path = 'model.ckpt'
 
-    # 5X5 patch, size:1 height:32
-    W_conv1 = weight_variable('W1', [5, 5, 1, 16])
-    b_conv1 = bias_variable('b1', [16])
-    h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
-    h_pool1 = max_pooling_2x2(h_conv1)  # output 50 * 10 * 16
-    h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
+        # 5X5 patch, size:1 height:32
+        W_conv1 = weight_variable('W1', [5, 5, 1, 16])
+        b_conv1 = bias_variable('b1', [16])
+        h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
+        h_pool1 = max_pooling_2x2(h_conv1)  # output 50 * 10 * 16
+        h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
 
-    # conv layer2
-    # 5X5 patch, size:1 height:32
-    W_conv2 = weight_variable('W2', [5, 5, 16, 32])
-    b_conv2 = bias_variable('b2', [32])
-    h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
-    h_pool2 = max_pooling_2x2(h_conv2)  # output 25 * 5 * 32
-    h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
+        # conv layer2
+        # 5X5 patch, size:1 height:32
+        W_conv2 = weight_variable('W2', [5, 5, 16, 32])
+        b_conv2 = bias_variable('b2', [32])
+        h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
+        h_pool2 = max_pooling_2x2(h_conv2)  # output 25 * 5 * 32
+        h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
 
-    #deconv 1
-    W_conv7 = weight_variable('W8', [5, 5, 16, 32])
-    b_conv7 = bias_variable('b8', [16])
-    deconv1 = tf.nn.conv2d_transpose(value=h_pool2, filter=W_conv7, output_shape=[batch_size, 10, 50, 16],
+        #deconv 1
+        W_conv7 = weight_variable('W8', [5, 5, 16, 32])
+        b_conv7 = bias_variable('b8', [16])
+        deconv1 = tf.nn.conv2d_transpose(value=h_pool2, filter=W_conv7, output_shape=[batch_size, 10, 50, 16],
                                      strides=[1, 2, 2, 1], padding='SAME')
-    deconv1 = tf.nn.relu(tf.nn.bias_add(deconv1, b_conv7))
-    deconv1 = tf.nn.dropout(deconv1, keep_prob)
+        deconv1 = tf.nn.relu(tf.nn.bias_add(deconv1, b_conv7))
+        deconv1 = tf.nn.dropout(deconv1, keep_prob)
 
-    W_conv8 = weight_variable('W9', [5, 5, 1, 16])
-    b_conv8 = bias_variable('b9', [1])
-    deconv2 = tf.nn.conv2d_transpose(value=deconv1, filter=W_conv8, output_shape=[batch_size, 20, 100, 1],
+        W_conv8 = weight_variable('W9', [5, 5, 1, 16])
+        b_conv8 = bias_variable('b9', [1])
+        deconv2 = tf.nn.conv2d_transpose(value=deconv1, filter=W_conv8, output_shape=[batch_size, 20, 100, 1],
                                      strides=[1, 2, 2, 1], padding='SAME')
-    deconv2 = tf.nn.bias_add(deconv2, b_conv8)
-    predict = tf.reshape(deconv2, [-1, 100*20])
+        deconv2 = tf.nn.bias_add(deconv2, b_conv8)
+        predict = tf.reshape(deconv2, [-1, 100*20])
 
-    cross = tf.reduce_mean(tf.pow(tf.subtract(predict, xs), 2.0))
-    train = train_method(train_step).minimize(cross)
+        cross = tf.reduce_mean(tf.pow(tf.subtract(predict, xs), 2.0))
+        train = train_method(train_step).minimize(cross)
 
-    saver = tf.train.Saver()
+        saver = tf.train.Saver()
 
-    img_in, img_out, cnt = read_and_decode('train.tfrecords')
-    img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
+        img_in, img_out, cnt = read_and_decode('train.tfrecords')
+        img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
                                                                min_after_dequeue=80, num_threads=1)
     if method == 'train':
-        with tf.Session(graph = tf.get_default_graph()) as sess:
+        with tf.Session(graph = graph) as sess:
             current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
             fp = open(LOG_PATH + current_time + ".txt", 'w+')
             coord = tf.train.Coordinator()
@@ -148,7 +150,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             coord.join(threads)
             fp.close()
     elif method == 'test':
-        with tf.Session() as sess:
+        with tf.Session(graph = graph) as sess:
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
