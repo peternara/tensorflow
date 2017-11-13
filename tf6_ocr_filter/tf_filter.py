@@ -114,7 +114,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
             pre_dict = 0
-            for i in range(6000):
+            for i in range(10000):
                 img_in_val, img_out_val, cnt_val = sess.run([img_in_batch, img_out_batch, cnt_batch])
                 np.set_printoptions(threshold=np.inf)
                 sess.run(train, feed_dict={xs: img_in_val, ys: img_out_val, keep_prob: 0.5})
