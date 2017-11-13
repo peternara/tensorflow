@@ -22,6 +22,9 @@ sample_list = [
         'N', 'P', 'Q', 'R', 'S', 'T',
         'U', 'V', 'W', 'X', 'Y', 'Z']
 
+NOISE_NUM = 586
+NOISE_DIR = './source/noise/'
+
 sample_len = 6
 sample_idx = 54
 
@@ -68,6 +71,8 @@ def random_image_generator(idx, label, path):
         start = start + random.randint(0, total_width - sum)
         sum = sum - width + 10
         #print('%s: %d-%d' %(label[i], start, start+width-10))
+        delta = random.uniform(0.3, 0.7)
+        roiImg = delta * roiImg
         total_img[:, start:start+width-10] = roiImg
         total_width = 200 - start - width + 10
         start = start + width - 10
@@ -85,6 +90,15 @@ def random_image_generator(idx, label, path):
     total_img = noise1 * total_img + noise
     total_img.astype(int)
 
+
+    #org noise
+    noise_idx = random.randint(1, NOISE_NUM)
+    noise_path = NOISE_DIR + str(noise_idx) + '.png'
+    img_noise = cv2.imread(noise_path, cv2.IMREAD_GRAYSCALE)
+    img_noise = 255 -img_noise
+
+    total_img = total_img + img_noise
+    total_img = 255 - total_img
     cv2.imwrite(path + '/' + str(idx) + '_' + ''.join(label) + '.png', total_img)
 
 def get_single_image_path(label):
