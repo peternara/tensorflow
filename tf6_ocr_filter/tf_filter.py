@@ -106,7 +106,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
                                                                min_after_dequeue=80, num_threads=1)
     if method == 'train':
-        with tf.Session() as sess:
+        with tf.Session(graph = tf.get_default_graph()) as sess:
             current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
             fp = open(LOG_PATH + current_time + ".txt", 'w+')
             coord = tf.train.Coordinator()
