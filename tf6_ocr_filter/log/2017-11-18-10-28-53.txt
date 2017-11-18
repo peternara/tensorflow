@@ -1,0 +1,6020 @@
+cnt: 0
+cross_sess: 5477.574707
+train accuracy: 0.153719
+pre cross: 0.000000 and current cross: 5477.574707
+cnt: 5
+cross_sess: 3244.981934
+train accuracy: 0.153391
+cnt: 10
+cross_sess: 3129.223389
+train accuracy: 0.157680
+cnt: 15
+cross_sess: 2797.144043
+train accuracy: 0.152297
+cnt: 20
+cross_sess: 2661.581787
+train accuracy: 0.155484
+cnt: 25
+cross_sess: 2662.889404
+train accuracy: 0.154211
+cnt: 30
+cross_sess: 2403.394775
+train accuracy: 0.152906
+cnt: 35
+cross_sess: 2261.097900
+train accuracy: 0.154914
+cnt: 40
+cross_sess: 2106.305420
+train accuracy: 0.155437
+cnt: 45
+cross_sess: 1983.917603
+train accuracy: 0.155008
+cnt: 50
+cross_sess: 1895.087036
+train accuracy: 0.154016
+cnt: 55
+cross_sess: 1836.281738
+train accuracy: 0.151594
+cnt: 60
+cross_sess: 1876.222656
+train accuracy: 0.155102
+cnt: 65
+cross_sess: 1765.772095
+train accuracy: 0.150867
+cnt: 70
+cross_sess: 1701.175659
+train accuracy: 0.155953
+cnt: 75
+cross_sess: 1659.901001
+train accuracy: 0.152484
+cnt: 80
+cross_sess: 1638.997559
+train accuracy: 0.153719
+cnt: 85
+cross_sess: 1614.726562
+train accuracy: 0.151398
+cnt: 90
+cross_sess: 1669.907959
+train accuracy: 0.155156
+cnt: 95
+cross_sess: 1521.428833
+train accuracy: 0.152437
+cnt: 100
+cross_sess: 1536.268311
+train accuracy: 0.154391
+cnt: 105
+cross_sess: 1461.199585
+train accuracy: 0.152523
+cnt: 110
+cross_sess: 1486.950684
+train accuracy: 0.154484
+cnt: 115
+cross_sess: 1460.517334
+train accuracy: 0.153203
+cnt: 120
+cross_sess: 1487.207031
+train accuracy: 0.158625
+cnt: 125
+cross_sess: 1396.733154
+train accuracy: 0.155633
+cnt: 130
+cross_sess: 1345.205322
+train accuracy: 0.152883
+cnt: 135
+cross_sess: 1361.540283
+train accuracy: 0.155523
+cnt: 140
+cross_sess: 1373.396484
+train accuracy: 0.151898
+cnt: 145
+cross_sess: 1379.789307
+train accuracy: 0.155570
+cnt: 150
+cross_sess: 1274.985229
+train accuracy: 0.154523
+cnt: 155
+cross_sess: 1202.379517
+train accuracy: 0.153148
+cnt: 160
+cross_sess: 1291.039062
+train accuracy: 0.154508
+cnt: 165
+cross_sess: 1272.899048
+train accuracy: 0.152742
+cnt: 170
+cross_sess: 1235.674194
+train accuracy: 0.153117
+cnt: 175
+cross_sess: 1192.984497
+train accuracy: 0.154461
+cnt: 180
+cross_sess: 1200.625488
+train accuracy: 0.154961
+cnt: 185
+cross_sess: 1212.628662
+train accuracy: 0.155305
+cnt: 190
+cross_sess: 1212.162231
+train accuracy: 0.156711
+cnt: 195
+cross_sess: 1218.520264
+train accuracy: 0.156539
+cnt: 200
+cross_sess: 1133.970215
+train accuracy: 0.150922
+cnt: 205
+cross_sess: 1217.651123
+train accuracy: 0.156766
+cnt: 210
+cross_sess: 1159.048462
+train accuracy: 0.154844
+cnt: 215
+cross_sess: 1172.637695
+train accuracy: 0.156062
+cnt: 220
+cross_sess: 1121.789673
+train accuracy: 0.153664
+cnt: 225
+cross_sess: 1097.314209
+train accuracy: 0.152172
+cnt: 230
+cross_sess: 1112.731445
+train accuracy: 0.153289
+cnt: 235
+cross_sess: 1080.308594
+train accuracy: 0.152609
+cnt: 240
+cross_sess: 1120.255859
+train accuracy: 0.155375
+cnt: 245
+cross_sess: 1089.255859
+train accuracy: 0.152820
+cnt: 250
+cross_sess: 1088.243896
+train accuracy: 0.154375
+cnt: 255
+cross_sess: 1105.689453
+train accuracy: 0.156164
+cnt: 260
+cross_sess: 1055.289551
+train accuracy: 0.155953
+cnt: 265
+cross_sess: 1068.231812
+train accuracy: 0.153078
+cnt: 270
+cross_sess: 1105.435913
+train accuracy: 0.154602
+cnt: 275
+cross_sess: 1098.947876
+train accuracy: 0.150500
+cnt: 280
+cross_sess: 1041.670776
+train accuracy: 0.152797
+cnt: 285
+cross_sess: 1002.180542
+train accuracy: 0.150773
+cnt: 290
+cross_sess: 1105.587891
+train accuracy: 0.158031
+cnt: 295
+cross_sess: 1050.007080
+train accuracy: 0.154734
+cnt: 300
+cross_sess: 1034.799561
+train accuracy: 0.154859
+cnt: 305
+cross_sess: 1000.199890
+train accuracy: 0.156859
+cnt: 310
+cross_sess: 1007.782959
+train accuracy: 0.151562
+cnt: 315
+cross_sess: 1019.179932
+train accuracy: 0.153867
+cnt: 320
+cross_sess: 1003.322449
+train accuracy: 0.156039
+cnt: 325
+cross_sess: 1025.242676
+train accuracy: 0.160156
+cnt: 330
+cross_sess: 986.352905
+train accuracy: 0.154023
+cnt: 335
+cross_sess: 965.812500
+train accuracy: 0.153344
+cnt: 340
+cross_sess: 936.481323
+train accuracy: 0.152828
+cnt: 345
+cross_sess: 943.351196
+train accuracy: 0.154539
+cnt: 350
+cross_sess: 909.460083
+train accuracy: 0.151914
+cnt: 355
+cross_sess: 942.519470
+train accuracy: 0.154734
+cnt: 360
+cross_sess: 973.010620
+train accuracy: 0.154891
+cnt: 365
+cross_sess: 992.576782
+train accuracy: 0.158570
+cnt: 370
+cross_sess: 933.346497
+train accuracy: 0.154617
+cnt: 375
+cross_sess: 906.606567
+train accuracy: 0.153852
+cnt: 380
+cross_sess: 921.281128
+train accuracy: 0.155883
+cnt: 385
+cross_sess: 879.256592
+train accuracy: 0.150844
+cnt: 390
+cross_sess: 878.865906
+train accuracy: 0.154555
+cnt: 395
+cross_sess: 893.432068
+train accuracy: 0.154344
+cnt: 400
+cross_sess: 926.141724
+train accuracy: 0.154852
+cnt: 405
+cross_sess: 874.438721
+train accuracy: 0.154797
+cnt: 410
+cross_sess: 880.129395
+train accuracy: 0.155930
+cnt: 415
+cross_sess: 845.317932
+train accuracy: 0.154766
+cnt: 420
+cross_sess: 874.231628
+train accuracy: 0.153953
+cnt: 425
+cross_sess: 886.805298
+train accuracy: 0.154211
+cnt: 430
+cross_sess: 857.062988
+train accuracy: 0.153375
+cnt: 435
+cross_sess: 831.677185
+train accuracy: 0.153180
+cnt: 440
+cross_sess: 839.311035
+train accuracy: 0.153711
+cnt: 445
+cross_sess: 836.597046
+train accuracy: 0.153766
+cnt: 450
+cross_sess: 853.350708
+train accuracy: 0.156883
+cnt: 455
+cross_sess: 815.031250
+train accuracy: 0.154094
+cnt: 460
+cross_sess: 831.772644
+train accuracy: 0.156750
+cnt: 465
+cross_sess: 819.992798
+train accuracy: 0.152156
+cnt: 470
+cross_sess: 803.275391
+train accuracy: 0.154922
+cnt: 475
+cross_sess: 812.747131
+train accuracy: 0.153547
+cnt: 480
+cross_sess: 843.851685
+train accuracy: 0.152820
+cnt: 485
+cross_sess: 791.404724
+train accuracy: 0.152523
+cnt: 490
+cross_sess: 841.768921
+train accuracy: 0.156477
+cnt: 495
+cross_sess: 778.795105
+train accuracy: 0.152391
+cnt: 500
+cross_sess: 779.458984
+train accuracy: 0.153930
+pre cross: 5477.574707 and current cross: 779.458984
+cnt: 505
+cross_sess: 825.067810
+train accuracy: 0.153445
+cnt: 510
+cross_sess: 773.223572
+train accuracy: 0.153867
+cnt: 515
+cross_sess: 807.821411
+train accuracy: 0.153875
+cnt: 520
+cross_sess: 752.176208
+train accuracy: 0.151289
+cnt: 525
+cross_sess: 784.042297
+train accuracy: 0.153781
+cnt: 530
+cross_sess: 796.236816
+train accuracy: 0.152445
+cnt: 535
+cross_sess: 779.877625
+train accuracy: 0.151656
+cnt: 540
+cross_sess: 786.222351
+train accuracy: 0.157641
+cnt: 545
+cross_sess: 744.822998
+train accuracy: 0.151617
+cnt: 550
+cross_sess: 763.069946
+train accuracy: 0.153289
+cnt: 555
+cross_sess: 778.818970
+train accuracy: 0.156125
+cnt: 560
+cross_sess: 740.486389
+train accuracy: 0.152437
+cnt: 565
+cross_sess: 785.221619
+train accuracy: 0.156438
+cnt: 570
+cross_sess: 722.145386
+train accuracy: 0.149945
+cnt: 575
+cross_sess: 771.443970
+train accuracy: 0.155086
+cnt: 580
+cross_sess: 750.935486
+train accuracy: 0.153609
+cnt: 585
+cross_sess: 731.571472
+train accuracy: 0.153117
+cnt: 590
+cross_sess: 738.497375
+train accuracy: 0.153961
+cnt: 595
+cross_sess: 711.430115
+train accuracy: 0.153516
+cnt: 600
+cross_sess: 747.309692
+train accuracy: 0.155711
+cnt: 605
+cross_sess: 698.374329
+train accuracy: 0.148297
+cnt: 610
+cross_sess: 739.770264
+train accuracy: 0.153547
+cnt: 615
+cross_sess: 729.785339
+train accuracy: 0.155203
+cnt: 620
+cross_sess: 733.979065
+train accuracy: 0.154687
+cnt: 625
+cross_sess: 727.140198
+train accuracy: 0.156070
+cnt: 630
+cross_sess: 739.576172
+train accuracy: 0.154016
+cnt: 635
+cross_sess: 736.757690
+train accuracy: 0.155477
+cnt: 640
+cross_sess: 714.221802
+train accuracy: 0.155305
+cnt: 645
+cross_sess: 732.193237
+train accuracy: 0.152547
+cnt: 650
+cross_sess: 722.498596
+train accuracy: 0.155945
+cnt: 655
+cross_sess: 708.590881
+train accuracy: 0.153508
+cnt: 660
+cross_sess: 717.457397
+train accuracy: 0.149836
+cnt: 665
+cross_sess: 691.867981
+train accuracy: 0.152313
+cnt: 670
+cross_sess: 751.712646
+train accuracy: 0.158383
+cnt: 675
+cross_sess: 672.390930
+train accuracy: 0.150375
+cnt: 680
+cross_sess: 705.540283
+train accuracy: 0.156477
+cnt: 685
+cross_sess: 714.605469
+train accuracy: 0.156469
+cnt: 690
+cross_sess: 711.492676
+train accuracy: 0.154680
+cnt: 695
+cross_sess: 691.914368
+train accuracy: 0.151508
+cnt: 700
+cross_sess: 714.868408
+train accuracy: 0.157297
+cnt: 705
+cross_sess: 679.268005
+train accuracy: 0.155344
+cnt: 710
+cross_sess: 710.829224
+train accuracy: 0.154281
+cnt: 715
+cross_sess: 683.072021
+train accuracy: 0.154883
+cnt: 720
+cross_sess: 681.414978
+train accuracy: 0.149781
+cnt: 725
+cross_sess: 689.779175
+train accuracy: 0.153180
+cnt: 730
+cross_sess: 690.139404
+train accuracy: 0.152055
+cnt: 735
+cross_sess: 661.634705
+train accuracy: 0.153828
+cnt: 740
+cross_sess: 703.329956
+train accuracy: 0.157148
+cnt: 745
+cross_sess: 675.848267
+train accuracy: 0.155656
+cnt: 750
+cross_sess: 707.051575
+train accuracy: 0.158297
+cnt: 755
+cross_sess: 703.225708
+train accuracy: 0.154273
+cnt: 760
+cross_sess: 672.259766
+train accuracy: 0.151172
+cnt: 765
+cross_sess: 696.868835
+train accuracy: 0.155742
+cnt: 770
+cross_sess: 654.293091
+train accuracy: 0.151461
+cnt: 775
+cross_sess: 666.053467
+train accuracy: 0.154398
+cnt: 780
+cross_sess: 678.480591
+train accuracy: 0.155516
+cnt: 785
+cross_sess: 653.628906
+train accuracy: 0.152672
+cnt: 790
+cross_sess: 653.102356
+train accuracy: 0.154867
+cnt: 795
+cross_sess: 668.060913
+train accuracy: 0.154555
+cnt: 800
+cross_sess: 670.850769
+train accuracy: 0.152109
+cnt: 805
+cross_sess: 651.339111
+train accuracy: 0.154125
+cnt: 810
+cross_sess: 675.351318
+train accuracy: 0.153602
+cnt: 815
+cross_sess: 662.855530
+train accuracy: 0.153086
+cnt: 820
+cross_sess: 643.863647
+train accuracy: 0.154727
+cnt: 825
+cross_sess: 619.086365
+train accuracy: 0.151461
+cnt: 830
+cross_sess: 645.801636
+train accuracy: 0.152102
+cnt: 835
+cross_sess: 646.189880
+train accuracy: 0.156742
+cnt: 840
+cross_sess: 659.050842
+train accuracy: 0.154391
+cnt: 845
+cross_sess: 658.425598
+train accuracy: 0.155672
+cnt: 850
+cross_sess: 645.572510
+train accuracy: 0.155094
+cnt: 855
+cross_sess: 634.238281
+train accuracy: 0.154047
+cnt: 860
+cross_sess: 648.223022
+train accuracy: 0.155437
+cnt: 865
+cross_sess: 647.316345
+train accuracy: 0.156828
+cnt: 870
+cross_sess: 641.916199
+train accuracy: 0.155359
+cnt: 875
+cross_sess: 624.471375
+train accuracy: 0.152281
+cnt: 880
+cross_sess: 661.142944
+train accuracy: 0.156672
+cnt: 885
+cross_sess: 626.747620
+train accuracy: 0.152859
+cnt: 890
+cross_sess: 620.755249
+train accuracy: 0.154430
+cnt: 895
+cross_sess: 655.485413
+train accuracy: 0.153602
+cnt: 900
+cross_sess: 646.971558
+train accuracy: 0.157969
+cnt: 905
+cross_sess: 607.985229
+train accuracy: 0.152516
+cnt: 910
+cross_sess: 603.363770
+train accuracy: 0.152492
+cnt: 915
+cross_sess: 608.365601
+train accuracy: 0.152047
+cnt: 920
+cross_sess: 634.234802
+train accuracy: 0.153336
+cnt: 925
+cross_sess: 653.118408
+train accuracy: 0.155312
+cnt: 930
+cross_sess: 634.783264
+train accuracy: 0.153375
+cnt: 935
+cross_sess: 630.521484
+train accuracy: 0.154531
+cnt: 940
+cross_sess: 612.128906
+train accuracy: 0.157320
+cnt: 945
+cross_sess: 613.308350
+train accuracy: 0.153547
+cnt: 950
+cross_sess: 619.759888
+train accuracy: 0.153398
+cnt: 955
+cross_sess: 621.017212
+train accuracy: 0.152398
+cnt: 960
+cross_sess: 621.154846
+train accuracy: 0.157016
+cnt: 965
+cross_sess: 601.194336
+train accuracy: 0.154703
+cnt: 970
+cross_sess: 605.944275
+train accuracy: 0.153898
+cnt: 975
+cross_sess: 621.890869
+train accuracy: 0.156289
+cnt: 980
+cross_sess: 645.837952
+train accuracy: 0.157312
+cnt: 985
+cross_sess: 646.612488
+train accuracy: 0.159086
+cnt: 990
+cross_sess: 611.318970
+train accuracy: 0.158211
+cnt: 995
+cross_sess: 600.900757
+train accuracy: 0.155563
+cnt: 1000
+cross_sess: 582.257935
+train accuracy: 0.153531
+pre cross: 779.458984 and current cross: 582.257935
+cnt: 1005
+cross_sess: 633.028442
+train accuracy: 0.156461
+cnt: 1010
+cross_sess: 610.487427
+train accuracy: 0.155680
+cnt: 1015
+cross_sess: 600.171265
+train accuracy: 0.153609
+cnt: 1020
+cross_sess: 566.979065
+train accuracy: 0.154953
+cnt: 1025
+cross_sess: 591.464783
+train accuracy: 0.155203
+cnt: 1030
+cross_sess: 610.178955
+train accuracy: 0.155039
+cnt: 1035
+cross_sess: 589.989929
+train accuracy: 0.152961
+cnt: 1040
+cross_sess: 587.763123
+train accuracy: 0.151070
+cnt: 1045
+cross_sess: 576.618713
+train accuracy: 0.152875
+cnt: 1050
+cross_sess: 614.298950
+train accuracy: 0.154242
+cnt: 1055
+cross_sess: 611.647278
+train accuracy: 0.156625
+cnt: 1060
+cross_sess: 624.058716
+train accuracy: 0.155937
+cnt: 1065
+cross_sess: 572.907104
+train accuracy: 0.154836
+cnt: 1070
+cross_sess: 604.789185
+train accuracy: 0.150273
+cnt: 1075
+cross_sess: 587.388062
+train accuracy: 0.155891
+cnt: 1080
+cross_sess: 595.029175
+train accuracy: 0.152727
+cnt: 1085
+cross_sess: 593.356812
+train accuracy: 0.155867
+cnt: 1090
+cross_sess: 593.602173
+train accuracy: 0.158234
+cnt: 1095
+cross_sess: 555.173828
+train accuracy: 0.153258
+cnt: 1100
+cross_sess: 604.698486
+train accuracy: 0.154680
+cnt: 1105
+cross_sess: 584.614685
+train accuracy: 0.153125
+cnt: 1110
+cross_sess: 567.363037
+train accuracy: 0.153266
+cnt: 1115
+cross_sess: 584.140686
+train accuracy: 0.154102
+cnt: 1120
+cross_sess: 565.406982
+train accuracy: 0.153227
+cnt: 1125
+cross_sess: 563.169556
+train accuracy: 0.150391
+cnt: 1130
+cross_sess: 594.157959
+train accuracy: 0.155430
+cnt: 1135
+cross_sess: 585.826294
+train accuracy: 0.156055
+cnt: 1140
+cross_sess: 588.685852
+train accuracy: 0.157234
+cnt: 1145
+cross_sess: 564.711731
+train accuracy: 0.152836
+cnt: 1150
+cross_sess: 574.381958
+train accuracy: 0.151344
+cnt: 1155
+cross_sess: 612.387451
+train accuracy: 0.155375
+cnt: 1160
+cross_sess: 587.436401
+train accuracy: 0.154828
+cnt: 1165
+cross_sess: 586.431763
+train accuracy: 0.153391
+cnt: 1170
+cross_sess: 587.116272
+train accuracy: 0.154648
+cnt: 1175
+cross_sess: 581.622192
+train accuracy: 0.155203
+cnt: 1180
+cross_sess: 565.462219
+train accuracy: 0.155016
+cnt: 1185
+cross_sess: 564.089294
+train accuracy: 0.153688
+cnt: 1190
+cross_sess: 591.191467
+train accuracy: 0.154672
+cnt: 1195
+cross_sess: 568.237488
+train accuracy: 0.155242
+cnt: 1200
+cross_sess: 559.647583
+train accuracy: 0.152555
+cnt: 1205
+cross_sess: 604.241028
+train accuracy: 0.152125
+cnt: 1210
+cross_sess: 565.266602
+train accuracy: 0.153812
+cnt: 1215
+cross_sess: 558.285156
+train accuracy: 0.152734
+cnt: 1220
+cross_sess: 558.107788
+train accuracy: 0.153719
+cnt: 1225
+cross_sess: 556.973145
+train accuracy: 0.151969
+cnt: 1230
+cross_sess: 548.742981
+train accuracy: 0.154508
+cnt: 1235
+cross_sess: 568.368896
+train accuracy: 0.156039
+cnt: 1240
+cross_sess: 556.609924
+train accuracy: 0.151508
+cnt: 1245
+cross_sess: 564.758667
+train accuracy: 0.152484
+cnt: 1250
+cross_sess: 566.881348
+train accuracy: 0.157367
+cnt: 1255
+cross_sess: 555.540894
+train accuracy: 0.156211
+cnt: 1260
+cross_sess: 565.265686
+train accuracy: 0.153859
+cnt: 1265
+cross_sess: 571.508850
+train accuracy: 0.153609
+cnt: 1270
+cross_sess: 557.639343
+train accuracy: 0.152602
+cnt: 1275
+cross_sess: 587.855957
+train accuracy: 0.156781
+cnt: 1280
+cross_sess: 582.458496
+train accuracy: 0.155188
+cnt: 1285
+cross_sess: 574.152771
+train accuracy: 0.152727
+cnt: 1290
+cross_sess: 586.398743
+train accuracy: 0.156242
+cnt: 1295
+cross_sess: 540.969299
+train accuracy: 0.149750
+cnt: 1300
+cross_sess: 546.202759
+train accuracy: 0.153266
+cnt: 1305
+cross_sess: 573.760925
+train accuracy: 0.157031
+cnt: 1310
+cross_sess: 557.481323
+train accuracy: 0.153508
+cnt: 1315
+cross_sess: 557.127319
+train accuracy: 0.152164
+cnt: 1320
+cross_sess: 526.681335
+train accuracy: 0.152266
+cnt: 1325
+cross_sess: 555.223083
+train accuracy: 0.156227
+cnt: 1330
+cross_sess: 547.388672
+train accuracy: 0.154875
+cnt: 1335
+cross_sess: 537.438965
+train accuracy: 0.154320
+cnt: 1340
+cross_sess: 547.537170
+train accuracy: 0.155703
+cnt: 1345
+cross_sess: 544.692505
+train accuracy: 0.152898
+cnt: 1350
+cross_sess: 537.435303
+train accuracy: 0.156180
+cnt: 1355
+cross_sess: 559.268555
+train accuracy: 0.155242
+cnt: 1360
+cross_sess: 570.559753
+train accuracy: 0.154734
+cnt: 1365
+cross_sess: 570.606445
+train accuracy: 0.156805
+cnt: 1370
+cross_sess: 580.381897
+train accuracy: 0.153758
+cnt: 1375
+cross_sess: 555.153076
+train accuracy: 0.155984
+cnt: 1380
+cross_sess: 548.439514
+train accuracy: 0.156078
+cnt: 1385
+cross_sess: 551.152588
+train accuracy: 0.154336
+cnt: 1390
+cross_sess: 520.368286
+train accuracy: 0.149992
+cnt: 1395
+cross_sess: 544.065918
+train accuracy: 0.152742
+cnt: 1400
+cross_sess: 561.065796
+train accuracy: 0.157367
+cnt: 1405
+cross_sess: 549.174927
+train accuracy: 0.157430
+cnt: 1410
+cross_sess: 515.837280
+train accuracy: 0.151336
+cnt: 1415
+cross_sess: 541.884460
+train accuracy: 0.153617
+cnt: 1420
+cross_sess: 540.974060
+train accuracy: 0.151930
+cnt: 1425
+cross_sess: 555.694397
+train accuracy: 0.152602
+cnt: 1430
+cross_sess: 533.365601
+train accuracy: 0.155094
+cnt: 1435
+cross_sess: 564.459961
+train accuracy: 0.153180
+cnt: 1440
+cross_sess: 541.406982
+train accuracy: 0.155422
+cnt: 1445
+cross_sess: 535.893677
+train accuracy: 0.156195
+cnt: 1450
+cross_sess: 551.189819
+train accuracy: 0.157500
+cnt: 1455
+cross_sess: 542.572693
+train accuracy: 0.153367
+cnt: 1460
+cross_sess: 535.501343
+train accuracy: 0.152844
+cnt: 1465
+cross_sess: 547.536133
+train accuracy: 0.155320
+cnt: 1470
+cross_sess: 567.924561
+train accuracy: 0.158250
+cnt: 1475
+cross_sess: 521.029419
+train accuracy: 0.153844
+cnt: 1480
+cross_sess: 561.944336
+train accuracy: 0.157992
+cnt: 1485
+cross_sess: 505.074219
+train accuracy: 0.154188
+cnt: 1490
+cross_sess: 533.034546
+train accuracy: 0.153570
+cnt: 1495
+cross_sess: 563.588318
+train accuracy: 0.156906
+cnt: 1500
+cross_sess: 516.836548
+train accuracy: 0.150469
+pre cross: 582.257935 and current cross: 516.836548
+cnt: 1505
+cross_sess: 510.800537
+train accuracy: 0.154547
+cnt: 1510
+cross_sess: 514.715881
+train accuracy: 0.155414
+cnt: 1515
+cross_sess: 526.238220
+train accuracy: 0.155133
+cnt: 1520
+cross_sess: 530.263916
+train accuracy: 0.151742
+cnt: 1525
+cross_sess: 503.368225
+train accuracy: 0.151063
+cnt: 1530
+cross_sess: 514.921021
+train accuracy: 0.154102
+cnt: 1535
+cross_sess: 530.610596
+train accuracy: 0.155430
+cnt: 1540
+cross_sess: 539.268921
+train accuracy: 0.154734
+cnt: 1545
+cross_sess: 505.992340
+train accuracy: 0.154500
+cnt: 1550
+cross_sess: 506.852112
+train accuracy: 0.146938
+cnt: 1555
+cross_sess: 558.398438
+train accuracy: 0.152758
+cnt: 1560
+cross_sess: 548.709656
+train accuracy: 0.154336
+cnt: 1565
+cross_sess: 509.439392
+train accuracy: 0.155555
+cnt: 1570
+cross_sess: 503.925507
+train accuracy: 0.154242
+cnt: 1575
+cross_sess: 522.117432
+train accuracy: 0.150742
+cnt: 1580
+cross_sess: 525.273560
+train accuracy: 0.152703
+cnt: 1585
+cross_sess: 520.459534
+train accuracy: 0.155445
+cnt: 1590
+cross_sess: 519.849060
+train accuracy: 0.154039
+cnt: 1595
+cross_sess: 492.966705
+train accuracy: 0.154117
+cnt: 1600
+cross_sess: 507.965240
+train accuracy: 0.151617
+cnt: 1605
+cross_sess: 519.389526
+train accuracy: 0.153461
+cnt: 1610
+cross_sess: 524.247681
+train accuracy: 0.152648
+cnt: 1615
+cross_sess: 520.042480
+train accuracy: 0.154586
+cnt: 1620
+cross_sess: 532.010437
+train accuracy: 0.157484
+cnt: 1625
+cross_sess: 489.251221
+train accuracy: 0.148695
+cnt: 1630
+cross_sess: 534.582031
+train accuracy: 0.156172
+cnt: 1635
+cross_sess: 521.830200
+train accuracy: 0.152359
+cnt: 1640
+cross_sess: 495.497620
+train accuracy: 0.152992
+cnt: 1645
+cross_sess: 492.546814
+train accuracy: 0.153203
+cnt: 1650
+cross_sess: 491.216064
+train accuracy: 0.153164
+cnt: 1655
+cross_sess: 517.794800
+train accuracy: 0.153969
+cnt: 1660
+cross_sess: 527.574646
+train accuracy: 0.156570
+cnt: 1665
+cross_sess: 519.286682
+train accuracy: 0.154328
+cnt: 1670
+cross_sess: 518.269775
+train accuracy: 0.154281
+cnt: 1675
+cross_sess: 516.560059
+train accuracy: 0.153195
+cnt: 1680
+cross_sess: 508.016785
+train accuracy: 0.154828
+cnt: 1685
+cross_sess: 519.877991
+train accuracy: 0.156180
+cnt: 1690
+cross_sess: 501.902832
+train accuracy: 0.155227
+cnt: 1695
+cross_sess: 501.591919
+train accuracy: 0.154617
+cnt: 1700
+cross_sess: 511.401917
+train accuracy: 0.155203
+cnt: 1705
+cross_sess: 483.599731
+train accuracy: 0.152555
+cnt: 1710
+cross_sess: 508.110077
+train accuracy: 0.151805
+cnt: 1715
+cross_sess: 513.694336
+train accuracy: 0.155859
+cnt: 1720
+cross_sess: 493.600708
+train accuracy: 0.152656
+cnt: 1725
+cross_sess: 514.665039
+train accuracy: 0.156711
+cnt: 1730
+cross_sess: 517.561829
+train accuracy: 0.154328
+cnt: 1735
+cross_sess: 511.550842
+train accuracy: 0.154508
+cnt: 1740
+cross_sess: 510.655701
+train accuracy: 0.155516
+cnt: 1745
+cross_sess: 498.605072
+train accuracy: 0.152391
+cnt: 1750
+cross_sess: 519.336182
+train accuracy: 0.154359
+cnt: 1755
+cross_sess: 481.953003
+train accuracy: 0.149359
+cnt: 1760
+cross_sess: 512.480591
+train accuracy: 0.152266
+cnt: 1765
+cross_sess: 512.447144
+train accuracy: 0.150977
+cnt: 1770
+cross_sess: 484.123199
+train accuracy: 0.153891
+cnt: 1775
+cross_sess: 506.313293
+train accuracy: 0.154516
+cnt: 1780
+cross_sess: 496.395203
+train accuracy: 0.155719
+cnt: 1785
+cross_sess: 521.868286
+train accuracy: 0.156953
+cnt: 1790
+cross_sess: 494.109619
+train accuracy: 0.150344
+cnt: 1795
+cross_sess: 512.723206
+train accuracy: 0.154109
+cnt: 1800
+cross_sess: 489.917358
+train accuracy: 0.155305
+cnt: 1805
+cross_sess: 498.430237
+train accuracy: 0.157781
+cnt: 1810
+cross_sess: 488.795288
+train accuracy: 0.155156
+cnt: 1815
+cross_sess: 477.996643
+train accuracy: 0.151992
+cnt: 1820
+cross_sess: 516.556824
+train accuracy: 0.154328
+cnt: 1825
+cross_sess: 513.517822
+train accuracy: 0.153734
+cnt: 1830
+cross_sess: 509.424011
+train accuracy: 0.151930
+cnt: 1835
+cross_sess: 514.264893
+train accuracy: 0.155578
+cnt: 1840
+cross_sess: 521.238281
+train accuracy: 0.156680
+cnt: 1845
+cross_sess: 498.954529
+train accuracy: 0.155383
+cnt: 1850
+cross_sess: 473.842712
+train accuracy: 0.151562
+cnt: 1855
+cross_sess: 506.915192
+train accuracy: 0.155445
+cnt: 1860
+cross_sess: 504.865723
+train accuracy: 0.156969
+cnt: 1865
+cross_sess: 504.072815
+train accuracy: 0.156672
+cnt: 1870
+cross_sess: 496.471741
+train accuracy: 0.155992
+cnt: 1875
+cross_sess: 478.796143
+train accuracy: 0.154305
+cnt: 1880
+cross_sess: 512.597900
+train accuracy: 0.153281
+cnt: 1885
+cross_sess: 487.081451
+train accuracy: 0.152750
+cnt: 1890
+cross_sess: 486.821381
+train accuracy: 0.155109
+cnt: 1895
+cross_sess: 473.562164
+train accuracy: 0.151844
+cnt: 1900
+cross_sess: 492.429291
+train accuracy: 0.153914
+cnt: 1905
+cross_sess: 478.265259
+train accuracy: 0.152820
+cnt: 1910
+cross_sess: 485.102509
+train accuracy: 0.153391
+cnt: 1915
+cross_sess: 490.743835
+train accuracy: 0.154180
+cnt: 1920
+cross_sess: 505.352203
+train accuracy: 0.157469
+cnt: 1925
+cross_sess: 489.583130
+train accuracy: 0.150102
+cnt: 1930
+cross_sess: 504.516663
+train accuracy: 0.154984
+cnt: 1935
+cross_sess: 472.391174
+train accuracy: 0.152734
+cnt: 1940
+cross_sess: 485.336945
+train accuracy: 0.154961
+cnt: 1945
+cross_sess: 482.461395
+train accuracy: 0.151227
+cnt: 1950
+cross_sess: 512.860535
+train accuracy: 0.155695
+cnt: 1955
+cross_sess: 455.456299
+train accuracy: 0.151828
+cnt: 1960
+cross_sess: 484.441620
+train accuracy: 0.153047
+cnt: 1965
+cross_sess: 530.473572
+train accuracy: 0.156336
+cnt: 1970
+cross_sess: 502.059448
+train accuracy: 0.158180
+cnt: 1975
+cross_sess: 494.385925
+train accuracy: 0.155023
+cnt: 1980
+cross_sess: 467.192139
+train accuracy: 0.150883
+cnt: 1985
+cross_sess: 498.544861
+train accuracy: 0.154727
+cnt: 1990
+cross_sess: 480.037781
+train accuracy: 0.156125
+cnt: 1995
+cross_sess: 492.760132
+train accuracy: 0.153625
+cnt: 2000
+cross_sess: 458.123474
+train accuracy: 0.150102
+pre cross: 516.836548 and current cross: 458.123474
+cnt: 2005
+cross_sess: 492.252563
+train accuracy: 0.153828
+cnt: 2010
+cross_sess: 491.440674
+train accuracy: 0.153945
+cnt: 2015
+cross_sess: 473.631165
+train accuracy: 0.152094
+cnt: 2020
+cross_sess: 485.649506
+train accuracy: 0.156578
+cnt: 2025
+cross_sess: 525.276123
+train accuracy: 0.158383
+cnt: 2030
+cross_sess: 489.844116
+train accuracy: 0.155734
+cnt: 2035
+cross_sess: 486.016174
+train accuracy: 0.155156
+cnt: 2040
+cross_sess: 480.753632
+train accuracy: 0.153148
+cnt: 2045
+cross_sess: 493.657043
+train accuracy: 0.155500
+cnt: 2050
+cross_sess: 480.798279
+train accuracy: 0.148398
+cnt: 2055
+cross_sess: 471.656097
+train accuracy: 0.153367
+cnt: 2060
+cross_sess: 493.682678
+train accuracy: 0.154883
+cnt: 2065
+cross_sess: 479.236938
+train accuracy: 0.156203
+cnt: 2070
+cross_sess: 472.860443
+train accuracy: 0.152945
+cnt: 2075
+cross_sess: 476.292206
+train accuracy: 0.150648
+cnt: 2080
+cross_sess: 484.806366
+train accuracy: 0.153656
+cnt: 2085
+cross_sess: 490.757263
+train accuracy: 0.153898
+cnt: 2090
+cross_sess: 446.332764
+train accuracy: 0.153328
+cnt: 2095
+cross_sess: 476.257019
+train accuracy: 0.155070
+cnt: 2100
+cross_sess: 497.771942
+train accuracy: 0.156734
+cnt: 2105
+cross_sess: 478.032349
+train accuracy: 0.153313
+cnt: 2110
+cross_sess: 476.944031
+train accuracy: 0.150422
+cnt: 2115
+cross_sess: 488.242981
+train accuracy: 0.153750
+cnt: 2120
+cross_sess: 482.026611
+train accuracy: 0.155453
+cnt: 2125
+cross_sess: 477.726868
+train accuracy: 0.149625
+cnt: 2130
+cross_sess: 475.425018
+train accuracy: 0.149406
+cnt: 2135
+cross_sess: 463.822662
+train accuracy: 0.154008
+cnt: 2140
+cross_sess: 481.616516
+train accuracy: 0.153289
+cnt: 2145
+cross_sess: 471.338379
+train accuracy: 0.157070
+cnt: 2150
+cross_sess: 456.085541
+train accuracy: 0.149742
+cnt: 2155
+cross_sess: 494.656433
+train accuracy: 0.156836
+cnt: 2160
+cross_sess: 487.013123
+train accuracy: 0.153633
+cnt: 2165
+cross_sess: 464.046753
+train accuracy: 0.153727
+cnt: 2170
+cross_sess: 478.631439
+train accuracy: 0.157063
+cnt: 2175
+cross_sess: 474.136475
+train accuracy: 0.153313
+cnt: 2180
+cross_sess: 474.040863
+train accuracy: 0.156789
+cnt: 2185
+cross_sess: 474.351135
+train accuracy: 0.153141
+cnt: 2190
+cross_sess: 492.669952
+train accuracy: 0.154266
+cnt: 2195
+cross_sess: 476.241791
+train accuracy: 0.154727
+cnt: 2200
+cross_sess: 489.635132
+train accuracy: 0.151977
+cnt: 2205
+cross_sess: 456.161224
+train accuracy: 0.153391
+cnt: 2210
+cross_sess: 457.382782
+train accuracy: 0.152492
+cnt: 2215
+cross_sess: 518.372864
+train accuracy: 0.157133
+cnt: 2220
+cross_sess: 493.765106
+train accuracy: 0.157664
+cnt: 2225
+cross_sess: 465.066345
+train accuracy: 0.153180
+cnt: 2230
+cross_sess: 476.546204
+train accuracy: 0.155820
+cnt: 2235
+cross_sess: 465.969360
+train accuracy: 0.154805
+cnt: 2240
+cross_sess: 484.038269
+train accuracy: 0.150547
+cnt: 2245
+cross_sess: 470.055725
+train accuracy: 0.154281
+cnt: 2250
+cross_sess: 460.913208
+train accuracy: 0.154453
+cnt: 2255
+cross_sess: 476.303589
+train accuracy: 0.153750
+cnt: 2260
+cross_sess: 487.955811
+train accuracy: 0.156375
+cnt: 2265
+cross_sess: 498.072327
+train accuracy: 0.155484
+cnt: 2270
+cross_sess: 458.626740
+train accuracy: 0.151492
+cnt: 2275
+cross_sess: 477.783875
+train accuracy: 0.154656
+cnt: 2280
+cross_sess: 452.684265
+train accuracy: 0.153508
+cnt: 2285
+cross_sess: 471.843567
+train accuracy: 0.153000
+cnt: 2290
+cross_sess: 484.513855
+train accuracy: 0.154234
+cnt: 2295
+cross_sess: 456.762604
+train accuracy: 0.153625
+cnt: 2300
+cross_sess: 451.167572
+train accuracy: 0.149883
+cnt: 2305
+cross_sess: 475.792725
+train accuracy: 0.152938
+cnt: 2310
+cross_sess: 466.577087
+train accuracy: 0.155750
+cnt: 2315
+cross_sess: 449.653198
+train accuracy: 0.152516
+cnt: 2320
+cross_sess: 469.930084
+train accuracy: 0.156633
+cnt: 2325
+cross_sess: 476.988586
+train accuracy: 0.156414
+cnt: 2330
+cross_sess: 468.872711
+train accuracy: 0.154930
+cnt: 2335
+cross_sess: 478.131561
+train accuracy: 0.154680
+cnt: 2340
+cross_sess: 481.767456
+train accuracy: 0.155016
+cnt: 2345
+cross_sess: 457.623627
+train accuracy: 0.155078
+cnt: 2350
+cross_sess: 454.015198
+train accuracy: 0.155242
+cnt: 2355
+cross_sess: 461.555725
+train accuracy: 0.154297
+cnt: 2360
+cross_sess: 462.399109
+train accuracy: 0.152375
+cnt: 2365
+cross_sess: 449.004028
+train accuracy: 0.154555
+cnt: 2370
+cross_sess: 459.404999
+train accuracy: 0.152672
+cnt: 2375
+cross_sess: 477.882141
+train accuracy: 0.153258
+cnt: 2380
+cross_sess: 465.724243
+train accuracy: 0.156633
+cnt: 2385
+cross_sess: 455.309692
+train accuracy: 0.154055
+cnt: 2390
+cross_sess: 453.524567
+train accuracy: 0.150531
+cnt: 2395
+cross_sess: 468.089233
+train accuracy: 0.155953
+cnt: 2400
+cross_sess: 464.311951
+train accuracy: 0.154039
+cnt: 2405
+cross_sess: 447.977905
+train accuracy: 0.153602
+cnt: 2410
+cross_sess: 460.675995
+train accuracy: 0.153477
+cnt: 2415
+cross_sess: 454.544434
+train accuracy: 0.152430
+cnt: 2420
+cross_sess: 457.906281
+train accuracy: 0.152500
+cnt: 2425
+cross_sess: 490.143768
+train accuracy: 0.150648
+cnt: 2430
+cross_sess: 449.682251
+train accuracy: 0.154773
+cnt: 2435
+cross_sess: 468.298157
+train accuracy: 0.155039
+cnt: 2440
+cross_sess: 434.174683
+train accuracy: 0.152516
+cnt: 2445
+cross_sess: 434.201324
+train accuracy: 0.149078
+cnt: 2450
+cross_sess: 463.584412
+train accuracy: 0.153867
+cnt: 2455
+cross_sess: 467.392334
+train accuracy: 0.155289
+cnt: 2460
+cross_sess: 469.379395
+train accuracy: 0.151891
+cnt: 2465
+cross_sess: 444.822327
+train accuracy: 0.153383
+cnt: 2470
+cross_sess: 444.858368
+train accuracy: 0.155023
+cnt: 2475
+cross_sess: 462.443054
+train accuracy: 0.153648
+cnt: 2480
+cross_sess: 459.537842
+train accuracy: 0.157398
+cnt: 2485
+cross_sess: 444.553680
+train accuracy: 0.151055
+cnt: 2490
+cross_sess: 450.351898
+train accuracy: 0.151961
+cnt: 2495
+cross_sess: 446.020630
+train accuracy: 0.150578
+cnt: 2500
+cross_sess: 465.148682
+train accuracy: 0.153602
+pre cross: 458.123474 and current cross: 465.148682
+cnt: 2505
+cross_sess: 449.091187
+train accuracy: 0.151359
+cnt: 2510
+cross_sess: 475.420929
+train accuracy: 0.152758
+cnt: 2515
+cross_sess: 468.269836
+train accuracy: 0.156352
+cnt: 2520
+cross_sess: 453.202454
+train accuracy: 0.153414
+cnt: 2525
+cross_sess: 469.242706
+train accuracy: 0.155664
+cnt: 2530
+cross_sess: 477.529419
+train accuracy: 0.155531
+cnt: 2535
+cross_sess: 450.084717
+train accuracy: 0.151305
+cnt: 2540
+cross_sess: 451.021912
+train accuracy: 0.156016
+cnt: 2545
+cross_sess: 450.201202
+train accuracy: 0.153000
+cnt: 2550
+cross_sess: 450.107788
+train accuracy: 0.152742
+cnt: 2555
+cross_sess: 462.366272
+train accuracy: 0.153953
+cnt: 2560
+cross_sess: 470.621674
+train accuracy: 0.157922
+cnt: 2565
+cross_sess: 470.501831
+train accuracy: 0.156797
+cnt: 2570
+cross_sess: 448.248962
+train accuracy: 0.154047
+cnt: 2575
+cross_sess: 457.800659
+train accuracy: 0.154547
+cnt: 2580
+cross_sess: 456.713684
+train accuracy: 0.153859
+cnt: 2585
+cross_sess: 442.819519
+train accuracy: 0.157297
+cnt: 2590
+cross_sess: 456.315338
+train accuracy: 0.156586
+cnt: 2595
+cross_sess: 420.827637
+train accuracy: 0.149828
+cnt: 2600
+cross_sess: 469.639832
+train accuracy: 0.158187
+cnt: 2605
+cross_sess: 447.622711
+train accuracy: 0.153867
+cnt: 2610
+cross_sess: 439.783203
+train accuracy: 0.155375
+cnt: 2615
+cross_sess: 440.789307
+train accuracy: 0.152344
+cnt: 2620
+cross_sess: 464.192108
+train accuracy: 0.154094
+cnt: 2625
+cross_sess: 471.505463
+train accuracy: 0.154188
+cnt: 2630
+cross_sess: 421.901123
+train accuracy: 0.149773
+cnt: 2635
+cross_sess: 447.338623
+train accuracy: 0.154508
+cnt: 2640
+cross_sess: 457.181793
+train accuracy: 0.155500
+cnt: 2645
+cross_sess: 456.961792
+train accuracy: 0.155773
+cnt: 2650
+cross_sess: 437.904541
+train accuracy: 0.153359
+cnt: 2655
+cross_sess: 431.824829
+train accuracy: 0.156180
+cnt: 2660
+cross_sess: 474.264648
+train accuracy: 0.152953
+cnt: 2665
+cross_sess: 430.876343
+train accuracy: 0.150055
+cnt: 2670
+cross_sess: 451.699341
+train accuracy: 0.153008
+cnt: 2675
+cross_sess: 453.980957
+train accuracy: 0.151688
+cnt: 2680
+cross_sess: 476.169617
+train accuracy: 0.154555
+cnt: 2685
+cross_sess: 476.226807
+train accuracy: 0.154617
+cnt: 2690
+cross_sess: 447.010193
+train accuracy: 0.157289
+cnt: 2695
+cross_sess: 441.846924
+train accuracy: 0.155422
+cnt: 2700
+cross_sess: 445.540527
+train accuracy: 0.153523
+cnt: 2705
+cross_sess: 426.563599
+train accuracy: 0.152484
+cnt: 2710
+cross_sess: 445.477844
+train accuracy: 0.152570
+cnt: 2715
+cross_sess: 467.791016
+train accuracy: 0.153805
+cnt: 2720
+cross_sess: 440.679199
+train accuracy: 0.150219
+cnt: 2725
+cross_sess: 449.602783
+train accuracy: 0.154938
+cnt: 2730
+cross_sess: 439.020660
+train accuracy: 0.158133
+cnt: 2735
+cross_sess: 447.988190
+train accuracy: 0.150797
+cnt: 2740
+cross_sess: 479.260559
+train accuracy: 0.158414
+cnt: 2745
+cross_sess: 432.376831
+train accuracy: 0.152344
+cnt: 2750
+cross_sess: 474.658813
+train accuracy: 0.154172
+cnt: 2755
+cross_sess: 428.190491
+train accuracy: 0.156258
+cnt: 2760
+cross_sess: 465.792664
+train accuracy: 0.155117
+cnt: 2765
+cross_sess: 439.851135
+train accuracy: 0.158117
+cnt: 2770
+cross_sess: 453.507446
+train accuracy: 0.152187
+cnt: 2775
+cross_sess: 404.062195
+train accuracy: 0.150391
+cnt: 2780
+cross_sess: 453.930908
+train accuracy: 0.153039
+cnt: 2785
+cross_sess: 431.133850
+train accuracy: 0.153891
+cnt: 2790
+cross_sess: 443.848022
+train accuracy: 0.153016
+cnt: 2795
+cross_sess: 426.210999
+train accuracy: 0.155477
+cnt: 2800
+cross_sess: 447.928925
+train accuracy: 0.157250
+cnt: 2805
+cross_sess: 431.115753
+train accuracy: 0.149438
+cnt: 2810
+cross_sess: 425.291199
+train accuracy: 0.156016
+cnt: 2815
+cross_sess: 437.196960
+train accuracy: 0.152648
+cnt: 2820
+cross_sess: 440.208679
+train accuracy: 0.154008
+cnt: 2825
+cross_sess: 458.204865
+train accuracy: 0.152398
+cnt: 2830
+cross_sess: 457.660339
+train accuracy: 0.155813
+cnt: 2835
+cross_sess: 454.308197
+train accuracy: 0.152688
+cnt: 2840
+cross_sess: 422.604645
+train accuracy: 0.149375
+cnt: 2845
+cross_sess: 454.255127
+train accuracy: 0.156672
+cnt: 2850
+cross_sess: 453.954956
+train accuracy: 0.153266
+cnt: 2855
+cross_sess: 436.214630
+train accuracy: 0.156391
+cnt: 2860
+cross_sess: 426.361481
+train accuracy: 0.155312
+cnt: 2865
+cross_sess: 430.852600
+train accuracy: 0.155695
+cnt: 2870
+cross_sess: 448.323059
+train accuracy: 0.157281
+cnt: 2875
+cross_sess: 441.605164
+train accuracy: 0.153328
+cnt: 2880
+cross_sess: 447.406799
+train accuracy: 0.150797
+cnt: 2885
+cross_sess: 473.855774
+train accuracy: 0.153734
+cnt: 2890
+cross_sess: 436.502136
+train accuracy: 0.155148
+cnt: 2895
+cross_sess: 431.527954
+train accuracy: 0.152469
+cnt: 2900
+cross_sess: 429.750427
+train accuracy: 0.154844
+cnt: 2905
+cross_sess: 441.100891
+train accuracy: 0.157430
+cnt: 2910
+cross_sess: 470.375641
+train accuracy: 0.154969
+cnt: 2915
+cross_sess: 461.958191
+train accuracy: 0.155219
+cnt: 2920
+cross_sess: 429.093689
+train accuracy: 0.157922
+cnt: 2925
+cross_sess: 435.801208
+train accuracy: 0.153133
+cnt: 2930
+cross_sess: 432.482605
+train accuracy: 0.151477
+cnt: 2935
+cross_sess: 431.051758
+train accuracy: 0.152352
+cnt: 2940
+cross_sess: 420.664062
+train accuracy: 0.151711
+cnt: 2945
+cross_sess: 450.643036
+train accuracy: 0.155750
+cnt: 2950
+cross_sess: 440.165344
+train accuracy: 0.155922
+cnt: 2955
+cross_sess: 442.399994
+train accuracy: 0.153266
+cnt: 2960
+cross_sess: 448.195526
+train accuracy: 0.157117
+cnt: 2965
+cross_sess: 430.390350
+train accuracy: 0.148625
+cnt: 2970
+cross_sess: 425.365784
+train accuracy: 0.155820
+cnt: 2975
+cross_sess: 440.607239
+train accuracy: 0.152539
+cnt: 2980
+cross_sess: 440.519897
+train accuracy: 0.153531
+cnt: 2985
+cross_sess: 436.090546
+train accuracy: 0.152703
+cnt: 2990
+cross_sess: 430.415314
+train accuracy: 0.153852
+cnt: 2995
+cross_sess: 438.930603
+train accuracy: 0.151461
+cnt: 3000
+cross_sess: 449.431976
+train accuracy: 0.151023
+pre cross: 465.148682 and current cross: 449.431976
+cnt: 3005
+cross_sess: 399.862762
+train accuracy: 0.149156
+cnt: 3010
+cross_sess: 466.958435
+train accuracy: 0.156930
+cnt: 3015
+cross_sess: 450.123047
+train accuracy: 0.154930
+cnt: 3020
+cross_sess: 437.452087
+train accuracy: 0.152961
+cnt: 3025
+cross_sess: 450.724487
+train accuracy: 0.157922
+cnt: 3030
+cross_sess: 427.510986
+train accuracy: 0.153742
+cnt: 3035
+cross_sess: 449.231445
+train accuracy: 0.153914
+cnt: 3040
+cross_sess: 421.228638
+train accuracy: 0.152945
+cnt: 3045
+cross_sess: 425.168854
+train accuracy: 0.154555
+cnt: 3050
+cross_sess: 430.083252
+train accuracy: 0.151539
+cnt: 3055
+cross_sess: 431.489441
+train accuracy: 0.154820
+cnt: 3060
+cross_sess: 434.507080
+train accuracy: 0.154859
+cnt: 3065
+cross_sess: 443.553619
+train accuracy: 0.155563
+cnt: 3070
+cross_sess: 455.251160
+train accuracy: 0.155008
+cnt: 3075
+cross_sess: 451.757324
+train accuracy: 0.153977
+cnt: 3080
+cross_sess: 451.540649
+train accuracy: 0.155398
+cnt: 3085
+cross_sess: 406.011536
+train accuracy: 0.152141
+cnt: 3090
+cross_sess: 439.395813
+train accuracy: 0.153836
+cnt: 3095
+cross_sess: 437.057678
+train accuracy: 0.155633
+cnt: 3100
+cross_sess: 432.132446
+train accuracy: 0.154289
+cnt: 3105
+cross_sess: 431.020020
+train accuracy: 0.152922
+cnt: 3110
+cross_sess: 413.351471
+train accuracy: 0.155211
+cnt: 3115
+cross_sess: 431.248505
+train accuracy: 0.155109
+cnt: 3120
+cross_sess: 452.249084
+train accuracy: 0.151570
+cnt: 3125
+cross_sess: 435.729553
+train accuracy: 0.155227
+cnt: 3130
+cross_sess: 409.821564
+train accuracy: 0.152016
+cnt: 3135
+cross_sess: 430.856506
+train accuracy: 0.154750
+cnt: 3140
+cross_sess: 429.943695
+train accuracy: 0.151992
+cnt: 3145
+cross_sess: 435.984375
+train accuracy: 0.154188
+cnt: 3150
+cross_sess: 435.103851
+train accuracy: 0.155406
+cnt: 3155
+cross_sess: 441.929260
+train accuracy: 0.152805
+cnt: 3160
+cross_sess: 432.503235
+train accuracy: 0.149805
+cnt: 3165
+cross_sess: 428.051453
+train accuracy: 0.153062
+cnt: 3170
+cross_sess: 407.185822
+train accuracy: 0.150383
+cnt: 3175
+cross_sess: 429.432556
+train accuracy: 0.154211
+cnt: 3180
+cross_sess: 424.261932
+train accuracy: 0.152531
+cnt: 3185
+cross_sess: 443.860596
+train accuracy: 0.152344
+cnt: 3190
+cross_sess: 464.067719
+train accuracy: 0.154563
+cnt: 3195
+cross_sess: 402.696472
+train accuracy: 0.151758
+cnt: 3200
+cross_sess: 420.931976
+train accuracy: 0.155273
+cnt: 3205
+cross_sess: 446.351776
+train accuracy: 0.153062
+cnt: 3210
+cross_sess: 439.560486
+train accuracy: 0.155086
+cnt: 3215
+cross_sess: 412.156311
+train accuracy: 0.151430
+cnt: 3220
+cross_sess: 427.578613
+train accuracy: 0.152555
+cnt: 3225
+cross_sess: 421.067871
+train accuracy: 0.154844
+cnt: 3230
+cross_sess: 423.540253
+train accuracy: 0.154313
+cnt: 3235
+cross_sess: 405.221497
+train accuracy: 0.151633
+cnt: 3240
+cross_sess: 432.801697
+train accuracy: 0.152828
+cnt: 3245
+cross_sess: 428.050446
+train accuracy: 0.154633
+cnt: 3250
+cross_sess: 439.090332
+train accuracy: 0.154211
+cnt: 3255
+cross_sess: 446.097839
+train accuracy: 0.156969
+cnt: 3260
+cross_sess: 433.230042
+train accuracy: 0.153328
+cnt: 3265
+cross_sess: 412.858521
+train accuracy: 0.152398
+cnt: 3270
+cross_sess: 430.510376
+train accuracy: 0.153727
+cnt: 3275
+cross_sess: 423.816223
+train accuracy: 0.151797
+cnt: 3280
+cross_sess: 413.226837
+train accuracy: 0.152812
+cnt: 3285
+cross_sess: 434.210999
+train accuracy: 0.154609
+cnt: 3290
+cross_sess: 451.733032
+train accuracy: 0.152008
+cnt: 3295
+cross_sess: 435.685242
+train accuracy: 0.153891
+cnt: 3300
+cross_sess: 420.469543
+train accuracy: 0.153062
+cnt: 3305
+cross_sess: 426.237976
+train accuracy: 0.156523
+cnt: 3310
+cross_sess: 425.918640
+train accuracy: 0.152289
+cnt: 3315
+cross_sess: 459.542542
+train accuracy: 0.155742
+cnt: 3320
+cross_sess: 442.629913
+train accuracy: 0.153141
+cnt: 3325
+cross_sess: 410.655273
+train accuracy: 0.150352
+cnt: 3330
+cross_sess: 421.971313
+train accuracy: 0.151453
+cnt: 3335
+cross_sess: 421.412262
+train accuracy: 0.154437
+cnt: 3340
+cross_sess: 426.836243
+train accuracy: 0.154617
+cnt: 3345
+cross_sess: 428.544189
+train accuracy: 0.155445
+cnt: 3350
+cross_sess: 404.109741
+train accuracy: 0.152289
+cnt: 3355
+cross_sess: 428.943298
+train accuracy: 0.150992
+cnt: 3360
+cross_sess: 425.854126
+train accuracy: 0.154664
+cnt: 3365
+cross_sess: 420.547974
+train accuracy: 0.151211
+cnt: 3370
+cross_sess: 419.363586
+train accuracy: 0.154203
+cnt: 3375
+cross_sess: 426.704285
+train accuracy: 0.153289
+cnt: 3380
+cross_sess: 403.369751
+train accuracy: 0.153172
+cnt: 3385
+cross_sess: 430.603088
+train accuracy: 0.153469
+cnt: 3390
+cross_sess: 425.355225
+train accuracy: 0.156320
+cnt: 3395
+cross_sess: 410.905396
+train accuracy: 0.149680
+cnt: 3400
+cross_sess: 409.372375
+train accuracy: 0.151305
+cnt: 3405
+cross_sess: 432.333740
+train accuracy: 0.156672
+cnt: 3410
+cross_sess: 457.252014
+train accuracy: 0.155023
+cnt: 3415
+cross_sess: 428.530487
+train accuracy: 0.153930
+cnt: 3420
+cross_sess: 416.608185
+train accuracy: 0.152359
+cnt: 3425
+cross_sess: 406.319702
+train accuracy: 0.154242
+cnt: 3430
+cross_sess: 424.753906
+train accuracy: 0.150242
+cnt: 3435
+cross_sess: 411.327454
+train accuracy: 0.154828
+cnt: 3440
+cross_sess: 421.777222
+train accuracy: 0.151789
+cnt: 3445
+cross_sess: 449.029510
+train accuracy: 0.153344
+cnt: 3450
+cross_sess: 422.506226
+train accuracy: 0.154984
+cnt: 3455
+cross_sess: 423.041901
+train accuracy: 0.153602
+cnt: 3460
+cross_sess: 408.494751
+train accuracy: 0.155211
+cnt: 3465
+cross_sess: 413.133209
+train accuracy: 0.153195
+cnt: 3470
+cross_sess: 396.923401
+train accuracy: 0.152578
+cnt: 3475
+cross_sess: 416.027344
+train accuracy: 0.156977
+cnt: 3480
+cross_sess: 414.600311
+train accuracy: 0.151469
+cnt: 3485
+cross_sess: 437.496399
+train accuracy: 0.154094
+cnt: 3490
+cross_sess: 420.314362
+train accuracy: 0.155266
+cnt: 3495
+cross_sess: 429.195618
+train accuracy: 0.155109
+cnt: 3500
+cross_sess: 406.353088
+train accuracy: 0.151977
+pre cross: 449.431976 and current cross: 406.353088
+cnt: 3505
+cross_sess: 428.822144
+train accuracy: 0.152406
+cnt: 3510
+cross_sess: 431.123657
+train accuracy: 0.155242
+cnt: 3515
+cross_sess: 428.124939
+train accuracy: 0.152422
+cnt: 3520
+cross_sess: 440.137024
+train accuracy: 0.154031
+cnt: 3525
+cross_sess: 416.598389
+train accuracy: 0.152313
+cnt: 3530
+cross_sess: 430.216309
+train accuracy: 0.154234
+cnt: 3535
+cross_sess: 443.608093
+train accuracy: 0.154805
+cnt: 3540
+cross_sess: 437.474335
+train accuracy: 0.153836
+cnt: 3545
+cross_sess: 401.515594
+train accuracy: 0.151836
+cnt: 3550
+cross_sess: 421.023499
+train accuracy: 0.151797
+cnt: 3555
+cross_sess: 429.351929
+train accuracy: 0.153102
+cnt: 3560
+cross_sess: 422.276642
+train accuracy: 0.152367
+cnt: 3565
+cross_sess: 418.084564
+train accuracy: 0.150805
+cnt: 3570
+cross_sess: 399.707397
+train accuracy: 0.155516
+cnt: 3575
+cross_sess: 406.268250
+train accuracy: 0.154672
+cnt: 3580
+cross_sess: 419.492035
+train accuracy: 0.154883
+cnt: 3585
+cross_sess: 414.090912
+train accuracy: 0.155945
+cnt: 3590
+cross_sess: 425.449280
+train accuracy: 0.154680
+cnt: 3595
+cross_sess: 411.888611
+train accuracy: 0.154102
+cnt: 3600
+cross_sess: 404.635712
+train accuracy: 0.152727
+cnt: 3605
+cross_sess: 420.824249
+train accuracy: 0.153797
+cnt: 3610
+cross_sess: 427.220856
+train accuracy: 0.154445
+cnt: 3615
+cross_sess: 396.782166
+train accuracy: 0.154625
+cnt: 3620
+cross_sess: 419.349182
+train accuracy: 0.154047
+cnt: 3625
+cross_sess: 420.195251
+train accuracy: 0.155563
+cnt: 3630
+cross_sess: 417.231171
+train accuracy: 0.153602
+cnt: 3635
+cross_sess: 415.270813
+train accuracy: 0.152109
+cnt: 3640
+cross_sess: 423.612000
+train accuracy: 0.154820
+cnt: 3645
+cross_sess: 424.808533
+train accuracy: 0.154281
+cnt: 3650
+cross_sess: 391.233337
+train accuracy: 0.149937
+cnt: 3655
+cross_sess: 410.314453
+train accuracy: 0.154930
+cnt: 3660
+cross_sess: 412.038025
+train accuracy: 0.151391
+cnt: 3665
+cross_sess: 411.667114
+train accuracy: 0.156977
+cnt: 3670
+cross_sess: 398.292419
+train accuracy: 0.153391
+cnt: 3675
+cross_sess: 412.973877
+train accuracy: 0.155180
+cnt: 3680
+cross_sess: 403.695984
+train accuracy: 0.158008
+cnt: 3685
+cross_sess: 410.415833
+train accuracy: 0.154445
+cnt: 3690
+cross_sess: 412.959778
+train accuracy: 0.154625
+cnt: 3695
+cross_sess: 418.113007
+train accuracy: 0.152547
+cnt: 3700
+cross_sess: 411.859436
+train accuracy: 0.154695
+cnt: 3705
+cross_sess: 423.971436
+train accuracy: 0.151562
+cnt: 3710
+cross_sess: 400.252045
+train accuracy: 0.151023
+cnt: 3715
+cross_sess: 409.559692
+train accuracy: 0.152523
+cnt: 3720
+cross_sess: 430.564636
+train accuracy: 0.156430
+cnt: 3725
+cross_sess: 397.966858
+train accuracy: 0.151258
+cnt: 3730
+cross_sess: 422.473328
+train accuracy: 0.153648
+cnt: 3735
+cross_sess: 391.436401
+train accuracy: 0.154008
+cnt: 3740
+cross_sess: 436.438782
+train accuracy: 0.155797
+cnt: 3745
+cross_sess: 425.832489
+train accuracy: 0.155969
+cnt: 3750
+cross_sess: 413.537048
+train accuracy: 0.151828
+cnt: 3755
+cross_sess: 420.040649
+train accuracy: 0.153250
+cnt: 3760
+cross_sess: 402.195801
+train accuracy: 0.152344
+cnt: 3765
+cross_sess: 395.345001
+train accuracy: 0.151227
+cnt: 3770
+cross_sess: 402.042542
+train accuracy: 0.151969
+cnt: 3775
+cross_sess: 441.508301
+train accuracy: 0.154062
+cnt: 3780
+cross_sess: 404.666016
+train accuracy: 0.155695
+cnt: 3785
+cross_sess: 416.048157
+train accuracy: 0.155453
+cnt: 3790
+cross_sess: 412.734222
+train accuracy: 0.151414
+cnt: 3795
+cross_sess: 420.112549
+train accuracy: 0.156555
+cnt: 3800
+cross_sess: 381.020508
+train accuracy: 0.150609
+cnt: 3805
+cross_sess: 423.672974
+train accuracy: 0.152336
+cnt: 3810
+cross_sess: 442.292053
+train accuracy: 0.158547
+cnt: 3815
+cross_sess: 408.896759
+train accuracy: 0.151117
+cnt: 3820
+cross_sess: 407.389343
+train accuracy: 0.154305
+cnt: 3825
+cross_sess: 382.966125
+train accuracy: 0.151469
+cnt: 3830
+cross_sess: 402.845886
+train accuracy: 0.151875
+cnt: 3835
+cross_sess: 440.307190
+train accuracy: 0.155672
+cnt: 3840
+cross_sess: 410.276733
+train accuracy: 0.155039
+cnt: 3845
+cross_sess: 421.528839
+train accuracy: 0.152383
+cnt: 3850
+cross_sess: 383.452271
+train accuracy: 0.155406
+cnt: 3855
+cross_sess: 432.092041
+train accuracy: 0.155750
+cnt: 3860
+cross_sess: 401.552246
+train accuracy: 0.151812
+cnt: 3865
+cross_sess: 423.426849
+train accuracy: 0.156039
+cnt: 3870
+cross_sess: 399.974731
+train accuracy: 0.152688
+cnt: 3875
+cross_sess: 418.017883
+train accuracy: 0.156336
+cnt: 3880
+cross_sess: 391.724976
+train accuracy: 0.152695
+cnt: 3885
+cross_sess: 408.497070
+train accuracy: 0.155461
+cnt: 3890
+cross_sess: 407.756714
+train accuracy: 0.154211
+cnt: 3895
+cross_sess: 417.217285
+train accuracy: 0.154258
+cnt: 3900
+cross_sess: 423.443268
+train accuracy: 0.150703
+cnt: 3905
+cross_sess: 425.562256
+train accuracy: 0.155977
+cnt: 3910
+cross_sess: 433.358521
+train accuracy: 0.156961
+cnt: 3915
+cross_sess: 385.617554
+train accuracy: 0.152484
+cnt: 3920
+cross_sess: 399.409698
+train accuracy: 0.154320
+cnt: 3925
+cross_sess: 411.643433
+train accuracy: 0.155305
+cnt: 3930
+cross_sess: 414.715240
+train accuracy: 0.157719
+cnt: 3935
+cross_sess: 419.814636
+train accuracy: 0.156781
+cnt: 3940
+cross_sess: 407.553833
+train accuracy: 0.153055
+cnt: 3945
+cross_sess: 406.504303
+train accuracy: 0.155203
+cnt: 3950
+cross_sess: 411.277100
+train accuracy: 0.152234
+cnt: 3955
+cross_sess: 420.777649
+train accuracy: 0.157375
+cnt: 3960
+cross_sess: 412.931946
+train accuracy: 0.155414
+cnt: 3965
+cross_sess: 408.092468
+train accuracy: 0.153367
+cnt: 3970
+cross_sess: 405.313721
+train accuracy: 0.151836
+cnt: 3975
+cross_sess: 400.837769
+train accuracy: 0.153859
+cnt: 3980
+cross_sess: 399.437714
+train accuracy: 0.153172
+cnt: 3985
+cross_sess: 425.761169
+train accuracy: 0.154836
+cnt: 3990
+cross_sess: 435.435547
+train accuracy: 0.155641
+cnt: 3995
+cross_sess: 435.485291
+train accuracy: 0.157648
+cnt: 4000
+cross_sess: 417.720093
+train accuracy: 0.152531
+pre cross: 406.353088 and current cross: 417.720093
+cnt: 4005
+cross_sess: 401.356445
+train accuracy: 0.151727
+cnt: 4010
+cross_sess: 379.267517
+train accuracy: 0.150414
+cnt: 4015
+cross_sess: 424.952698
+train accuracy: 0.158195
+cnt: 4020
+cross_sess: 404.803314
+train accuracy: 0.155078
+cnt: 4025
+cross_sess: 395.463989
+train accuracy: 0.152313
+cnt: 4030
+cross_sess: 417.911041
+train accuracy: 0.157117
+cnt: 4035
+cross_sess: 398.851257
+train accuracy: 0.152156
+cnt: 4040
+cross_sess: 409.867310
+train accuracy: 0.156477
+cnt: 4045
+cross_sess: 407.563324
+train accuracy: 0.155344
+cnt: 4050
+cross_sess: 413.967377
+train accuracy: 0.156047
+cnt: 4055
+cross_sess: 412.104980
+train accuracy: 0.156500
+cnt: 4060
+cross_sess: 431.912292
+train accuracy: 0.157445
+cnt: 4065
+cross_sess: 405.330078
+train accuracy: 0.153156
+cnt: 4070
+cross_sess: 387.298584
+train accuracy: 0.150328
+cnt: 4075
+cross_sess: 407.949860
+train accuracy: 0.154383
+cnt: 4080
+cross_sess: 379.387024
+train accuracy: 0.153844
+cnt: 4085
+cross_sess: 423.963654
+train accuracy: 0.155945
+cnt: 4090
+cross_sess: 396.503235
+train accuracy: 0.154211
+cnt: 4095
+cross_sess: 393.146149
+train accuracy: 0.151789
+cnt: 4100
+cross_sess: 456.130371
+train accuracy: 0.155375
+cnt: 4105
+cross_sess: 398.839783
+train accuracy: 0.149383
+cnt: 4110
+cross_sess: 391.892487
+train accuracy: 0.151891
+cnt: 4115
+cross_sess: 390.162903
+train accuracy: 0.152078
+cnt: 4120
+cross_sess: 404.586243
+train accuracy: 0.155031
+cnt: 4125
+cross_sess: 412.713501
+train accuracy: 0.153133
+cnt: 4130
+cross_sess: 394.080383
+train accuracy: 0.155109
+cnt: 4135
+cross_sess: 394.009796
+train accuracy: 0.152766
+cnt: 4140
+cross_sess: 419.978058
+train accuracy: 0.155156
+cnt: 4145
+cross_sess: 383.007233
+train accuracy: 0.155000
+cnt: 4150
+cross_sess: 423.887756
+train accuracy: 0.156719
+cnt: 4155
+cross_sess: 396.408142
+train accuracy: 0.154922
+cnt: 4160
+cross_sess: 423.084045
+train accuracy: 0.155633
+cnt: 4165
+cross_sess: 407.134583
+train accuracy: 0.154852
+cnt: 4170
+cross_sess: 397.743774
+train accuracy: 0.154656
+cnt: 4175
+cross_sess: 402.837585
+train accuracy: 0.152898
+cnt: 4180
+cross_sess: 412.891754
+train accuracy: 0.156094
+cnt: 4185
+cross_sess: 393.771698
+train accuracy: 0.152672
+cnt: 4190
+cross_sess: 401.936432
+train accuracy: 0.155703
+cnt: 4195
+cross_sess: 383.689911
+train accuracy: 0.152547
+cnt: 4200
+cross_sess: 409.465454
+train accuracy: 0.150758
+cnt: 4205
+cross_sess: 413.087311
+train accuracy: 0.157312
+cnt: 4210
+cross_sess: 404.400635
+train accuracy: 0.153617
+cnt: 4215
+cross_sess: 386.045776
+train accuracy: 0.151758
+cnt: 4220
+cross_sess: 398.583374
+train accuracy: 0.153961
+cnt: 4225
+cross_sess: 378.010559
+train accuracy: 0.149805
+cnt: 4230
+cross_sess: 405.400482
+train accuracy: 0.152938
+cnt: 4235
+cross_sess: 410.327759
+train accuracy: 0.154297
+cnt: 4240
+cross_sess: 410.364075
+train accuracy: 0.155031
+cnt: 4245
+cross_sess: 402.850983
+train accuracy: 0.152352
+cnt: 4250
+cross_sess: 402.742523
+train accuracy: 0.153953
+cnt: 4255
+cross_sess: 397.278595
+train accuracy: 0.152938
+cnt: 4260
+cross_sess: 410.304108
+train accuracy: 0.154539
+cnt: 4265
+cross_sess: 408.182495
+train accuracy: 0.155937
+cnt: 4270
+cross_sess: 408.274780
+train accuracy: 0.157094
+cnt: 4275
+cross_sess: 391.991455
+train accuracy: 0.151992
+cnt: 4280
+cross_sess: 418.985718
+train accuracy: 0.154781
+cnt: 4285
+cross_sess: 426.760406
+train accuracy: 0.153859
+cnt: 4290
+cross_sess: 426.494202
+train accuracy: 0.154414
+cnt: 4295
+cross_sess: 383.252258
+train accuracy: 0.155086
+cnt: 4300
+cross_sess: 404.972534
+train accuracy: 0.153062
+cnt: 4305
+cross_sess: 389.863739
+train accuracy: 0.154383
+cnt: 4310
+cross_sess: 401.780884
+train accuracy: 0.155891
+cnt: 4315
+cross_sess: 400.538757
+train accuracy: 0.156336
+cnt: 4320
+cross_sess: 409.675720
+train accuracy: 0.150289
+cnt: 4325
+cross_sess: 427.555389
+train accuracy: 0.153703
+cnt: 4330
+cross_sess: 403.969086
+train accuracy: 0.154211
+cnt: 4335
+cross_sess: 387.161072
+train accuracy: 0.149617
+cnt: 4340
+cross_sess: 408.385437
+train accuracy: 0.153461
+cnt: 4345
+cross_sess: 395.098877
+train accuracy: 0.151859
+cnt: 4350
+cross_sess: 407.600891
+train accuracy: 0.152883
+cnt: 4355
+cross_sess: 403.157227
+train accuracy: 0.154211
+cnt: 4360
+cross_sess: 393.909088
+train accuracy: 0.155680
+cnt: 4365
+cross_sess: 388.260925
+train accuracy: 0.152477
+cnt: 4370
+cross_sess: 400.673096
+train accuracy: 0.154484
+cnt: 4375
+cross_sess: 427.259094
+train accuracy: 0.158305
+cnt: 4380
+cross_sess: 395.396759
+train accuracy: 0.152531
+cnt: 4385
+cross_sess: 390.723694
+train accuracy: 0.152430
+cnt: 4390
+cross_sess: 394.735199
+train accuracy: 0.154797
+cnt: 4395
+cross_sess: 379.927429
+train accuracy: 0.153828
+cnt: 4400
+cross_sess: 392.283020
+train accuracy: 0.153008
+cnt: 4405
+cross_sess: 371.797302
+train accuracy: 0.154375
+cnt: 4410
+cross_sess: 365.329590
+train accuracy: 0.150297
+cnt: 4415
+cross_sess: 383.160706
+train accuracy: 0.155016
+cnt: 4420
+cross_sess: 363.758606
+train accuracy: 0.153766
+cnt: 4425
+cross_sess: 405.064697
+train accuracy: 0.154445
+cnt: 4430
+cross_sess: 421.741730
+train accuracy: 0.154836
+cnt: 4435
+cross_sess: 391.120026
+train accuracy: 0.154648
+cnt: 4440
+cross_sess: 411.063538
+train accuracy: 0.156109
+cnt: 4445
+cross_sess: 398.750183
+train accuracy: 0.148078
+cnt: 4450
+cross_sess: 396.751678
+train accuracy: 0.153359
+cnt: 4455
+cross_sess: 399.945801
+train accuracy: 0.152602
+cnt: 4460
+cross_sess: 388.402954
+train accuracy: 0.152898
+cnt: 4465
+cross_sess: 388.364502
+train accuracy: 0.154805
+cnt: 4470
+cross_sess: 373.365601
+train accuracy: 0.152227
+cnt: 4475
+cross_sess: 402.533112
+train accuracy: 0.153648
+cnt: 4480
+cross_sess: 385.531128
+train accuracy: 0.153867
+cnt: 4485
+cross_sess: 400.677979
+train accuracy: 0.155977
+cnt: 4490
+cross_sess: 405.427002
+train accuracy: 0.156586
+cnt: 4495
+cross_sess: 400.292206
+train accuracy: 0.155531
+cnt: 4500
+cross_sess: 388.326355
+train accuracy: 0.152969
+pre cross: 417.720093 and current cross: 388.326355
+cnt: 4505
+cross_sess: 415.114929
+train accuracy: 0.156031
+cnt: 4510
+cross_sess: 398.795319
+train accuracy: 0.153914
+cnt: 4515
+cross_sess: 397.294128
+train accuracy: 0.152461
+cnt: 4520
+cross_sess: 396.763489
+train accuracy: 0.154250
+cnt: 4525
+cross_sess: 389.369965
+train accuracy: 0.153281
+cnt: 4530
+cross_sess: 395.541931
+train accuracy: 0.152953
+cnt: 4535
+cross_sess: 393.912781
+train accuracy: 0.152375
+cnt: 4540
+cross_sess: 414.549866
+train accuracy: 0.156305
+cnt: 4545
+cross_sess: 401.699585
+train accuracy: 0.151203
+cnt: 4550
+cross_sess: 393.788025
+train accuracy: 0.149937
+cnt: 4555
+cross_sess: 386.080688
+train accuracy: 0.152609
+cnt: 4560
+cross_sess: 394.453491
+train accuracy: 0.154203
+cnt: 4565
+cross_sess: 402.023621
+train accuracy: 0.152336
+cnt: 4570
+cross_sess: 392.810089
+train accuracy: 0.159148
+cnt: 4575
+cross_sess: 395.151947
+train accuracy: 0.152938
+cnt: 4580
+cross_sess: 393.423645
+train accuracy: 0.149273
+cnt: 4585
+cross_sess: 406.636841
+train accuracy: 0.153266
+cnt: 4590
+cross_sess: 402.119690
+train accuracy: 0.152180
+cnt: 4595
+cross_sess: 396.461121
+train accuracy: 0.152773
+cnt: 4600
+cross_sess: 400.205475
+train accuracy: 0.155305
+cnt: 4605
+cross_sess: 390.029968
+train accuracy: 0.155586
+cnt: 4610
+cross_sess: 397.829865
+train accuracy: 0.155391
+cnt: 4615
+cross_sess: 378.763123
+train accuracy: 0.154266
+cnt: 4620
+cross_sess: 398.106323
+train accuracy: 0.152711
+cnt: 4625
+cross_sess: 387.188904
+train accuracy: 0.154047
+cnt: 4630
+cross_sess: 393.806274
+train accuracy: 0.155648
+cnt: 4635
+cross_sess: 405.796814
+train accuracy: 0.154141
+cnt: 4640
+cross_sess: 412.585571
+train accuracy: 0.153219
+cnt: 4645
+cross_sess: 401.573517
+train accuracy: 0.157094
+cnt: 4650
+cross_sess: 396.712402
+train accuracy: 0.153539
+cnt: 4655
+cross_sess: 366.682251
+train accuracy: 0.149664
+cnt: 4660
+cross_sess: 406.888733
+train accuracy: 0.155703
+cnt: 4665
+cross_sess: 397.513611
+train accuracy: 0.155625
+cnt: 4670
+cross_sess: 376.176758
+train accuracy: 0.151555
+cnt: 4675
+cross_sess: 398.031494
+train accuracy: 0.153422
+cnt: 4680
+cross_sess: 370.378418
+train accuracy: 0.153305
+cnt: 4685
+cross_sess: 408.291901
+train accuracy: 0.153414
+cnt: 4690
+cross_sess: 390.995728
+train accuracy: 0.153281
+cnt: 4695
+cross_sess: 395.542725
+train accuracy: 0.152305
+cnt: 4700
+cross_sess: 405.632050
+train accuracy: 0.153492
+cnt: 4705
+cross_sess: 384.311279
+train accuracy: 0.149656
+cnt: 4710
+cross_sess: 418.611755
+train accuracy: 0.157531
+cnt: 4715
+cross_sess: 406.493256
+train accuracy: 0.154359
+cnt: 4720
+cross_sess: 404.330261
+train accuracy: 0.154305
+cnt: 4725
+cross_sess: 413.297668
+train accuracy: 0.154992
+cnt: 4730
+cross_sess: 387.326843
+train accuracy: 0.156906
+cnt: 4735
+cross_sess: 391.977295
+train accuracy: 0.158391
+cnt: 4740
+cross_sess: 389.778473
+train accuracy: 0.154953
+cnt: 4745
+cross_sess: 376.290466
+train accuracy: 0.152883
+cnt: 4750
+cross_sess: 416.153564
+train accuracy: 0.151789
+cnt: 4755
+cross_sess: 388.295288
+train accuracy: 0.158398
+cnt: 4760
+cross_sess: 399.597839
+train accuracy: 0.154852
+cnt: 4765
+cross_sess: 395.522156
+train accuracy: 0.156516
+cnt: 4770
+cross_sess: 395.787170
+train accuracy: 0.152852
+cnt: 4775
+cross_sess: 411.430786
+train accuracy: 0.151930
+cnt: 4780
+cross_sess: 392.771729
+train accuracy: 0.150586
+cnt: 4785
+cross_sess: 375.286316
+train accuracy: 0.152078
+cnt: 4790
+cross_sess: 387.821136
+train accuracy: 0.154664
+cnt: 4795
+cross_sess: 388.627869
+train accuracy: 0.155617
+cnt: 4800
+cross_sess: 405.427856
+train accuracy: 0.155258
+cnt: 4805
+cross_sess: 401.826813
+train accuracy: 0.155242
+cnt: 4810
+cross_sess: 411.960999
+train accuracy: 0.156875
+cnt: 4815
+cross_sess: 403.369019
+train accuracy: 0.153625
+cnt: 4820
+cross_sess: 364.613159
+train accuracy: 0.154039
+cnt: 4825
+cross_sess: 368.306244
+train accuracy: 0.153680
+cnt: 4830
+cross_sess: 411.199188
+train accuracy: 0.156164
+cnt: 4835
+cross_sess: 406.343079
+train accuracy: 0.154836
+cnt: 4840
+cross_sess: 377.190674
+train accuracy: 0.154578
+cnt: 4845
+cross_sess: 384.359741
+train accuracy: 0.154656
+cnt: 4850
+cross_sess: 383.116211
+train accuracy: 0.154211
+cnt: 4855
+cross_sess: 394.399231
+train accuracy: 0.152187
+cnt: 4860
+cross_sess: 384.370117
+train accuracy: 0.153688
+cnt: 4865
+cross_sess: 386.133453
+train accuracy: 0.152750
+cnt: 4870
+cross_sess: 402.968811
+train accuracy: 0.157422
+cnt: 4875
+cross_sess: 406.296326
+train accuracy: 0.157063
+cnt: 4880
+cross_sess: 414.228821
+train accuracy: 0.155625
+cnt: 4885
+cross_sess: 384.309204
+train accuracy: 0.152055
+cnt: 4890
+cross_sess: 386.770386
+train accuracy: 0.154516
+cnt: 4895
+cross_sess: 388.237030
+train accuracy: 0.151797
+cnt: 4900
+cross_sess: 390.418030
+train accuracy: 0.153195
+cnt: 4905
+cross_sess: 382.915070
+train accuracy: 0.156273
+cnt: 4910
+cross_sess: 395.132263
+train accuracy: 0.154320
+cnt: 4915
+cross_sess: 390.654053
+train accuracy: 0.154055
+cnt: 4920
+cross_sess: 405.568298
+train accuracy: 0.156734
+cnt: 4925
+cross_sess: 396.230804
+train accuracy: 0.153516
+cnt: 4930
+cross_sess: 396.412018
+train accuracy: 0.152977
+cnt: 4935
+cross_sess: 383.293213
+train accuracy: 0.155586
+cnt: 4940
+cross_sess: 396.243713
+train accuracy: 0.151836
+cnt: 4945
+cross_sess: 387.651703
+train accuracy: 0.155898
+cnt: 4950
+cross_sess: 377.934143
+train accuracy: 0.150805
+cnt: 4955
+cross_sess: 388.036743
+train accuracy: 0.153000
+cnt: 4960
+cross_sess: 392.953918
+train accuracy: 0.152016
+cnt: 4965
+cross_sess: 399.049225
+train accuracy: 0.157648
+cnt: 4970
+cross_sess: 396.723572
+train accuracy: 0.155547
+cnt: 4975
+cross_sess: 385.764130
+train accuracy: 0.152063
+cnt: 4980
+cross_sess: 385.238342
+train accuracy: 0.154117
+cnt: 4985
+cross_sess: 405.994354
+train accuracy: 0.157359
+cnt: 4990
+cross_sess: 397.716339
+train accuracy: 0.154000
+cnt: 4995
+cross_sess: 376.241180
+train accuracy: 0.151641
+cnt: 5000
+cross_sess: 364.863525
+train accuracy: 0.151711
+pre cross: 388.326355 and current cross: 364.863525
+cnt: 5005
+cross_sess: 377.871460
+train accuracy: 0.153187
+cnt: 5010
+cross_sess: 394.603699
+train accuracy: 0.152891
+cnt: 5015
+cross_sess: 384.847900
+train accuracy: 0.154383
+cnt: 5020
+cross_sess: 386.251678
+train accuracy: 0.153148
+cnt: 5025
+cross_sess: 396.139954
+train accuracy: 0.153398
+cnt: 5030
+cross_sess: 372.180176
+train accuracy: 0.151031
+cnt: 5035
+cross_sess: 399.511719
+train accuracy: 0.157273
+cnt: 5040
+cross_sess: 399.002136
+train accuracy: 0.152781
+cnt: 5045
+cross_sess: 389.192657
+train accuracy: 0.154375
+cnt: 5050
+cross_sess: 395.449402
+train accuracy: 0.154492
+cnt: 5055
+cross_sess: 378.781372
+train accuracy: 0.154367
+cnt: 5060
+cross_sess: 401.092102
+train accuracy: 0.157539
+cnt: 5065
+cross_sess: 398.608459
+train accuracy: 0.155484
+cnt: 5070
+cross_sess: 390.074951
+train accuracy: 0.155563
+cnt: 5075
+cross_sess: 394.286560
+train accuracy: 0.157211
+cnt: 5080
+cross_sess: 416.665497
+train accuracy: 0.154977
+cnt: 5085
+cross_sess: 395.828583
+train accuracy: 0.152969
+cnt: 5090
+cross_sess: 399.765991
+train accuracy: 0.150977
+cnt: 5095
+cross_sess: 381.384949
+train accuracy: 0.155953
+cnt: 5100
+cross_sess: 375.557556
+train accuracy: 0.151398
+cnt: 5105
+cross_sess: 380.283234
+train accuracy: 0.151352
+cnt: 5110
+cross_sess: 406.347351
+train accuracy: 0.153242
+cnt: 5115
+cross_sess: 382.540833
+train accuracy: 0.152695
+cnt: 5120
+cross_sess: 398.067871
+train accuracy: 0.153672
+cnt: 5125
+cross_sess: 376.260132
+train accuracy: 0.155141
+cnt: 5130
+cross_sess: 383.215332
+train accuracy: 0.156016
+cnt: 5135
+cross_sess: 392.997803
+train accuracy: 0.151781
+cnt: 5140
+cross_sess: 433.924805
+train accuracy: 0.155062
+cnt: 5145
+cross_sess: 404.783966
+train accuracy: 0.155219
+cnt: 5150
+cross_sess: 397.156769
+train accuracy: 0.153305
+cnt: 5155
+cross_sess: 386.850525
+train accuracy: 0.150508
+cnt: 5160
+cross_sess: 381.097137
+train accuracy: 0.153242
+cnt: 5165
+cross_sess: 383.404449
+train accuracy: 0.156055
+cnt: 5170
+cross_sess: 392.503235
+train accuracy: 0.152836
+cnt: 5175
+cross_sess: 397.046509
+train accuracy: 0.152086
+cnt: 5180
+cross_sess: 379.452972
+train accuracy: 0.154914
+cnt: 5185
+cross_sess: 399.603485
+train accuracy: 0.153633
+cnt: 5190
+cross_sess: 407.077393
+train accuracy: 0.157953
+cnt: 5195
+cross_sess: 401.529755
+train accuracy: 0.155531
+cnt: 5200
+cross_sess: 372.645935
+train accuracy: 0.149266
+cnt: 5205
+cross_sess: 393.789398
+train accuracy: 0.154805
+cnt: 5210
+cross_sess: 399.206177
+train accuracy: 0.155016
+cnt: 5215
+cross_sess: 380.542725
+train accuracy: 0.154797
+cnt: 5220
+cross_sess: 376.780823
+train accuracy: 0.153422
+cnt: 5225
+cross_sess: 375.979156
+train accuracy: 0.154258
+cnt: 5230
+cross_sess: 381.450104
+train accuracy: 0.153891
+cnt: 5235
+cross_sess: 405.761230
+train accuracy: 0.155344
+cnt: 5240
+cross_sess: 374.703278
+train accuracy: 0.152437
+cnt: 5245
+cross_sess: 403.996918
+train accuracy: 0.157633
+cnt: 5250
+cross_sess: 371.142426
+train accuracy: 0.153781
+cnt: 5255
+cross_sess: 401.715698
+train accuracy: 0.156602
+cnt: 5260
+cross_sess: 378.670563
+train accuracy: 0.153352
+cnt: 5265
+cross_sess: 387.449707
+train accuracy: 0.152039
+cnt: 5270
+cross_sess: 391.535156
+train accuracy: 0.152172
+cnt: 5275
+cross_sess: 367.614075
+train accuracy: 0.148289
+cnt: 5280
+cross_sess: 395.598358
+train accuracy: 0.155500
+cnt: 5285
+cross_sess: 392.969025
+train accuracy: 0.151148
+cnt: 5290
+cross_sess: 381.961090
+train accuracy: 0.155437
+cnt: 5295
+cross_sess: 387.410767
+train accuracy: 0.149820
+cnt: 5300
+cross_sess: 392.961792
+train accuracy: 0.152398
+cnt: 5305
+cross_sess: 365.580688
+train accuracy: 0.150828
+cnt: 5310
+cross_sess: 401.003326
+train accuracy: 0.154508
+cnt: 5315
+cross_sess: 377.157227
+train accuracy: 0.152734
+cnt: 5320
+cross_sess: 390.484741
+train accuracy: 0.153742
+cnt: 5325
+cross_sess: 387.645264
+train accuracy: 0.153867
+cnt: 5330
+cross_sess: 395.828613
+train accuracy: 0.156750
+cnt: 5335
+cross_sess: 416.946411
+train accuracy: 0.155734
+cnt: 5340
+cross_sess: 413.720520
+train accuracy: 0.156687
+cnt: 5345
+cross_sess: 387.627747
+train accuracy: 0.157266
+cnt: 5350
+cross_sess: 389.351929
+train accuracy: 0.153891
+cnt: 5355
+cross_sess: 385.804016
+train accuracy: 0.153719
+cnt: 5360
+cross_sess: 372.522278
+train accuracy: 0.151461
+cnt: 5365
+cross_sess: 373.782471
+train accuracy: 0.153031
+cnt: 5370
+cross_sess: 388.084564
+train accuracy: 0.154391
+cnt: 5375
+cross_sess: 412.158356
+train accuracy: 0.155805
+cnt: 5380
+cross_sess: 398.549255
+train accuracy: 0.153500
+cnt: 5385
+cross_sess: 357.587646
+train accuracy: 0.154211
+cnt: 5390
+cross_sess: 374.353027
+train accuracy: 0.153367
+cnt: 5395
+cross_sess: 388.497253
+train accuracy: 0.153266
+cnt: 5400
+cross_sess: 384.525452
+train accuracy: 0.151812
+cnt: 5405
+cross_sess: 391.280151
+train accuracy: 0.153469
+cnt: 5410
+cross_sess: 401.106201
+train accuracy: 0.153023
+cnt: 5415
+cross_sess: 387.947266
+train accuracy: 0.155250
+cnt: 5420
+cross_sess: 394.722992
+train accuracy: 0.157719
+cnt: 5425
+cross_sess: 396.390869
+train accuracy: 0.151578
+cnt: 5430
+cross_sess: 372.599792
+train accuracy: 0.153781
+cnt: 5435
+cross_sess: 375.489685
+train accuracy: 0.152789
+cnt: 5440
+cross_sess: 370.794006
+train accuracy: 0.154492
+cnt: 5445
+cross_sess: 387.062134
+train accuracy: 0.153398
+cnt: 5450
+cross_sess: 390.482971
+train accuracy: 0.155305
+cnt: 5455
+cross_sess: 394.664825
+train accuracy: 0.156711
+cnt: 5460
+cross_sess: 382.683746
+train accuracy: 0.153492
+cnt: 5465
+cross_sess: 405.144012
+train accuracy: 0.154977
+cnt: 5470
+cross_sess: 402.897705
+train accuracy: 0.152633
+cnt: 5475
+cross_sess: 380.249847
+train accuracy: 0.154914
+cnt: 5480
+cross_sess: 388.717041
+train accuracy: 0.151562
+cnt: 5485
+cross_sess: 394.171570
+train accuracy: 0.154336
+cnt: 5490
+cross_sess: 404.224030
+train accuracy: 0.152805
+cnt: 5495
+cross_sess: 374.935425
+train accuracy: 0.151914
+cnt: 5500
+cross_sess: 375.202881
+train accuracy: 0.154273
+pre cross: 364.863525 and current cross: 375.202881
+cnt: 5505
+cross_sess: 394.028137
+train accuracy: 0.154805
+cnt: 5510
+cross_sess: 389.849091
+train accuracy: 0.154727
+cnt: 5515
+cross_sess: 378.683167
+train accuracy: 0.154523
+cnt: 5520
+cross_sess: 376.089996
+train accuracy: 0.154578
+cnt: 5525
+cross_sess: 383.808899
+train accuracy: 0.153508
+cnt: 5530
+cross_sess: 366.478973
+train accuracy: 0.152109
+cnt: 5535
+cross_sess: 400.078003
+train accuracy: 0.153141
+cnt: 5540
+cross_sess: 389.956543
+train accuracy: 0.154461
+cnt: 5545
+cross_sess: 413.998047
+train accuracy: 0.157148
+cnt: 5550
+cross_sess: 378.028595
+train accuracy: 0.152555
+cnt: 5555
+cross_sess: 379.549255
+train accuracy: 0.155406
+cnt: 5560
+cross_sess: 384.797485
+train accuracy: 0.153664
+cnt: 5565
+cross_sess: 398.591858
+train accuracy: 0.154141
+cnt: 5570
+cross_sess: 377.708374
+train accuracy: 0.154203
+cnt: 5575
+cross_sess: 373.526489
+train accuracy: 0.151313
+cnt: 5580
+cross_sess: 391.507843
+train accuracy: 0.151086
+cnt: 5585
+cross_sess: 390.176636
+train accuracy: 0.156617
+cnt: 5590
+cross_sess: 391.917328
+train accuracy: 0.153898
+cnt: 5595
+cross_sess: 391.532532
+train accuracy: 0.152461
+cnt: 5600
+cross_sess: 376.039185
+train accuracy: 0.153266
+cnt: 5605
+cross_sess: 376.369751
+train accuracy: 0.156219
+cnt: 5610
+cross_sess: 376.928528
+train accuracy: 0.151594
+cnt: 5615
+cross_sess: 402.410889
+train accuracy: 0.153555
+cnt: 5620
+cross_sess: 395.952820
+train accuracy: 0.152492
+cnt: 5625
+cross_sess: 391.386047
+train accuracy: 0.150375
+cnt: 5630
+cross_sess: 394.552246
+train accuracy: 0.154234
+cnt: 5635
+cross_sess: 394.529816
+train accuracy: 0.154242
+cnt: 5640
+cross_sess: 379.023254
+train accuracy: 0.156383
+cnt: 5645
+cross_sess: 388.901428
+train accuracy: 0.153773
+cnt: 5650
+cross_sess: 377.217682
+train accuracy: 0.151313
+cnt: 5655
+cross_sess: 400.425507
+train accuracy: 0.155937
+cnt: 5660
+cross_sess: 390.725647
+train accuracy: 0.156414
+cnt: 5665
+cross_sess: 365.074799
+train accuracy: 0.152945
+cnt: 5670
+cross_sess: 360.418121
+train accuracy: 0.154563
+cnt: 5675
+cross_sess: 381.926453
+train accuracy: 0.151820
+cnt: 5680
+cross_sess: 390.592529
+train accuracy: 0.157156
+cnt: 5685
+cross_sess: 384.955475
+train accuracy: 0.157273
+cnt: 5690
+cross_sess: 403.236450
+train accuracy: 0.158586
+cnt: 5695
+cross_sess: 362.405426
+train accuracy: 0.149352
+cnt: 5700
+cross_sess: 381.679962
+train accuracy: 0.155141
+cnt: 5705
+cross_sess: 386.225647
+train accuracy: 0.156992
+cnt: 5710
+cross_sess: 384.447754
+train accuracy: 0.153750
+cnt: 5715
+cross_sess: 379.595001
+train accuracy: 0.151648
+cnt: 5720
+cross_sess: 385.078094
+train accuracy: 0.157922
+cnt: 5725
+cross_sess: 350.101868
+train accuracy: 0.154414
+cnt: 5730
+cross_sess: 377.006927
+train accuracy: 0.154641
+cnt: 5735
+cross_sess: 383.148102
+train accuracy: 0.153281
+cnt: 5740
+cross_sess: 389.240356
+train accuracy: 0.154062
+cnt: 5745
+cross_sess: 391.813416
+train accuracy: 0.153500
+cnt: 5750
+cross_sess: 384.709656
+train accuracy: 0.152656
+cnt: 5755
+cross_sess: 392.360016
+train accuracy: 0.154352
+cnt: 5760
+cross_sess: 373.957916
+train accuracy: 0.151742
+cnt: 5765
+cross_sess: 403.737671
+train accuracy: 0.155281
+cnt: 5770
+cross_sess: 391.777283
+train accuracy: 0.155719
+cnt: 5775
+cross_sess: 385.023499
+train accuracy: 0.153352
+cnt: 5780
+cross_sess: 370.880066
+train accuracy: 0.156969
+cnt: 5785
+cross_sess: 394.242889
+train accuracy: 0.154836
+cnt: 5790
+cross_sess: 381.182861
+train accuracy: 0.154469
+cnt: 5795
+cross_sess: 379.846130
+train accuracy: 0.153250
+cnt: 5800
+cross_sess: 395.231873
+train accuracy: 0.154898
+cnt: 5805
+cross_sess: 407.805511
+train accuracy: 0.156367
+cnt: 5810
+cross_sess: 366.689178
+train accuracy: 0.158227
+cnt: 5815
+cross_sess: 389.733948
+train accuracy: 0.153617
+cnt: 5820
+cross_sess: 377.571075
+train accuracy: 0.152641
+cnt: 5825
+cross_sess: 391.208557
+train accuracy: 0.150531
+cnt: 5830
+cross_sess: 379.257446
+train accuracy: 0.153203
+cnt: 5835
+cross_sess: 376.936890
+train accuracy: 0.155531
+cnt: 5840
+cross_sess: 387.783936
+train accuracy: 0.152836
+cnt: 5845
+cross_sess: 394.876221
+train accuracy: 0.154414
+cnt: 5850
+cross_sess: 377.396912
+train accuracy: 0.154023
+cnt: 5855
+cross_sess: 376.966553
+train accuracy: 0.152313
+cnt: 5860
+cross_sess: 386.970154
+train accuracy: 0.152883
+cnt: 5865
+cross_sess: 375.780426
+train accuracy: 0.154953
+cnt: 5870
+cross_sess: 388.744171
+train accuracy: 0.151953
+cnt: 5875
+cross_sess: 415.435669
+train accuracy: 0.154602
+cnt: 5880
+cross_sess: 363.636749
+train accuracy: 0.153781
+cnt: 5885
+cross_sess: 379.838013
+train accuracy: 0.155211
+cnt: 5890
+cross_sess: 394.850494
+train accuracy: 0.154500
+cnt: 5895
+cross_sess: 388.912476
+train accuracy: 0.155437
+cnt: 5900
+cross_sess: 387.750793
+train accuracy: 0.154711
+cnt: 5905
+cross_sess: 396.718201
+train accuracy: 0.155977
+cnt: 5910
+cross_sess: 363.572693
+train accuracy: 0.153672
+cnt: 5915
+cross_sess: 387.311340
+train accuracy: 0.155852
+cnt: 5920
+cross_sess: 394.135559
+train accuracy: 0.153023
+cnt: 5925
+cross_sess: 363.389984
+train accuracy: 0.152492
+cnt: 5930
+cross_sess: 398.637756
+train accuracy: 0.155695
+cnt: 5935
+cross_sess: 366.463959
+train accuracy: 0.152773
+cnt: 5940
+cross_sess: 380.948730
+train accuracy: 0.150875
+cnt: 5945
+cross_sess: 422.162872
+train accuracy: 0.158891
+cnt: 5950
+cross_sess: 378.250885
+train accuracy: 0.154695
+cnt: 5955
+cross_sess: 372.931702
+train accuracy: 0.152945
+cnt: 5960
+cross_sess: 376.668854
+train accuracy: 0.152266
+cnt: 5965
+cross_sess: 393.784424
+train accuracy: 0.152562
+cnt: 5970
+cross_sess: 395.389343
+train accuracy: 0.154211
+cnt: 5975
+cross_sess: 397.634766
+train accuracy: 0.157094
+cnt: 5980
+cross_sess: 386.546112
+train accuracy: 0.152531
+cnt: 5985
+cross_sess: 394.535431
+train accuracy: 0.156445
+cnt: 5990
+cross_sess: 383.969116
+train accuracy: 0.152148
+cnt: 5995
+cross_sess: 377.266479
+train accuracy: 0.154336
+cnt: 6000
+cross_sess: 356.476807
+train accuracy: 0.151477
+pre cross: 375.202881 and current cross: 356.476807
+cnt: 6005
+cross_sess: 393.359253
+train accuracy: 0.154508
+cnt: 6010
+cross_sess: 370.992157
+train accuracy: 0.154430
+cnt: 6015
+cross_sess: 375.015381
+train accuracy: 0.148711
+cnt: 6020
+cross_sess: 405.754944
+train accuracy: 0.153641
+cnt: 6025
+cross_sess: 393.806946
+train accuracy: 0.154602
+cnt: 6030
+cross_sess: 384.416901
+train accuracy: 0.157188
+cnt: 6035
+cross_sess: 379.427460
+train accuracy: 0.154313
+cnt: 6040
+cross_sess: 394.328827
+train accuracy: 0.153820
+cnt: 6045
+cross_sess: 376.773773
+train accuracy: 0.153695
+cnt: 6050
+cross_sess: 388.825836
+train accuracy: 0.156648
+cnt: 6055
+cross_sess: 392.099609
+train accuracy: 0.153430
+cnt: 6060
+cross_sess: 391.089355
+train accuracy: 0.156680
+cnt: 6065
+cross_sess: 380.318573
+train accuracy: 0.153062
+cnt: 6070
+cross_sess: 378.662567
+train accuracy: 0.150719
+cnt: 6075
+cross_sess: 391.606567
+train accuracy: 0.156164
+cnt: 6080
+cross_sess: 370.489807
+train accuracy: 0.153008
+cnt: 6085
+cross_sess: 365.289154
+train accuracy: 0.147641
+cnt: 6090
+cross_sess: 364.148041
+train accuracy: 0.150953
+cnt: 6095
+cross_sess: 394.189423
+train accuracy: 0.155305
+cnt: 6100
+cross_sess: 395.388306
+train accuracy: 0.151422
+cnt: 6105
+cross_sess: 412.840149
+train accuracy: 0.154219
+cnt: 6110
+cross_sess: 386.598999
+train accuracy: 0.158031
+cnt: 6115
+cross_sess: 389.735840
+train accuracy: 0.154391
+cnt: 6120
+cross_sess: 386.383362
+train accuracy: 0.156547
+cnt: 6125
+cross_sess: 366.572571
+train accuracy: 0.153219
+cnt: 6130
+cross_sess: 394.212341
+train accuracy: 0.155578
+cnt: 6135
+cross_sess: 372.126282
+train accuracy: 0.153609
+cnt: 6140
+cross_sess: 372.224182
+train accuracy: 0.154687
+cnt: 6145
+cross_sess: 378.088623
+train accuracy: 0.155070
+cnt: 6150
+cross_sess: 398.957611
+train accuracy: 0.158672
+cnt: 6155
+cross_sess: 370.421112
+train accuracy: 0.154141
+cnt: 6160
+cross_sess: 398.737732
+train accuracy: 0.155273
+cnt: 6165
+cross_sess: 353.738586
+train accuracy: 0.151859
+cnt: 6170
+cross_sess: 378.141113
+train accuracy: 0.155734
+cnt: 6175
+cross_sess: 370.219574
+train accuracy: 0.154867
+cnt: 6180
+cross_sess: 385.325928
+train accuracy: 0.153172
+cnt: 6185
+cross_sess: 388.007965
+train accuracy: 0.157781
+cnt: 6190
+cross_sess: 370.528381
+train accuracy: 0.150789
+cnt: 6195
+cross_sess: 374.668518
+train accuracy: 0.152812
+cnt: 6200
+cross_sess: 381.328339
+train accuracy: 0.152484
+cnt: 6205
+cross_sess: 398.287292
+train accuracy: 0.153555
+cnt: 6210
+cross_sess: 362.290680
+train accuracy: 0.151930
+cnt: 6215
+cross_sess: 380.086243
+train accuracy: 0.153359
+cnt: 6220
+cross_sess: 394.066864
+train accuracy: 0.155648
+cnt: 6225
+cross_sess: 403.527710
+train accuracy: 0.151727
+cnt: 6230
+cross_sess: 376.145081
+train accuracy: 0.150562
+cnt: 6235
+cross_sess: 373.607544
+train accuracy: 0.153391
+cnt: 6240
+cross_sess: 378.526581
+train accuracy: 0.152922
+cnt: 6245
+cross_sess: 387.582947
+train accuracy: 0.155289
+cnt: 6250
+cross_sess: 392.562958
+train accuracy: 0.151758
+cnt: 6255
+cross_sess: 374.755951
+train accuracy: 0.153516
+cnt: 6260
+cross_sess: 396.069336
+train accuracy: 0.156937
+cnt: 6265
+cross_sess: 391.776978
+train accuracy: 0.152297
+cnt: 6270
+cross_sess: 387.840637
+train accuracy: 0.158578
+cnt: 6275
+cross_sess: 364.968475
+train accuracy: 0.150883
+cnt: 6280
+cross_sess: 384.438782
+train accuracy: 0.150797
+cnt: 6285
+cross_sess: 383.343018
+train accuracy: 0.156234
+cnt: 6290
+cross_sess: 392.946472
+train accuracy: 0.156383
+cnt: 6295
+cross_sess: 396.052399
+train accuracy: 0.154008
+cnt: 6300
+cross_sess: 387.289062
+train accuracy: 0.156742
+cnt: 6305
+cross_sess: 394.659790
+train accuracy: 0.153461
+cnt: 6310
+cross_sess: 390.023193
+train accuracy: 0.151336
+cnt: 6315
+cross_sess: 371.300842
+train accuracy: 0.148945
+cnt: 6320
+cross_sess: 389.092407
+train accuracy: 0.154352
+cnt: 6325
+cross_sess: 391.156891
+train accuracy: 0.154500
+cnt: 6330
+cross_sess: 383.670044
+train accuracy: 0.155242
+cnt: 6335
+cross_sess: 400.046936
+train accuracy: 0.159344
+cnt: 6340
+cross_sess: 363.662903
+train accuracy: 0.154734
+cnt: 6345
+cross_sess: 379.220825
+train accuracy: 0.149344
+cnt: 6350
+cross_sess: 376.242828
+train accuracy: 0.152008
+cnt: 6355
+cross_sess: 388.136658
+train accuracy: 0.153313
+cnt: 6360
+cross_sess: 400.884033
+train accuracy: 0.156578
+cnt: 6365
+cross_sess: 377.374969
+train accuracy: 0.154563
+cnt: 6370
+cross_sess: 369.681976
+train accuracy: 0.154781
+cnt: 6375
+cross_sess: 365.982849
+train accuracy: 0.152445
+cnt: 6380
+cross_sess: 361.985504
+train accuracy: 0.154703
+cnt: 6385
+cross_sess: 401.839996
+train accuracy: 0.155031
+cnt: 6390
+cross_sess: 385.689270
+train accuracy: 0.155422
+cnt: 6395
+cross_sess: 391.247406
+train accuracy: 0.155477
+cnt: 6400
+cross_sess: 370.326355
+train accuracy: 0.154336
+cnt: 6405
+cross_sess: 397.747253
+train accuracy: 0.153156
+cnt: 6410
+cross_sess: 374.342407
+train accuracy: 0.149203
+cnt: 6415
+cross_sess: 390.728088
+train accuracy: 0.153711
+cnt: 6420
+cross_sess: 373.413147
+train accuracy: 0.155125
+cnt: 6425
+cross_sess: 379.059143
+train accuracy: 0.154836
+cnt: 6430
+cross_sess: 390.704895
+train accuracy: 0.154672
+cnt: 6435
+cross_sess: 379.175201
+train accuracy: 0.152703
+cnt: 6440
+cross_sess: 368.882690
+train accuracy: 0.152242
+cnt: 6445
+cross_sess: 364.128876
+train accuracy: 0.154211
+cnt: 6450
+cross_sess: 379.856720
+train accuracy: 0.149703
+cnt: 6455
+cross_sess: 391.474945
+train accuracy: 0.152891
+cnt: 6460
+cross_sess: 405.830627
+train accuracy: 0.157203
+cnt: 6465
+cross_sess: 353.160706
+train accuracy: 0.150602
+cnt: 6470
+cross_sess: 375.114319
+train accuracy: 0.151539
+cnt: 6475
+cross_sess: 375.778351
+train accuracy: 0.149555
+cnt: 6480
+cross_sess: 396.918030
+train accuracy: 0.157234
+cnt: 6485
+cross_sess: 376.783264
+train accuracy: 0.152500
+cnt: 6490
+cross_sess: 372.250610
+train accuracy: 0.153078
+cnt: 6495
+cross_sess: 387.215057
+train accuracy: 0.154430
+cnt: 6500
+cross_sess: 383.860657
+train accuracy: 0.152531
+pre cross: 356.476807 and current cross: 383.860657
+cnt: 6505
+cross_sess: 385.954651
+train accuracy: 0.157930
+cnt: 6510
+cross_sess: 380.059662
+train accuracy: 0.157836
+cnt: 6515
+cross_sess: 354.844666
+train accuracy: 0.152859
+cnt: 6520
+cross_sess: 378.429810
+train accuracy: 0.152008
+cnt: 6525
+cross_sess: 395.337463
+train accuracy: 0.154648
+cnt: 6530
+cross_sess: 390.786377
+train accuracy: 0.155578
+cnt: 6535
+cross_sess: 381.842773
+train accuracy: 0.153297
+cnt: 6540
+cross_sess: 392.852356
+train accuracy: 0.156148
+cnt: 6545
+cross_sess: 363.226135
+train accuracy: 0.151297
+cnt: 6550
+cross_sess: 383.520752
+train accuracy: 0.155563
+cnt: 6555
+cross_sess: 393.001373
+train accuracy: 0.155414
+cnt: 6560
+cross_sess: 357.243591
+train accuracy: 0.148625
+cnt: 6565
+cross_sess: 380.448242
+train accuracy: 0.151516
+cnt: 6570
+cross_sess: 364.547516
+train accuracy: 0.152430
+cnt: 6575
+cross_sess: 375.166199
+train accuracy: 0.154477
+cnt: 6580
+cross_sess: 371.091888
+train accuracy: 0.154625
+cnt: 6585
+cross_sess: 379.916321
+train accuracy: 0.155422
+cnt: 6590
+cross_sess: 382.793152
+train accuracy: 0.151953
+cnt: 6595
+cross_sess: 381.673645
+train accuracy: 0.153398
+cnt: 6600
+cross_sess: 364.003845
+train accuracy: 0.151070
+cnt: 6605
+cross_sess: 365.100525
+train accuracy: 0.153695
+cnt: 6610
+cross_sess: 378.477081
+train accuracy: 0.150234
+cnt: 6615
+cross_sess: 394.502808
+train accuracy: 0.155258
+cnt: 6620
+cross_sess: 374.612152
+train accuracy: 0.152781
+cnt: 6625
+cross_sess: 368.143616
+train accuracy: 0.156086
+cnt: 6630
+cross_sess: 384.299286
+train accuracy: 0.153273
+cnt: 6635
+cross_sess: 381.401581
+train accuracy: 0.152859
+cnt: 6640
+cross_sess: 395.483521
+train accuracy: 0.156625
+cnt: 6645
+cross_sess: 371.684479
+train accuracy: 0.152125
+cnt: 6650
+cross_sess: 368.148132
+train accuracy: 0.152969
+cnt: 6655
+cross_sess: 383.471893
+train accuracy: 0.155937
+cnt: 6660
+cross_sess: 376.610779
+train accuracy: 0.155094
+cnt: 6665
+cross_sess: 358.377991
+train accuracy: 0.154359
+cnt: 6670
+cross_sess: 385.347595
+train accuracy: 0.152906
+cnt: 6675
+cross_sess: 386.950928
+train accuracy: 0.153547
+cnt: 6680
+cross_sess: 378.452515
+train accuracy: 0.155242
+cnt: 6685
+cross_sess: 356.258606
+train accuracy: 0.151773
+cnt: 6690
+cross_sess: 381.582733
+train accuracy: 0.154180
+cnt: 6695
+cross_sess: 364.056396
+train accuracy: 0.150977
+cnt: 6700
+cross_sess: 376.516266
+train accuracy: 0.153148
+cnt: 6705
+cross_sess: 389.057861
+train accuracy: 0.154070
+cnt: 6710
+cross_sess: 393.365784
+train accuracy: 0.155500
+cnt: 6715
+cross_sess: 381.631439
+train accuracy: 0.152602
+cnt: 6720
+cross_sess: 368.957520
+train accuracy: 0.154055
+cnt: 6725
+cross_sess: 384.801392
+train accuracy: 0.156258
+cnt: 6730
+cross_sess: 390.592712
+train accuracy: 0.150453
+cnt: 6735
+cross_sess: 391.117401
+train accuracy: 0.151258
+cnt: 6740
+cross_sess: 380.934814
+train accuracy: 0.152313
+cnt: 6745
+cross_sess: 375.478973
+train accuracy: 0.155633
+cnt: 6750
+cross_sess: 362.576538
+train accuracy: 0.153328
+cnt: 6755
+cross_sess: 370.742126
+train accuracy: 0.155242
+cnt: 6760
+cross_sess: 386.793884
+train accuracy: 0.154703
+cnt: 6765
+cross_sess: 399.198853
+train accuracy: 0.156883
+cnt: 6770
+cross_sess: 382.904785
+train accuracy: 0.149570
+cnt: 6775
+cross_sess: 371.352264
+train accuracy: 0.153352
+cnt: 6780
+cross_sess: 374.188232
+train accuracy: 0.155383
+cnt: 6785
+cross_sess: 359.059082
+train accuracy: 0.153508
+cnt: 6790
+cross_sess: 372.221191
+train accuracy: 0.153531
+cnt: 6795
+cross_sess: 377.789307
+train accuracy: 0.151922
+cnt: 6800
+cross_sess: 365.631744
+train accuracy: 0.151617
+cnt: 6805
+cross_sess: 374.509491
+train accuracy: 0.153383
+cnt: 6810
+cross_sess: 350.797363
+train accuracy: 0.152750
+cnt: 6815
+cross_sess: 374.185974
+train accuracy: 0.155937
+cnt: 6820
+cross_sess: 394.824280
+train accuracy: 0.155250
+cnt: 6825
+cross_sess: 374.792236
+train accuracy: 0.157367
+cnt: 6830
+cross_sess: 385.209564
+train accuracy: 0.153805
+cnt: 6835
+cross_sess: 393.614807
+train accuracy: 0.151836
+cnt: 6840
+cross_sess: 377.475891
+train accuracy: 0.152375
+cnt: 6845
+cross_sess: 384.749451
+train accuracy: 0.154219
+cnt: 6850
+cross_sess: 382.485657
+train accuracy: 0.153070
+cnt: 6855
+cross_sess: 394.250305
+train accuracy: 0.156586
+cnt: 6860
+cross_sess: 368.652588
+train accuracy: 0.153141
+cnt: 6865
+cross_sess: 397.909180
+train accuracy: 0.153773
+cnt: 6870
+cross_sess: 355.321136
+train accuracy: 0.152383
+cnt: 6875
+cross_sess: 387.891907
+train accuracy: 0.155375
+cnt: 6880
+cross_sess: 383.491821
+train accuracy: 0.155250
+cnt: 6885
+cross_sess: 378.417389
+train accuracy: 0.151570
+cnt: 6890
+cross_sess: 374.066284
+train accuracy: 0.153984
+cnt: 6895
+cross_sess: 369.598297
+train accuracy: 0.155977
+cnt: 6900
+cross_sess: 348.425171
+train accuracy: 0.153617
+cnt: 6905
+cross_sess: 388.108154
+train accuracy: 0.149914
+cnt: 6910
+cross_sess: 399.770782
+train accuracy: 0.154445
+cnt: 6915
+cross_sess: 381.662689
+train accuracy: 0.156250
+cnt: 6920
+cross_sess: 373.528442
+train accuracy: 0.150367
+cnt: 6925
+cross_sess: 379.890472
+train accuracy: 0.156328
+cnt: 6930
+cross_sess: 387.301392
+train accuracy: 0.154383
+cnt: 6935
+cross_sess: 382.658112
+train accuracy: 0.153227
+cnt: 6940
+cross_sess: 376.567444
+train accuracy: 0.152375
+cnt: 6945
+cross_sess: 387.814453
+train accuracy: 0.153234
+cnt: 6950
+cross_sess: 378.436218
+train accuracy: 0.153867
+cnt: 6955
+cross_sess: 381.011108
+train accuracy: 0.152688
+cnt: 6960
+cross_sess: 354.557220
+train accuracy: 0.155078
+cnt: 6965
+cross_sess: 383.236664
+train accuracy: 0.154383
+cnt: 6970
+cross_sess: 366.913910
+train accuracy: 0.149133
+cnt: 6975
+cross_sess: 363.543884
+train accuracy: 0.153187
+cnt: 6980
+cross_sess: 378.696136
+train accuracy: 0.157648
+cnt: 6985
+cross_sess: 390.015381
+train accuracy: 0.153336
+cnt: 6990
+cross_sess: 394.850067
+train accuracy: 0.156141
+cnt: 6995
+cross_sess: 362.048492
+train accuracy: 0.150922
+cnt: 7000
+cross_sess: 367.215485
+train accuracy: 0.153547
+pre cross: 383.860657 and current cross: 367.215485
+cnt: 7005
+cross_sess: 379.139771
+train accuracy: 0.151766
+cnt: 7010
+cross_sess: 362.523193
+train accuracy: 0.152102
+cnt: 7015
+cross_sess: 376.717346
+train accuracy: 0.153406
+cnt: 7020
+cross_sess: 371.687347
+train accuracy: 0.152039
+cnt: 7025
+cross_sess: 394.262360
+train accuracy: 0.157063
+cnt: 7030
+cross_sess: 385.452026
+train accuracy: 0.155336
+cnt: 7035
+cross_sess: 360.226379
+train accuracy: 0.150461
+cnt: 7040
+cross_sess: 379.528015
+train accuracy: 0.156461
+cnt: 7045
+cross_sess: 372.619476
+train accuracy: 0.153180
+cnt: 7050
+cross_sess: 382.482605
+train accuracy: 0.152313
+cnt: 7055
+cross_sess: 380.471985
+train accuracy: 0.152586
+cnt: 7060
+cross_sess: 393.676849
+train accuracy: 0.156156
+cnt: 7065
+cross_sess: 349.077820
+train accuracy: 0.150281
+cnt: 7070
+cross_sess: 377.543549
+train accuracy: 0.153977
+cnt: 7075
+cross_sess: 377.010071
+train accuracy: 0.154891
+cnt: 7080
+cross_sess: 411.334595
+train accuracy: 0.153836
+cnt: 7085
+cross_sess: 389.474854
+train accuracy: 0.158758
+cnt: 7090
+cross_sess: 371.788086
+train accuracy: 0.152594
+cnt: 7095
+cross_sess: 387.274323
+train accuracy: 0.154672
+cnt: 7100
+cross_sess: 371.592468
+train accuracy: 0.153242
+cnt: 7105
+cross_sess: 339.837952
+train accuracy: 0.149047
+cnt: 7110
+cross_sess: 366.111877
+train accuracy: 0.152766
+cnt: 7115
+cross_sess: 374.065613
+train accuracy: 0.155867
+cnt: 7120
+cross_sess: 348.181854
+train accuracy: 0.151008
+cnt: 7125
+cross_sess: 385.434448
+train accuracy: 0.153773
+cnt: 7130
+cross_sess: 387.874359
+train accuracy: 0.153336
+cnt: 7135
+cross_sess: 382.384521
+train accuracy: 0.156578
+cnt: 7140
+cross_sess: 369.726410
+train accuracy: 0.152422
+cnt: 7145
+cross_sess: 395.984314
+train accuracy: 0.154844
+cnt: 7150
+cross_sess: 377.880859
+train accuracy: 0.151602
+cnt: 7155
+cross_sess: 364.592468
+train accuracy: 0.152547
+cnt: 7160
+cross_sess: 387.190521
+train accuracy: 0.154852
+cnt: 7165
+cross_sess: 385.609436
+train accuracy: 0.153953
+cnt: 7170
+cross_sess: 373.780457
+train accuracy: 0.153008
+cnt: 7175
+cross_sess: 386.047485
+train accuracy: 0.151812
+cnt: 7180
+cross_sess: 390.160889
+train accuracy: 0.152688
+cnt: 7185
+cross_sess: 372.039734
+train accuracy: 0.150594
+cnt: 7190
+cross_sess: 368.342407
+train accuracy: 0.153367
+cnt: 7195
+cross_sess: 367.410950
+train accuracy: 0.153352
+cnt: 7200
+cross_sess: 365.129730
+train accuracy: 0.155094
+cnt: 7205
+cross_sess: 375.541656
+train accuracy: 0.153867
+cnt: 7210
+cross_sess: 393.860657
+train accuracy: 0.153672
+cnt: 7215
+cross_sess: 402.027466
+train accuracy: 0.154922
+cnt: 7220
+cross_sess: 379.212463
+train accuracy: 0.156648
+cnt: 7225
+cross_sess: 375.715454
+train accuracy: 0.153289
+cnt: 7230
+cross_sess: 368.916931
+train accuracy: 0.152250
+cnt: 7235
+cross_sess: 384.238586
+train accuracy: 0.158320
+cnt: 7240
+cross_sess: 381.174713
+train accuracy: 0.153953
+cnt: 7245
+cross_sess: 342.950256
+train accuracy: 0.151289
+cnt: 7250
+cross_sess: 356.412506
+train accuracy: 0.149656
+cnt: 7255
+cross_sess: 391.342407
+train accuracy: 0.155602
+cnt: 7260
+cross_sess: 360.763306
+train accuracy: 0.148969
+cnt: 7265
+cross_sess: 388.219910
+train accuracy: 0.157188
+cnt: 7270
+cross_sess: 359.916351
+train accuracy: 0.154594
+cnt: 7275
+cross_sess: 359.959534
+train accuracy: 0.152742
+cnt: 7280
+cross_sess: 383.443176
+train accuracy: 0.154398
+cnt: 7285
+cross_sess: 390.154602
+train accuracy: 0.154406
+cnt: 7290
+cross_sess: 375.423309
+train accuracy: 0.152969
+cnt: 7295
+cross_sess: 360.159485
+train accuracy: 0.153586
+cnt: 7300
+cross_sess: 372.826111
+train accuracy: 0.151500
+cnt: 7305
+cross_sess: 368.008301
+train accuracy: 0.153141
+cnt: 7310
+cross_sess: 372.846130
+train accuracy: 0.154000
+cnt: 7315
+cross_sess: 378.378235
+train accuracy: 0.151344
+cnt: 7320
+cross_sess: 390.612152
+train accuracy: 0.156570
+cnt: 7325
+cross_sess: 393.732544
+train accuracy: 0.156336
+cnt: 7330
+cross_sess: 379.294586
+train accuracy: 0.155055
+cnt: 7335
+cross_sess: 394.353271
+train accuracy: 0.151469
+cnt: 7340
+cross_sess: 374.669678
+train accuracy: 0.153617
+cnt: 7345
+cross_sess: 359.367676
+train accuracy: 0.152812
+cnt: 7350
+cross_sess: 358.767853
+train accuracy: 0.152109
+cnt: 7355
+cross_sess: 368.738098
+train accuracy: 0.151805
+cnt: 7360
+cross_sess: 373.706665
+train accuracy: 0.153664
+cnt: 7365
+cross_sess: 388.534790
+train accuracy: 0.155797
+cnt: 7370
+cross_sess: 363.197571
+train accuracy: 0.154273
+cnt: 7375
+cross_sess: 371.814941
+train accuracy: 0.155258
+cnt: 7380
+cross_sess: 364.842224
+train accuracy: 0.152328
+cnt: 7385
+cross_sess: 381.241974
+train accuracy: 0.152742
+cnt: 7390
+cross_sess: 356.210876
+train accuracy: 0.149094
+cnt: 7395
+cross_sess: 383.997559
+train accuracy: 0.156586
+cnt: 7400
+cross_sess: 385.162720
+train accuracy: 0.154047
+cnt: 7405
+cross_sess: 377.360168
+train accuracy: 0.153578
+cnt: 7410
+cross_sess: 391.950745
+train accuracy: 0.155641
+cnt: 7415
+cross_sess: 377.558258
+train accuracy: 0.152117
+cnt: 7420
+cross_sess: 389.214325
+train accuracy: 0.152031
+cnt: 7425
+cross_sess: 363.409729
+train accuracy: 0.153352
+cnt: 7430
+cross_sess: 382.773071
+train accuracy: 0.152336
+cnt: 7435
+cross_sess: 373.964111
+train accuracy: 0.152703
+cnt: 7440
+cross_sess: 381.392975
+train accuracy: 0.153461
+cnt: 7445
+cross_sess: 376.385651
+train accuracy: 0.153047
+cnt: 7450
+cross_sess: 355.429504
+train accuracy: 0.154648
+cnt: 7455
+cross_sess: 394.110321
+train accuracy: 0.154391
+cnt: 7460
+cross_sess: 404.689087
+train accuracy: 0.154828
+cnt: 7465
+cross_sess: 378.554810
+train accuracy: 0.151781
+cnt: 7470
+cross_sess: 367.939514
+train accuracy: 0.153758
+cnt: 7475
+cross_sess: 389.649048
+train accuracy: 0.157961
+cnt: 7480
+cross_sess: 402.286560
+train accuracy: 0.155578
+cnt: 7485
+cross_sess: 378.410034
+train accuracy: 0.158133
+cnt: 7490
+cross_sess: 384.309082
+train accuracy: 0.155305
+cnt: 7495
+cross_sess: 364.715240
+train accuracy: 0.150984
+cnt: 7500
+cross_sess: 387.360535
+train accuracy: 0.155117
+pre cross: 367.215485 and current cross: 387.360535
+cnt: 7505
+cross_sess: 365.965973
+train accuracy: 0.152258
+cnt: 7510
+cross_sess: 371.127472
+train accuracy: 0.154641
+cnt: 7515
+cross_sess: 377.109070
+train accuracy: 0.155453
+cnt: 7520
+cross_sess: 396.510803
+train accuracy: 0.154969
+cnt: 7525
+cross_sess: 363.359924
+train accuracy: 0.152617
+cnt: 7530
+cross_sess: 354.442780
+train accuracy: 0.155086
+cnt: 7535
+cross_sess: 351.976288
+train accuracy: 0.151398
+cnt: 7540
+cross_sess: 377.568817
+train accuracy: 0.154633
+cnt: 7545
+cross_sess: 363.530151
+train accuracy: 0.150711
+cnt: 7550
+cross_sess: 395.607178
+train accuracy: 0.155156
+cnt: 7555
+cross_sess: 381.230957
+train accuracy: 0.152664
+cnt: 7560
+cross_sess: 367.766418
+train accuracy: 0.152727
+cnt: 7565
+cross_sess: 360.860168
+train accuracy: 0.153500
+cnt: 7570
+cross_sess: 372.547180
+train accuracy: 0.153375
+cnt: 7575
+cross_sess: 383.632996
+train accuracy: 0.153828
+cnt: 7580
+cross_sess: 369.646362
+train accuracy: 0.152008
+cnt: 7585
+cross_sess: 377.897034
+train accuracy: 0.153359
+cnt: 7590
+cross_sess: 370.865356
+train accuracy: 0.152953
+cnt: 7595
+cross_sess: 374.851593
+train accuracy: 0.153156
+cnt: 7600
+cross_sess: 399.013214
+train accuracy: 0.153625
+cnt: 7605
+cross_sess: 394.153870
+train accuracy: 0.154086
+cnt: 7610
+cross_sess: 379.270752
+train accuracy: 0.153250
+cnt: 7615
+cross_sess: 383.014343
+train accuracy: 0.150836
+cnt: 7620
+cross_sess: 382.308380
+train accuracy: 0.154578
+cnt: 7625
+cross_sess: 374.152344
+train accuracy: 0.156359
+cnt: 7630
+cross_sess: 390.454041
+train accuracy: 0.156039
+cnt: 7635
+cross_sess: 398.467163
+train accuracy: 0.154547
+cnt: 7640
+cross_sess: 392.174011
+train accuracy: 0.153547
+cnt: 7645
+cross_sess: 380.383057
+train accuracy: 0.152617
+cnt: 7650
+cross_sess: 396.080048
+train accuracy: 0.156852
+cnt: 7655
+cross_sess: 375.543823
+train accuracy: 0.155000
+cnt: 7660
+cross_sess: 380.771973
+train accuracy: 0.153406
+cnt: 7665
+cross_sess: 387.066223
+train accuracy: 0.156414
+cnt: 7670
+cross_sess: 369.739777
+train accuracy: 0.152680
+cnt: 7675
+cross_sess: 360.922150
+train accuracy: 0.149859
+cnt: 7680
+cross_sess: 389.162781
+train accuracy: 0.153414
+cnt: 7685
+cross_sess: 346.927612
+train accuracy: 0.151664
+cnt: 7690
+cross_sess: 386.588501
+train accuracy: 0.152578
+cnt: 7695
+cross_sess: 384.451782
+train accuracy: 0.152898
+cnt: 7700
+cross_sess: 374.091522
+train accuracy: 0.153547
+cnt: 7705
+cross_sess: 382.421448
+train accuracy: 0.153570
+cnt: 7710
+cross_sess: 389.004150
+train accuracy: 0.154070
+cnt: 7715
+cross_sess: 404.404572
+train accuracy: 0.156984
+cnt: 7720
+cross_sess: 366.578003
+train accuracy: 0.151633
+cnt: 7725
+cross_sess: 363.447937
+train accuracy: 0.152633
+cnt: 7730
+cross_sess: 335.402252
+train accuracy: 0.152227
+cnt: 7735
+cross_sess: 350.684204
+train accuracy: 0.152930
+cnt: 7740
+cross_sess: 366.249634
+train accuracy: 0.151023
+cnt: 7745
+cross_sess: 395.235260
+train accuracy: 0.152875
+cnt: 7750
+cross_sess: 359.379852
+train accuracy: 0.155281
+cnt: 7755
+cross_sess: 370.075989
+train accuracy: 0.155289
+cnt: 7760
+cross_sess: 356.762695
+train accuracy: 0.152703
+cnt: 7765
+cross_sess: 372.258820
+train accuracy: 0.153344
+cnt: 7770
+cross_sess: 387.408142
+train accuracy: 0.153750
+cnt: 7775
+cross_sess: 370.926849
+train accuracy: 0.152461
+cnt: 7780
+cross_sess: 371.569824
+train accuracy: 0.154656
+cnt: 7785
+cross_sess: 383.969849
+train accuracy: 0.154437
+cnt: 7790
+cross_sess: 377.405975
+train accuracy: 0.153289
+cnt: 7795
+cross_sess: 384.435760
+train accuracy: 0.152562
+cnt: 7800
+cross_sess: 386.361816
+train accuracy: 0.158008
+cnt: 7805
+cross_sess: 375.531067
+train accuracy: 0.156133
+cnt: 7810
+cross_sess: 379.875732
+train accuracy: 0.154297
+cnt: 7815
+cross_sess: 371.793274
+train accuracy: 0.153688
+cnt: 7820
+cross_sess: 373.067932
+train accuracy: 0.154102
+cnt: 7825
+cross_sess: 362.047974
+train accuracy: 0.151992
+cnt: 7830
+cross_sess: 354.273041
+train accuracy: 0.151711
+cnt: 7835
+cross_sess: 375.441833
+train accuracy: 0.154844
+cnt: 7840
+cross_sess: 401.454834
+train accuracy: 0.155414
+cnt: 7845
+cross_sess: 367.623779
+train accuracy: 0.154812
+cnt: 7850
+cross_sess: 377.315521
+train accuracy: 0.156422
+cnt: 7855
+cross_sess: 348.234863
+train accuracy: 0.153695
+cnt: 7860
+cross_sess: 382.009216
+train accuracy: 0.154664
+cnt: 7865
+cross_sess: 381.152374
+train accuracy: 0.155047
+cnt: 7870
+cross_sess: 371.703064
+train accuracy: 0.153313
+cnt: 7875
+cross_sess: 379.252533
+train accuracy: 0.151609
+cnt: 7880
+cross_sess: 386.287842
+train accuracy: 0.156000
+cnt: 7885
+cross_sess: 352.026123
+train accuracy: 0.151344
+cnt: 7890
+cross_sess: 380.315979
+train accuracy: 0.154930
+cnt: 7895
+cross_sess: 360.684631
+train accuracy: 0.155281
+cnt: 7900
+cross_sess: 380.728882
+train accuracy: 0.153922
+cnt: 7905
+cross_sess: 393.473022
+train accuracy: 0.156094
+cnt: 7910
+cross_sess: 387.606262
+train accuracy: 0.153664
+cnt: 7915
+cross_sess: 371.067657
+train accuracy: 0.154086
+cnt: 7920
+cross_sess: 362.439056
+train accuracy: 0.154953
+cnt: 7925
+cross_sess: 353.361023
+train accuracy: 0.149195
+cnt: 7930
+cross_sess: 369.188232
+train accuracy: 0.153102
+cnt: 7935
+cross_sess: 351.731934
+train accuracy: 0.150648
+cnt: 7940
+cross_sess: 368.618134
+train accuracy: 0.151453
+cnt: 7945
+cross_sess: 376.283875
+train accuracy: 0.153859
+cnt: 7950
+cross_sess: 363.275452
+train accuracy: 0.151234
+cnt: 7955
+cross_sess: 382.219360
+train accuracy: 0.154523
+cnt: 7960
+cross_sess: 368.733643
+train accuracy: 0.156023
+cnt: 7965
+cross_sess: 404.973419
+train accuracy: 0.154805
+cnt: 7970
+cross_sess: 378.521667
+train accuracy: 0.154750
+cnt: 7975
+cross_sess: 369.852661
+train accuracy: 0.153406
+cnt: 7980
+cross_sess: 378.634155
+train accuracy: 0.154750
+cnt: 7985
+cross_sess: 391.427399
+train accuracy: 0.154125
+cnt: 7990
+cross_sess: 357.384247
+train accuracy: 0.150063
+cnt: 7995
+cross_sess: 369.967834
+train accuracy: 0.154945
+cnt: 8000
+cross_sess: 364.933411
+train accuracy: 0.156398
+pre cross: 387.360535 and current cross: 364.933411
+cnt: 8005
+cross_sess: 362.901794
+train accuracy: 0.155250
+cnt: 8010
+cross_sess: 385.145447
+train accuracy: 0.152828
+cnt: 8015
+cross_sess: 364.448761
+train accuracy: 0.152758
+cnt: 8020
+cross_sess: 370.109222
+train accuracy: 0.151438
+cnt: 8025
+cross_sess: 392.738831
+train accuracy: 0.155867
+cnt: 8030
+cross_sess: 350.857178
+train accuracy: 0.151867
+cnt: 8035
+cross_sess: 389.603363
+train accuracy: 0.155773
+cnt: 8040
+cross_sess: 357.820709
+train accuracy: 0.153086
+cnt: 8045
+cross_sess: 405.294464
+train accuracy: 0.153938
+cnt: 8050
+cross_sess: 367.170715
+train accuracy: 0.153055
+cnt: 8055
+cross_sess: 365.983093
+train accuracy: 0.154102
+cnt: 8060
+cross_sess: 381.465881
+train accuracy: 0.155984
+cnt: 8065
+cross_sess: 381.362732
+train accuracy: 0.152906
+cnt: 8070
+cross_sess: 359.784180
+train accuracy: 0.156328
+cnt: 8075
+cross_sess: 391.070587
+train accuracy: 0.156805
+cnt: 8080
+cross_sess: 356.591187
+train accuracy: 0.154594
+cnt: 8085
+cross_sess: 382.126099
+train accuracy: 0.153211
+cnt: 8090
+cross_sess: 377.857544
+train accuracy: 0.153625
+cnt: 8095
+cross_sess: 373.240112
+train accuracy: 0.154398
+cnt: 8100
+cross_sess: 364.497375
+train accuracy: 0.150453
+cnt: 8105
+cross_sess: 370.034302
+train accuracy: 0.154391
+cnt: 8110
+cross_sess: 368.442413
+train accuracy: 0.153477
+cnt: 8115
+cross_sess: 361.329163
+train accuracy: 0.154734
+cnt: 8120
+cross_sess: 376.023895
+train accuracy: 0.151758
+cnt: 8125
+cross_sess: 376.376892
+train accuracy: 0.154000
+cnt: 8130
+cross_sess: 385.720947
+train accuracy: 0.154203
+cnt: 8135
+cross_sess: 370.683380
+train accuracy: 0.155664
+cnt: 8140
+cross_sess: 387.250000
+train accuracy: 0.151289
+cnt: 8145
+cross_sess: 370.788361
+train accuracy: 0.152492
+cnt: 8150
+cross_sess: 378.736694
+train accuracy: 0.157805
+cnt: 8155
+cross_sess: 358.831299
+train accuracy: 0.154305
+cnt: 8160
+cross_sess: 371.709259
+train accuracy: 0.154617
+cnt: 8165
+cross_sess: 396.782593
+train accuracy: 0.155727
+cnt: 8170
+cross_sess: 381.941742
+train accuracy: 0.153094
+cnt: 8175
+cross_sess: 363.178833
+train accuracy: 0.151969
+cnt: 8180
+cross_sess: 383.446960
+train accuracy: 0.157414
+cnt: 8185
+cross_sess: 379.413513
+train accuracy: 0.152156
+cnt: 8190
+cross_sess: 385.823181
+train accuracy: 0.155586
+cnt: 8195
+cross_sess: 378.673431
+train accuracy: 0.154500
+cnt: 8200
+cross_sess: 372.549927
+train accuracy: 0.153055
+cnt: 8205
+cross_sess: 395.485718
+train accuracy: 0.153375
+cnt: 8210
+cross_sess: 363.151794
+train accuracy: 0.154453
+cnt: 8215
+cross_sess: 370.465057
+train accuracy: 0.154047
+cnt: 8220
+cross_sess: 374.639954
+train accuracy: 0.153773
+cnt: 8225
+cross_sess: 360.691772
+train accuracy: 0.154125
+cnt: 8230
+cross_sess: 372.381134
+train accuracy: 0.152586
+cnt: 8235
+cross_sess: 375.632935
+train accuracy: 0.151133
+cnt: 8240
+cross_sess: 374.269012
+train accuracy: 0.154227
+cnt: 8245
+cross_sess: 380.582947
+train accuracy: 0.157609
+cnt: 8250
+cross_sess: 373.810547
+train accuracy: 0.148563
+cnt: 8255
+cross_sess: 363.110809
+train accuracy: 0.152258
+cnt: 8260
+cross_sess: 375.624268
+train accuracy: 0.150828
+cnt: 8265
+cross_sess: 384.475281
+train accuracy: 0.154141
+cnt: 8270
+cross_sess: 399.687469
+train accuracy: 0.157469
+cnt: 8275
+cross_sess: 386.434998
+train accuracy: 0.155164
+cnt: 8280
+cross_sess: 374.748474
+train accuracy: 0.156258
+cnt: 8285
+cross_sess: 376.298462
+train accuracy: 0.152766
+cnt: 8290
+cross_sess: 398.519470
+train accuracy: 0.158508
+cnt: 8295
+cross_sess: 395.462921
+train accuracy: 0.152359
+cnt: 8300
+cross_sess: 381.409912
+train accuracy: 0.155898
+cnt: 8305
+cross_sess: 375.375610
+train accuracy: 0.153172
+cnt: 8310
+cross_sess: 360.302795
+train accuracy: 0.152258
+cnt: 8315
+cross_sess: 365.320404
+train accuracy: 0.156227
+cnt: 8320
+cross_sess: 362.171082
+train accuracy: 0.152930
+cnt: 8325
+cross_sess: 395.038513
+train accuracy: 0.153953
+cnt: 8330
+cross_sess: 374.971893
+train accuracy: 0.151336
+cnt: 8335
+cross_sess: 371.410126
+train accuracy: 0.152641
+cnt: 8340
+cross_sess: 370.014709
+train accuracy: 0.155055
+cnt: 8345
+cross_sess: 358.142944
+train accuracy: 0.156062
+cnt: 8350
+cross_sess: 394.553772
+train accuracy: 0.152477
+cnt: 8355
+cross_sess: 380.474396
+train accuracy: 0.157484
+cnt: 8360
+cross_sess: 351.169373
+train accuracy: 0.151883
+cnt: 8365
+cross_sess: 383.429688
+train accuracy: 0.155797
+cnt: 8370
+cross_sess: 363.306274
+train accuracy: 0.151531
+cnt: 8375
+cross_sess: 380.685791
+train accuracy: 0.154406
+cnt: 8380
+cross_sess: 363.008606
+train accuracy: 0.157188
+cnt: 8385
+cross_sess: 378.799866
+train accuracy: 0.153234
+cnt: 8390
+cross_sess: 399.465576
+train accuracy: 0.152820
+cnt: 8395
+cross_sess: 381.528015
+train accuracy: 0.152625
+cnt: 8400
+cross_sess: 354.948181
+train accuracy: 0.151547
+cnt: 8405
+cross_sess: 379.211792
+train accuracy: 0.154695
+cnt: 8410
+cross_sess: 378.422852
+train accuracy: 0.154945
+cnt: 8415
+cross_sess: 390.907715
+train accuracy: 0.155000
+cnt: 8420
+cross_sess: 384.666534
+train accuracy: 0.155664
+cnt: 8425
+cross_sess: 368.107849
+train accuracy: 0.152445
+cnt: 8430
+cross_sess: 357.011078
+train accuracy: 0.152609
+cnt: 8435
+cross_sess: 360.261353
+train accuracy: 0.153109
+cnt: 8440
+cross_sess: 402.054413
+train accuracy: 0.150719
+cnt: 8445
+cross_sess: 374.574677
+train accuracy: 0.154375
+cnt: 8450
+cross_sess: 373.052307
+train accuracy: 0.151055
+cnt: 8455
+cross_sess: 357.296814
+train accuracy: 0.151992
+cnt: 8460
+cross_sess: 374.254639
+train accuracy: 0.153703
+cnt: 8465
+cross_sess: 388.130646
+train accuracy: 0.155250
+cnt: 8470
+cross_sess: 391.091125
+train accuracy: 0.153523
+cnt: 8475
+cross_sess: 371.690063
+train accuracy: 0.156453
+cnt: 8480
+cross_sess: 372.024170
+train accuracy: 0.151656
+cnt: 8485
+cross_sess: 367.943146
+train accuracy: 0.154477
+cnt: 8490
+cross_sess: 362.114319
+train accuracy: 0.152805
+cnt: 8495
+cross_sess: 379.289673
+train accuracy: 0.153812
+cnt: 8500
+cross_sess: 400.391968
+train accuracy: 0.157953
+pre cross: 364.933411 and current cross: 400.391968
+cnt: 8505
+cross_sess: 367.199585
+train accuracy: 0.152375
+cnt: 8510
+cross_sess: 369.794006
+train accuracy: 0.154203
+cnt: 8515
+cross_sess: 361.068909
+train accuracy: 0.155453
+cnt: 8520
+cross_sess: 369.182068
+train accuracy: 0.154414
+cnt: 8525
+cross_sess: 385.857849
+train accuracy: 0.153273
+cnt: 8530
+cross_sess: 395.286346
+train accuracy: 0.155500
+cnt: 8535
+cross_sess: 377.197601
+train accuracy: 0.152273
+cnt: 8540
+cross_sess: 349.538147
+train accuracy: 0.150359
+cnt: 8545
+cross_sess: 350.067749
+train accuracy: 0.152891
+cnt: 8550
+cross_sess: 387.797729
+train accuracy: 0.153539
+cnt: 8555
+cross_sess: 349.803345
+train accuracy: 0.151836
+cnt: 8560
+cross_sess: 378.798370
+train accuracy: 0.151641
+cnt: 8565
+cross_sess: 382.201935
+train accuracy: 0.156203
+cnt: 8570
+cross_sess: 378.375000
+train accuracy: 0.156102
+cnt: 8575
+cross_sess: 354.236908
+train accuracy: 0.151914
+cnt: 8580
+cross_sess: 359.386078
+train accuracy: 0.152727
+cnt: 8585
+cross_sess: 395.850006
+train accuracy: 0.155195
+cnt: 8590
+cross_sess: 379.056702
+train accuracy: 0.152883
+cnt: 8595
+cross_sess: 398.751617
+train accuracy: 0.156492
+cnt: 8600
+cross_sess: 368.596069
+train accuracy: 0.154766
+cnt: 8605
+cross_sess: 375.936188
+train accuracy: 0.153711
+cnt: 8610
+cross_sess: 383.006287
+train accuracy: 0.152852
+cnt: 8615
+cross_sess: 401.077301
+train accuracy: 0.156867
+cnt: 8620
+cross_sess: 355.317871
+train accuracy: 0.150859
+cnt: 8625
+cross_sess: 372.051208
+train accuracy: 0.155016
+cnt: 8630
+cross_sess: 405.617920
+train accuracy: 0.155555
+cnt: 8635
+cross_sess: 375.748108
+train accuracy: 0.153164
+cnt: 8640
+cross_sess: 375.503448
+train accuracy: 0.153859
+cnt: 8645
+cross_sess: 376.810089
+train accuracy: 0.151195
+cnt: 8650
+cross_sess: 379.920074
+train accuracy: 0.152641
+cnt: 8655
+cross_sess: 370.885803
+train accuracy: 0.150867
+cnt: 8660
+cross_sess: 392.345703
+train accuracy: 0.153422
+cnt: 8665
+cross_sess: 357.702515
+train accuracy: 0.154719
+cnt: 8670
+cross_sess: 379.510193
+train accuracy: 0.154117
+cnt: 8675
+cross_sess: 360.466095
+train accuracy: 0.154812
+cnt: 8680
+cross_sess: 370.010193
+train accuracy: 0.150594
+cnt: 8685
+cross_sess: 383.547882
+train accuracy: 0.153859
+cnt: 8690
+cross_sess: 379.219757
+train accuracy: 0.152930
+cnt: 8695
+cross_sess: 375.797363
+train accuracy: 0.155680
+cnt: 8700
+cross_sess: 356.881989
+train accuracy: 0.149773
+cnt: 8705
+cross_sess: 353.267548
+train accuracy: 0.150750
+cnt: 8710
+cross_sess: 345.972961
+train accuracy: 0.152773
+cnt: 8715
+cross_sess: 367.812897
+train accuracy: 0.151758
+cnt: 8720
+cross_sess: 366.316284
+train accuracy: 0.154305
+cnt: 8725
+cross_sess: 366.494263
+train accuracy: 0.155234
+cnt: 8730
+cross_sess: 362.764832
+train accuracy: 0.151930
+cnt: 8735
+cross_sess: 391.104187
+train accuracy: 0.157234
+cnt: 8740
+cross_sess: 383.068665
+train accuracy: 0.155922
+cnt: 8745
+cross_sess: 362.056763
+train accuracy: 0.152109
+cnt: 8750
+cross_sess: 380.068909
+train accuracy: 0.154859
+cnt: 8755
+cross_sess: 373.334076
+train accuracy: 0.153664
+cnt: 8760
+cross_sess: 363.902954
+train accuracy: 0.154781
+cnt: 8765
+cross_sess: 371.622894
+train accuracy: 0.152992
+cnt: 8770
+cross_sess: 378.004028
+train accuracy: 0.154125
+cnt: 8775
+cross_sess: 378.983093
+train accuracy: 0.153750
+cnt: 8780
+cross_sess: 387.316162
+train accuracy: 0.153766
+cnt: 8785
+cross_sess: 365.091431
+train accuracy: 0.150148
+cnt: 8790
+cross_sess: 345.152771
+train accuracy: 0.153211
+cnt: 8795
+cross_sess: 393.580872
+train accuracy: 0.153398
+cnt: 8800
+cross_sess: 374.799805
+train accuracy: 0.153430
+cnt: 8805
+cross_sess: 354.455109
+train accuracy: 0.155797
+cnt: 8810
+cross_sess: 365.203339
+train accuracy: 0.155078
+cnt: 8815
+cross_sess: 355.707886
+train accuracy: 0.153414
+cnt: 8820
+cross_sess: 379.459656
+train accuracy: 0.155047
+cnt: 8825
+cross_sess: 362.897034
+train accuracy: 0.153703
+cnt: 8830
+cross_sess: 382.157471
+train accuracy: 0.155977
+cnt: 8835
+cross_sess: 389.581116
+train accuracy: 0.152711
+cnt: 8840
+cross_sess: 389.931213
+train accuracy: 0.157609
+cnt: 8845
+cross_sess: 370.071014
+train accuracy: 0.153508
+cnt: 8850
+cross_sess: 357.814850
+train accuracy: 0.155109
+cnt: 8855
+cross_sess: 391.565704
+train accuracy: 0.152750
+cnt: 8860
+cross_sess: 384.404480
+train accuracy: 0.151844
+cnt: 8865
+cross_sess: 356.514374
+train accuracy: 0.153437
+cnt: 8870
+cross_sess: 375.345459
+train accuracy: 0.153711
+cnt: 8875
+cross_sess: 375.016541
+train accuracy: 0.155281
+cnt: 8880
+cross_sess: 348.097595
+train accuracy: 0.152945
+cnt: 8885
+cross_sess: 405.103455
+train accuracy: 0.156609
+cnt: 8890
+cross_sess: 378.552673
+train accuracy: 0.153898
+cnt: 8895
+cross_sess: 387.973450
+train accuracy: 0.151383
+cnt: 8900
+cross_sess: 369.013733
+train accuracy: 0.156352
+cnt: 8905
+cross_sess: 384.006042
+train accuracy: 0.154258
+cnt: 8910
+cross_sess: 383.729858
+train accuracy: 0.154961
+cnt: 8915
+cross_sess: 378.473541
+train accuracy: 0.151313
+cnt: 8920
+cross_sess: 370.593414
+train accuracy: 0.154945
+cnt: 8925
+cross_sess: 398.353760
+train accuracy: 0.155180
+cnt: 8930
+cross_sess: 367.961548
+train accuracy: 0.151648
+cnt: 8935
+cross_sess: 359.729370
+train accuracy: 0.150656
+cnt: 8940
+cross_sess: 382.411255
+train accuracy: 0.153070
+cnt: 8945
+cross_sess: 348.988953
+train accuracy: 0.149438
+cnt: 8950
+cross_sess: 389.561493
+train accuracy: 0.155742
+cnt: 8955
+cross_sess: 379.741974
+train accuracy: 0.152484
+cnt: 8960
+cross_sess: 391.366028
+train accuracy: 0.153883
+cnt: 8965
+cross_sess: 356.614258
+train accuracy: 0.150961
+cnt: 8970
+cross_sess: 385.430237
+train accuracy: 0.154305
+cnt: 8975
+cross_sess: 386.778625
+train accuracy: 0.155273
+cnt: 8980
+cross_sess: 377.383301
+train accuracy: 0.153219
+cnt: 8985
+cross_sess: 374.865112
+train accuracy: 0.151852
+cnt: 8990
+cross_sess: 379.511597
+train accuracy: 0.153680
+cnt: 8995
+cross_sess: 380.009186
+train accuracy: 0.156992
+cnt: 9000
+cross_sess: 390.615295
+train accuracy: 0.155133
+pre cross: 400.391968 and current cross: 390.615295
+cnt: 9005
+cross_sess: 374.688965
+train accuracy: 0.153531
+cnt: 9010
+cross_sess: 363.397949
+train accuracy: 0.151922
+cnt: 9015
+cross_sess: 368.761017
+train accuracy: 0.153680
+cnt: 9020
+cross_sess: 368.698303
+train accuracy: 0.153961
+cnt: 9025
+cross_sess: 358.759064
+train accuracy: 0.151898
+cnt: 9030
+cross_sess: 374.529083
+train accuracy: 0.155406
+cnt: 9035
+cross_sess: 369.051788
+train accuracy: 0.150430
+cnt: 9040
+cross_sess: 372.992249
+train accuracy: 0.155437
+cnt: 9045
+cross_sess: 389.631989
+train accuracy: 0.153719
+cnt: 9050
+cross_sess: 394.495239
+train accuracy: 0.154555
+cnt: 9055
+cross_sess: 374.063293
+train accuracy: 0.154633
+cnt: 9060
+cross_sess: 368.997864
+train accuracy: 0.150734
+cnt: 9065
+cross_sess: 388.406250
+train accuracy: 0.153109
+cnt: 9070
+cross_sess: 373.015015
+train accuracy: 0.154484
+cnt: 9075
+cross_sess: 383.433533
+train accuracy: 0.152625
+cnt: 9080
+cross_sess: 368.228088
+train accuracy: 0.153359
+cnt: 9085
+cross_sess: 359.253113
+train accuracy: 0.153164
+cnt: 9090
+cross_sess: 376.733032
+train accuracy: 0.154414
+cnt: 9095
+cross_sess: 384.497101
+train accuracy: 0.153961
+cnt: 9100
+cross_sess: 385.199097
+train accuracy: 0.154141
+cnt: 9105
+cross_sess: 375.149719
+train accuracy: 0.153805
+cnt: 9110
+cross_sess: 394.880035
+train accuracy: 0.154906
+cnt: 9115
+cross_sess: 376.668274
+train accuracy: 0.152422
+cnt: 9120
+cross_sess: 359.357178
+train accuracy: 0.152570
+cnt: 9125
+cross_sess: 388.929565
+train accuracy: 0.155273
+cnt: 9130
+cross_sess: 350.621948
+train accuracy: 0.152664
+cnt: 9135
+cross_sess: 367.525330
+train accuracy: 0.153812
+cnt: 9140
+cross_sess: 373.891479
+train accuracy: 0.153273
+cnt: 9145
+cross_sess: 373.402069
+train accuracy: 0.155039
+cnt: 9150
+cross_sess: 426.174377
+train accuracy: 0.155727
+cnt: 9155
+cross_sess: 370.744690
+train accuracy: 0.155266
+cnt: 9160
+cross_sess: 379.201813
+train accuracy: 0.157937
+cnt: 9165
+cross_sess: 390.855591
+train accuracy: 0.153531
+cnt: 9170
+cross_sess: 378.714691
+train accuracy: 0.157227
+cnt: 9175
+cross_sess: 389.083801
+train accuracy: 0.155094
+cnt: 9180
+cross_sess: 396.522736
+train accuracy: 0.157359
+cnt: 9185
+cross_sess: 374.120575
+train accuracy: 0.151859
+cnt: 9190
+cross_sess: 354.188019
+train accuracy: 0.151859
+cnt: 9195
+cross_sess: 382.427490
+train accuracy: 0.153852
+cnt: 9200
+cross_sess: 406.295288
+train accuracy: 0.155078
+cnt: 9205
+cross_sess: 389.079376
+train accuracy: 0.157312
+cnt: 9210
+cross_sess: 357.476318
+train accuracy: 0.153016
+cnt: 9215
+cross_sess: 369.867279
+train accuracy: 0.149023
+cnt: 9220
+cross_sess: 377.541656
+train accuracy: 0.153320
+cnt: 9225
+cross_sess: 372.125763
+train accuracy: 0.155312
+cnt: 9230
+cross_sess: 371.394470
+train accuracy: 0.152992
+cnt: 9235
+cross_sess: 351.291931
+train accuracy: 0.151375
+cnt: 9240
+cross_sess: 369.508606
+train accuracy: 0.154109
+cnt: 9245
+cross_sess: 365.621735
+train accuracy: 0.153430
+cnt: 9250
+cross_sess: 371.221375
+train accuracy: 0.153719
+cnt: 9255
+cross_sess: 371.079285
+train accuracy: 0.157906
+cnt: 9260
+cross_sess: 399.631958
+train accuracy: 0.155625
+cnt: 9265
+cross_sess: 370.316895
+train accuracy: 0.154078
+cnt: 9270
+cross_sess: 371.471497
+train accuracy: 0.153250
+cnt: 9275
+cross_sess: 370.454315
+train accuracy: 0.153953
+cnt: 9280
+cross_sess: 378.643860
+train accuracy: 0.154289
+cnt: 9285
+cross_sess: 372.268799
+train accuracy: 0.155008
+cnt: 9290
+cross_sess: 381.425812
+train accuracy: 0.152172
+cnt: 9295
+cross_sess: 372.983673
+train accuracy: 0.153586
+cnt: 9300
+cross_sess: 366.685974
+train accuracy: 0.151039
+cnt: 9305
+cross_sess: 384.296936
+train accuracy: 0.152617
+cnt: 9310
+cross_sess: 359.019867
+train accuracy: 0.151984
+cnt: 9315
+cross_sess: 379.276123
+train accuracy: 0.156445
+cnt: 9320
+cross_sess: 364.717865
+train accuracy: 0.153453
+cnt: 9325
+cross_sess: 372.078033
+train accuracy: 0.157406
+cnt: 9330
+cross_sess: 374.889587
+train accuracy: 0.152898
+cnt: 9335
+cross_sess: 379.006287
+train accuracy: 0.155523
+cnt: 9340
+cross_sess: 377.666809
+train accuracy: 0.155375
+cnt: 9345
+cross_sess: 372.824097
+train accuracy: 0.154180
+cnt: 9350
+cross_sess: 388.473816
+train accuracy: 0.148992
+cnt: 9355
+cross_sess: 356.800659
+train accuracy: 0.149969
+cnt: 9360
+cross_sess: 345.211578
+train accuracy: 0.152617
+cnt: 9365
+cross_sess: 357.109497
+train accuracy: 0.153617
+cnt: 9370
+cross_sess: 360.844727
+train accuracy: 0.151992
+cnt: 9375
+cross_sess: 376.009827
+train accuracy: 0.154078
+cnt: 9380
+cross_sess: 371.064270
+train accuracy: 0.155563
+cnt: 9385
+cross_sess: 377.455139
+train accuracy: 0.156797
+cnt: 9390
+cross_sess: 356.951385
+train accuracy: 0.152406
+cnt: 9395
+cross_sess: 371.957001
+train accuracy: 0.149937
+cnt: 9400
+cross_sess: 392.656189
+train accuracy: 0.155977
+cnt: 9405
+cross_sess: 360.922943
+train accuracy: 0.154031
+cnt: 9410
+cross_sess: 373.989105
+train accuracy: 0.152406
+cnt: 9415
+cross_sess: 373.633240
+train accuracy: 0.154469
+cnt: 9420
+cross_sess: 366.963867
+train accuracy: 0.151555
+cnt: 9425
+cross_sess: 400.020630
+train accuracy: 0.155242
+cnt: 9430
+cross_sess: 388.776245
+train accuracy: 0.155078
+cnt: 9435
+cross_sess: 374.714661
+train accuracy: 0.149773
+cnt: 9440
+cross_sess: 361.436523
+train accuracy: 0.155328
+cnt: 9445
+cross_sess: 392.723145
+train accuracy: 0.153977
+cnt: 9450
+cross_sess: 379.507538
+train accuracy: 0.156484
+cnt: 9455
+cross_sess: 376.903290
+train accuracy: 0.156203
+cnt: 9460
+cross_sess: 357.177521
+train accuracy: 0.153727
+cnt: 9465
+cross_sess: 360.436768
+train accuracy: 0.151648
+cnt: 9470
+cross_sess: 366.512360
+train accuracy: 0.153313
+cnt: 9475
+cross_sess: 365.513214
+train accuracy: 0.154188
+cnt: 9480
+cross_sess: 369.800476
+train accuracy: 0.153820
+cnt: 9485
+cross_sess: 350.582275
+train accuracy: 0.151844
+cnt: 9490
+cross_sess: 371.056976
+train accuracy: 0.154109
+cnt: 9495
+cross_sess: 384.021790
+train accuracy: 0.155148
+cnt: 9500
+cross_sess: 357.618286
+train accuracy: 0.152289
+pre cross: 390.615295 and current cross: 357.618286
+cnt: 9505
+cross_sess: 373.001099
+train accuracy: 0.151828
+cnt: 9510
+cross_sess: 383.129272
+train accuracy: 0.155734
+cnt: 9515
+cross_sess: 395.938629
+train accuracy: 0.159031
+cnt: 9520
+cross_sess: 369.097290
+train accuracy: 0.154586
+cnt: 9525
+cross_sess: 394.911255
+train accuracy: 0.153414
+cnt: 9530
+cross_sess: 387.669128
+train accuracy: 0.157359
+cnt: 9535
+cross_sess: 375.601135
+train accuracy: 0.156680
+cnt: 9540
+cross_sess: 368.700073
+train accuracy: 0.152586
+cnt: 9545
+cross_sess: 361.688324
+train accuracy: 0.152328
+cnt: 9550
+cross_sess: 357.484161
+train accuracy: 0.150250
+cnt: 9555
+cross_sess: 377.291565
+train accuracy: 0.156078
+cnt: 9560
+cross_sess: 358.724945
+train accuracy: 0.154039
+cnt: 9565
+cross_sess: 350.596497
+train accuracy: 0.150633
+cnt: 9570
+cross_sess: 372.485962
+train accuracy: 0.153367
+cnt: 9575
+cross_sess: 379.752502
+train accuracy: 0.152797
+cnt: 9580
+cross_sess: 379.216736
+train accuracy: 0.151570
+cnt: 9585
+cross_sess: 387.614838
+train accuracy: 0.154383
+cnt: 9590
+cross_sess: 367.401611
+train accuracy: 0.153602
+cnt: 9595
+cross_sess: 375.725281
+train accuracy: 0.153852
+cnt: 9600
+cross_sess: 367.062531
+train accuracy: 0.152391
+cnt: 9605
+cross_sess: 363.333710
+train accuracy: 0.151508
+cnt: 9610
+cross_sess: 376.714233
+train accuracy: 0.154273
+cnt: 9615
+cross_sess: 376.494995
+train accuracy: 0.152633
+cnt: 9620
+cross_sess: 370.633118
+train accuracy: 0.152562
+cnt: 9625
+cross_sess: 381.993042
+train accuracy: 0.155320
+cnt: 9630
+cross_sess: 380.996460
+train accuracy: 0.156711
+cnt: 9635
+cross_sess: 365.596313
+train accuracy: 0.154914
+cnt: 9640
+cross_sess: 365.351807
+train accuracy: 0.154125
+cnt: 9645
+cross_sess: 388.918762
+train accuracy: 0.155367
+cnt: 9650
+cross_sess: 358.418671
+train accuracy: 0.153164
+cnt: 9655
+cross_sess: 384.494934
+train accuracy: 0.154320
+cnt: 9660
+cross_sess: 377.260986
+train accuracy: 0.154500
+cnt: 9665
+cross_sess: 387.838806
+train accuracy: 0.152867
+cnt: 9670
+cross_sess: 361.711395
+train accuracy: 0.152141
+cnt: 9675
+cross_sess: 358.845764
+train accuracy: 0.155203
+cnt: 9680
+cross_sess: 388.850647
+train accuracy: 0.154609
+cnt: 9685
+cross_sess: 377.891418
+train accuracy: 0.152000
+cnt: 9690
+cross_sess: 360.051270
+train accuracy: 0.154836
+cnt: 9695
+cross_sess: 345.323547
+train accuracy: 0.152922
+cnt: 9700
+cross_sess: 368.090820
+train accuracy: 0.155703
+cnt: 9705
+cross_sess: 373.147736
+train accuracy: 0.151680
+cnt: 9710
+cross_sess: 381.751343
+train accuracy: 0.153711
+cnt: 9715
+cross_sess: 372.461243
+train accuracy: 0.153227
+cnt: 9720
+cross_sess: 369.091766
+train accuracy: 0.155742
+cnt: 9725
+cross_sess: 359.012024
+train accuracy: 0.152211
+cnt: 9730
+cross_sess: 379.560852
+train accuracy: 0.152664
+cnt: 9735
+cross_sess: 359.937103
+train accuracy: 0.150828
+cnt: 9740
+cross_sess: 359.884796
+train accuracy: 0.155141
+cnt: 9745
+cross_sess: 396.826477
+train accuracy: 0.158398
+cnt: 9750
+cross_sess: 376.376038
+train accuracy: 0.154234
+cnt: 9755
+cross_sess: 396.193787
+train accuracy: 0.154102
+cnt: 9760
+cross_sess: 365.771118
+train accuracy: 0.153062
+cnt: 9765
+cross_sess: 356.847168
+train accuracy: 0.151758
+cnt: 9770
+cross_sess: 378.766113
+train accuracy: 0.154500
+cnt: 9775
+cross_sess: 387.203766
+train accuracy: 0.152211
+cnt: 9780
+cross_sess: 372.663696
+train accuracy: 0.151930
+cnt: 9785
+cross_sess: 356.449463
+train accuracy: 0.153602
+cnt: 9790
+cross_sess: 359.916809
+train accuracy: 0.154492
+cnt: 9795
+cross_sess: 361.480530
+train accuracy: 0.152336
+cnt: 9800
+cross_sess: 389.313599
+train accuracy: 0.152914
+cnt: 9805
+cross_sess: 366.973785
+train accuracy: 0.152430
+cnt: 9810
+cross_sess: 376.099243
+train accuracy: 0.154695
+cnt: 9815
+cross_sess: 358.642639
+train accuracy: 0.152289
+cnt: 9820
+cross_sess: 367.121521
+train accuracy: 0.157164
+cnt: 9825
+cross_sess: 388.438477
+train accuracy: 0.153094
+cnt: 9830
+cross_sess: 370.335083
+train accuracy: 0.156062
+cnt: 9835
+cross_sess: 389.634460
+train accuracy: 0.154656
+cnt: 9840
+cross_sess: 377.236115
+train accuracy: 0.153281
+cnt: 9845
+cross_sess: 383.038757
+train accuracy: 0.150937
+cnt: 9850
+cross_sess: 405.643982
+train accuracy: 0.159703
+cnt: 9855
+cross_sess: 376.760040
+train accuracy: 0.153227
+cnt: 9860
+cross_sess: 349.919983
+train accuracy: 0.152375
+cnt: 9865
+cross_sess: 373.741364
+train accuracy: 0.150695
+cnt: 9870
+cross_sess: 378.413177
+train accuracy: 0.153688
+cnt: 9875
+cross_sess: 362.475830
+train accuracy: 0.158391
+cnt: 9880
+cross_sess: 366.972656
+train accuracy: 0.150531
+cnt: 9885
+cross_sess: 371.531799
+train accuracy: 0.152922
+cnt: 9890
+cross_sess: 371.611938
+train accuracy: 0.152187
+cnt: 9895
+cross_sess: 374.944031
+train accuracy: 0.154945
+cnt: 9900
+cross_sess: 369.910858
+train accuracy: 0.154586
+cnt: 9905
+cross_sess: 373.137024
+train accuracy: 0.151758
+cnt: 9910
+cross_sess: 357.550323
+train accuracy: 0.146789
+cnt: 9915
+cross_sess: 402.707001
+train accuracy: 0.155016
+cnt: 9920
+cross_sess: 370.852997
+train accuracy: 0.157805
+cnt: 9925
+cross_sess: 373.541443
+train accuracy: 0.154609
+cnt: 9930
+cross_sess: 395.588867
+train accuracy: 0.155789
+cnt: 9935
+cross_sess: 368.116760
+train accuracy: 0.152250
+cnt: 9940
+cross_sess: 354.749634
+train accuracy: 0.151609
+cnt: 9945
+cross_sess: 360.193756
+train accuracy: 0.154992
+cnt: 9950
+cross_sess: 361.611420
+train accuracy: 0.152625
+cnt: 9955
+cross_sess: 371.670837
+train accuracy: 0.153109
+cnt: 9960
+cross_sess: 373.382690
+train accuracy: 0.153289
+cnt: 9965
+cross_sess: 353.259827
+train accuracy: 0.152164
+cnt: 9970
+cross_sess: 377.202332
+train accuracy: 0.158828
+cnt: 9975
+cross_sess: 368.986206
+train accuracy: 0.155117
+cnt: 9980
+cross_sess: 359.080902
+train accuracy: 0.153625
+cnt: 9985
+cross_sess: 370.103577
+train accuracy: 0.153117
+cnt: 9990
+cross_sess: 381.010010
+train accuracy: 0.153336
+cnt: 9995
+cross_sess: 394.461151
+train accuracy: 0.158484

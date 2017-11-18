@@ -71,7 +71,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         pool_heigth = IMAGE_HEIGHT
         pool_width = IMAGE_WIDTH
 
-    model_path = 'model.ckpt'
+    model_path = './model/model.ckpt'
 
     # 5X5 patch, size:1 height:32
     with tf.name_scope('conv1'):
@@ -145,9 +145,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
-            saver.save(sess, model_path, global_step=1000)
             pre_dict = 0
             for i in range(10000):
+                if i % 1000 == 0:
+                    saver.save(sess, model_path, global_step=i, write_meta_graph=False)
                 if NOISE_ENABLE == 1:
                     img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
                     img_n_val, label_n_val, cnt_n_val = sess.run([img_n_batch, label_n_batch, cnt_n_batch])

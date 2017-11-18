@@ -67,7 +67,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         keep_prob = tf.placeholder(tf.float32)
         x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
 
-        model_path = 'model.ckpt'
+        model_path = 'model/model.ckpt'
 
         # 5X5 patch, size:1 height:32
         W_conv1 = weight_variable('W1', [5, 5, 1, 16])
@@ -99,10 +99,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         deconv2 = tf.nn.bias_add(deconv2, b_conv8)
         predict = tf.reshape(deconv2, [-1, 100*20])
 
-        cross = tf.reduce_mean(tf.pow(tf.subtract(predict, xs), 2.0))
+        cross = tf.reduce_sum(tf.pow(tf.subtract(predict, xs), 2.0))
         train = train_method(train_step).minimize(cross)
 
-        saver = tf.train.Saver()
+        saver = tf.train.Saver(max_to_keep=1)
 
         img_in, img_out, cnt = read_and_decode('train.tfrecords')
         img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
@@ -115,9 +115,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
-            saver.save(sess, model_path, global_step=1000)
             pre_dict = 0
             for i in range(10000):
+                if i % 1000 == 0:
+                    saver.save(sess, model_path, global_step=i, write_meta_graph=False)
                 img_in_val, img_out_val, cnt_val = sess.run([img_in_batch, img_out_batch, cnt_batch])
                 np.set_printoptions(threshold=np.inf)
                 sess.run(train, feed_dict={xs: img_in_val, ys: img_out_val, keep_prob: 0.5})
