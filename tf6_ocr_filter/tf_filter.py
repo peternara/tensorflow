@@ -10,6 +10,7 @@ IMAGE_WIDTH = 100 #200
 IMAGE_HEIGHT = 20 #50
 batch_size = 64
 LOG_PATH = './log/'
+graph = tf.Graph()
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
@@ -59,7 +60,6 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     def max_pooling_2x2(x):
         return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
-    graph = tf.Graph()
     with graph.as_default():
         # define placeholder
         xs = tf.placeholder(tf.float32, [None, 2000])
@@ -115,6 +115,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
+            saver.save(sess, model_path, global_step=1000)
             pre_dict = 0
             for i in range(10000):
                 img_in_val, img_out_val, cnt_val = sess.run([img_in_batch, img_out_batch, cnt_batch])
@@ -145,7 +146,6 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                     result_process(i, cross_sess, accuracy_sess)
                     fp.write(str)
                     fp.flush()
-            saver.save(sess, model_path)
             coord.request_stop()
             coord.join(threads)
             fp.close()

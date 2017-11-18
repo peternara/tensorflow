@@ -63,56 +63,65 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         return layer, pool_height, pool_width
 
     #define placeholder
-    xs = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT*IMAGE_WIDTH])
-    ys = tf.placeholder(tf.float32, [None, label_len])
-    keep_prob = tf.placeholder(tf.float32)
-    x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
-    pool_heigth = IMAGE_HEIGHT
-    pool_width = IMAGE_WIDTH
+    with tf.name_scope('input'):
+        xs = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT*IMAGE_WIDTH])
+        ys = tf.placeholder(tf.float32, [None, label_len])
+        keep_prob = tf.placeholder(tf.float32)
+        x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
+        pool_heigth = IMAGE_HEIGHT
+        pool_width = IMAGE_WIDTH
 
     model_path = 'model.ckpt'
 
     # 5X5 patch, size:1 height:32
-    W_conv1 = weight_variable('W1', [5, 5, 1, 32])
-    b_conv1 = bias_variable('b1', [32])
-    h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
-    h_pool1, pool_heigth, pool_width = max_pooling_2x2(h_conv1, pool_heigth, pool_width)  # output 50 * 10 * 16
-    h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
+    with tf.name_scope('conv1'):
+        W_conv1 = weight_variable('W1', [5, 5, 1, 32])
+        b_conv1 = bias_variable('b1', [32])
+        h_conv1 = tf.nn.relu(tf.nn.bias_add(con2d(x_image, W_conv1), b_conv1))  # output 100 * 20 * 16
+        h_pool1, pool_heigth, pool_width = max_pooling_2x2(h_conv1, pool_heigth, pool_width)  # output 50 * 10 * 16
+        h_pool1 = tf.nn.dropout(h_pool1, keep_prob)
 
     #conv layer2
     # 5X5 patch, size:1 height:32
-    W_conv2 = weight_variable('W2', [5, 5, 32, 64])
-    b_conv2 = bias_variable('b2', [64])
-    h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
-    h_pool2, pool_heigth, pool_width = max_pooling_2x2(h_conv2, pool_heigth, pool_width)  # output 25 * 5 * 32
-    h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
+    with tf.name_scope('conv2'):
+        W_conv2 = weight_variable('W2', [5, 5, 32, 64])
+        b_conv2 = bias_variable('b2', [64])
+        h_conv2 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool1, W_conv2), b_conv2))  # output 50 * 10 * 32
+        h_pool2, pool_heigth, pool_width = max_pooling_2x2(h_conv2, pool_heigth, pool_width)  # output 25 * 5 * 32
+        h_pool2 = tf.nn.dropout(h_pool2, keep_prob)
 
     #conv layer2
     # 5X5 patch, size:1 height:32
-    W_conv3 = weight_variable('W3', [5, 5, 64, 64])
-    b_conv3 = bias_variable('b3', [64])
-    h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
-    h_pool3, pool_heigth, pool_width = max_pooling_2x2(h_conv3, pool_heigth, pool_width)  # output 25 * 5 * 32
-    h_pool3 = tf.nn.dropout(h_pool3, keep_prob)
-    h_pool3_flat = tf.reshape(h_pool3, [-1, pool_heigth * pool_width * 64])
+    with tf.name_scope('conv3'):
+        W_conv3 = weight_variable('W3', [5, 5, 64, 64])
+        b_conv3 = bias_variable('b3', [64])
+        h_conv3 = tf.nn.relu(tf.nn.bias_add(con2d(h_pool2, W_conv3), b_conv3))  # output 50 * 10 * 32
+        h_pool3, pool_heigth, pool_width = max_pooling_2x2(h_conv3, pool_heigth, pool_width)  # output 25 * 5 * 32
+        h_pool3 = tf.nn.dropout(h_pool3, keep_prob)
+        h_pool3_flat = tf.reshape(h_pool3, [-1, pool_heigth * pool_width * 64])
 
     # full connect layer3
-    W_fc3 = weight_variable('W4', [pool_heigth * pool_width * 64, 1024])
-    b_fc3 = bias_variable('b4', [1024])
-    h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool3_flat, W_fc3), b_fc3))
-    h_fc3 = tf.nn.dropout(h_fc3, keep_prob)
+    with tf.name_scope('fc1'):
+        W_fc3 = weight_variable('W4', [pool_heigth * pool_width * 64, 1024])
+        b_fc3 = bias_variable('b4', [1024])
+        h_fc3 = tf.nn.relu(tf.add(tf.matmul(h_pool3_flat, W_fc3), b_fc3))
+        h_fc3 = tf.nn.dropout(h_fc3, keep_prob)
 
     # full connect layer3
-    W_fc4 = weight_variable('W5', [1024, label_len])
-    b_fc4 = bias_variable('b5', [label_len])
-    predict = tf.add(tf.matmul(h_fc3, W_fc4), b_fc4)
+    with tf.name_scope('fc2'):
+        W_fc4 = weight_variable('W5', [1024, label_len])
+        b_fc4 = bias_variable('b5', [label_len])
+        predict = tf.add(tf.matmul(h_fc3, W_fc4), b_fc4)
 
     #cross entropy
-    cross = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict, labels=ys))
+    with tf.name_scope('loss'):
+        cross = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=predict, labels=ys))
+        tf.summary.scalar('loss', cross)
     #cross = tf.reduce_mean(-tf.reduce_sum(ys*tf.log(tf.clip_by_value(predict, 1e-10,1.0)), \
     #           reduction_indices=[1]))
 
-    train = train_method(train_step).minimize(cross)
+    with tf.name_scope('train'):
+        train = train_method(train_step).minimize(cross)
 
     saver = tf.train.Saver()
 
@@ -127,12 +136,16 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     img_t_batch, label_t_batch, cnt_t_batch = tf.train.shuffle_batch([img_t, label_t, cnt_t], batch_size=20, capacity=250, min_after_dequeue=50, num_threads=1)
     if method == 'train':
         with tf.Session() as sess:
+            merged = tf.summary.merge_all()
+            # save tensorboard file to logs dir
+            writer = tf.summary.FileWriter("logs/", sess.graph)
             current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
             fp = open(LOG_PATH + current_time + ".txt", 'w+')
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
+            saver.save(sess, model_path, global_step=1000)
             pre_dict = 0
             for i in range(10000):
                 if NOISE_ENABLE == 1:
@@ -173,9 +186,10 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                         else:
                              pre_dict = cross_sess
                     result_process(i, cross_sess, accuracy_sess)
+                    result = sess.run(merged, feed_dict={xs: img_val, ys: label_val, keep_prob: 1})
+                    writer.add_summary(result, i)
                     fp.write(str)
                     fp.flush()
-            saver.save(sess, model_path)
             coord.request_stop()
             coord.join(threads)
             fp.close()

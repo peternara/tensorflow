@@ -103,7 +103,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
-
+            saver.save(sess, model_path)
             for i in range(10000):
                 img_val, label_val, cnt_val = sess.run([img_batch, label_batch, cnt_batch])
                 np.set_printoptions(threshold=np.inf)
@@ -120,7 +120,6 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                     #print(sess.run(bias1))
                     #print(sess.run(bias2))
                     result_process(i, cross_sess, accuracy_sess)
-            saver.save(sess, model_path)
             coord.request_stop()
             coord.join(threads)
     elif method == 'test':

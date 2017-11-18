@@ -1,0 +1,5 @@
+cnt: 0
+cross_sess: 0.643972
+train accuracy: 0.015783
+test accuracy: 0.008333
+pre cross: 0.000000 and current cross: 0.643972
