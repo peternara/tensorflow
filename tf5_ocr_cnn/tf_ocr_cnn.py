@@ -72,6 +72,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         pool_width = IMAGE_WIDTH
 
     model_path = './model/model.ckpt'
+    model_test_path = './model_test/model.ckpt'
 
     # 5X5 patch, size:1 height:32
     with tf.name_scope('conv1'):
@@ -136,6 +137,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
     img_t_batch, label_t_batch, cnt_t_batch = tf.train.shuffle_batch([img_t, label_t, cnt_t], batch_size=20, capacity=250, min_after_dequeue=50, num_threads=1)
     if method == 'train':
         with tf.Session() as sess:
+            #saver.save(sess, model_path)
+            #saver.restore(sess, tf.train.latest_checkpoint('./model/'))
             merged = tf.summary.merge_all()
             # save tensorboard file to logs dir
             writer = tf.summary.FileWriter("logs/", sess.graph)
@@ -144,6 +147,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
+            saver.save(sess, model_path)
             tf.train.start_queue_runners(sess=sess)
             pre_dict = 0
             for i in range(10000):
@@ -200,7 +204,9 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
-            saver.restore(sess, model_path)
+            saver.restore(sess, model_test_path)
+            #saver.restore(sess, tf.train.latest_checkpoint('./model/'))
+            #saver.restore(sess, model_path)
             for i in range(10):
                 img_t_val, label_t_val, cnt_t_val = sess.run([img_t_batch, label_t_batch, cnt_t_batch])
                 accuracy_sess = compare_accuracy(img_t_val, label_t_val)
