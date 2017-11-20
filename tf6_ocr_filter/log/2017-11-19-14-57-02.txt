@@ -1,0 +1,7 @@
+cnt: 0
+cross_sess: 22924.404297
+train accuracy: 0.414867
+pre cross: 0.000000 and current cross: 22924.404297
+cnt: 5
+cross_sess: 14557.798828
+train accuracy: 0.177016

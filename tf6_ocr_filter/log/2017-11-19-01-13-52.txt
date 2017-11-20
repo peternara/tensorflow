@@ -1,0 +1,25 @@
+cnt: 0
+cross_sess: 74272.765625
+train accuracy: 0.157937
+pre cross: 0.000000 and current cross: 74272.765625
+cnt: 5
+cross_sess: 49693.937500
+train accuracy: 0.156570
+cnt: 10
+cross_sess: 24882.529297
+train accuracy: 0.150906
+cnt: 15
+cross_sess: 17210.437500
+train accuracy: 0.154328
+cnt: 20
+cross_sess: 16094.365234
+train accuracy: 0.156898
+cnt: 25
+cross_sess: 11364.738281
+train accuracy: 0.155547
+cnt: 30
+cross_sess: 11564.073242
+train accuracy: 0.152000
+cnt: 35
+cross_sess: 9916.134766
+train accuracy: 0.151406
