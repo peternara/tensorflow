@@ -3,16 +3,22 @@ import numpy as np
 import sys
 import time
 import os
+import cv2
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 IMAGE_WIDTH = 100 #200
 IMAGE_HEIGHT = 20 #50
-batch_size = 64
+#batch_size = 64
 LOG_PATH = './log/'
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
+
+    if method == 'train':
+        batch_size = 64
+    else:
+        batch_size = 1
 
     def read_and_decode(tf_record_path):  # read iris_contact.tfrecords
         filename_queue = tf.train.string_input_producer([tf_record_path])  # create a queue
@@ -70,6 +76,7 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         x_image = tf.reshape(xs, [-1, IMAGE_HEIGHT, IMAGE_WIDTH, 1])
 
         model_path = 'model/model.ckpt'
+        model_test_path = 'model_test/model.ckpt'
 
         # 5X5 patch, size:1 height:32
         W_conv1 = weight_variable('W1', [5, 5, 1, 16])
@@ -161,8 +168,18 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(tf.global_variables_initializer())
             tf.train.start_queue_runners(sess=sess)
-            saver.restore(sess, model_path)
-            #for i in range(1):
+            saver.restore(sess, model_test_path)
+            for i in range(1):
+                img_in_val, img_out_val, cnt_val = sess.run([img_in_batch, img_out_batch, cnt_batch])
+                pre_dict = sess.run(predict, feed_dict={xs: img_in_val, ys: img_out_val, keep_prob: 1})
+                print(np.shape(img_in_val))
+                img_org = np.reshape(img_in_val, [IMAGE_HEIGHT, IMAGE_WIDTH])
+                img_out = np.reshape(img_out_val, [IMAGE_HEIGHT, IMAGE_WIDTH])
+                img_fil = np.reshape(pre_dict, [IMAGE_HEIGHT, IMAGE_WIDTH])
+                cv2.imshow('out', img_out)
+                cv2.imshow('org', img_org)
+                cv2.imshow('filter', img_fil)
+                cv2.waitKey(0)
             coord.request_stop()
             coord.join(threads)
 
