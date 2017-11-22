@@ -3,7 +3,7 @@ import numpy as np
 import sys
 import time
 import os
-import cv2
+#import cv2
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -11,13 +11,18 @@ IMAGE_WIDTH = 100 #200
 IMAGE_HEIGHT = 20 #50
 #batch_size = 64
 LOG_PATH = './log/'
+NOISE_ENABLE = 1
 
 def tf_ocr_train(train_method, train_step, result_process, method='train'):
     global predict
 
     if method == 'train':
-        batch_size = 64
+        if NOISE_ENABLE == 1:
+            batch_size = 264
+        else:
+            batch_size = 64
     else:
+        import cv2
         batch_size = 1
 
     def read_and_decode(tf_record_path):  # read iris_contact.tfrecords
@@ -111,9 +116,15 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         cross = tf.reduce_sum(tf.pow(tf.subtract(predict, xs), 2.0))
         #train = train_method(train_step).minimize(cross)
         train = tf.train.AdamOptimizer(1e-3).minimize(cross) 
-
-        img_in, img_out, cnt = read_and_decode('train.tfrecords')
-        img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
+        if NOISE_ENABLE == 1:
+            img_n_in, img_n_out, cnt_n = read_and_decode('generator.tfrecords')
+            img_n_in_batch, img_n_out_batch, cnt_n_batch = tf.train.shuffle_batch([img_n_in, img_n_out, cnt_n], \
+                 batch_size=200, capacity=8000, min_after_dequeue=2000, num_threads=2)
+            img_in, img_out, cnt = read_and_decode('train.tfrecords')
+            img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=64, capacity=500, min_after_dequeue=80, num_threads=1)
+        else:
+            img_in, img_out, cnt = read_and_decode('train.tfrecords')
+            img_in_batch, img_out_batch, cnt_batch = tf.train.shuffle_batch([img_in, img_out, cnt], batch_size=batch_size, capacity=500,
                                                                min_after_dequeue=80, num_threads=1)
         saver = tf.train.Saver()
         init = tf.global_variables_initializer()
@@ -125,11 +136,17 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
             #coord = tf.train.Coordinator()
             #threads = tf.train.start_queue_runners(coord=coord)
             sess.run(init)
-            saver.save(sess, model_path)
+            saver.restore(sess, model_test_path)
+            #saver.save(sess, model_path)
             tf.train.start_queue_runners(sess=sess)
             pre_dict = 0
             for i in range(10000):
                 img_in_val, img_out_val, cnt_val = sess.run([img_in_batch, img_out_batch, cnt_batch])
+                if NOISE_ENABLE == 1:
+                    img_n_in_val, img_n_out_val, cnt_n_val = sess.run([img_n_in_batch, img_n_out_batch, cnt_n_batch])
+                    img_in_val = np.row_stack((img_in_val, img_n_in_val))
+                    img_out_val = np.row_stack((img_out_val, img_n_out_val))
+
                 np.set_printoptions(threshold=np.inf)
                 sess.run(train, feed_dict={xs: img_in_val, ys: img_out_val, keep_prob: 0.5})
                 if i % 5 == 0:
@@ -159,8 +176,8 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                     fp.flush()
                 if i%100 == 0:
                     saver.save(sess, model_path, global_step=i, write_meta_graph=False)
-            #coord.request_stop()
-            #coord.join(threads)
+            coord.request_stop()
+            coord.join(threads)
             fp.close()
     elif method == 'test':
         with tf.Session() as sess:
