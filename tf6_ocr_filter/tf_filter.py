@@ -132,12 +132,11 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
         with tf.Session() as sess:
             print('open sess')
             current_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
-            fp = open(LOG_PATH + current_time + ".txt", 'w+')
+            #fp = open(LOG_PATH + current_time + ".txt", 'w+')
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(coord=coord)
             sess.run(init)
             saver.restore(sess, model_test_path)
-            #saver.save(sess, model_path)
             tf.train.start_queue_runners(sess=sess)
             pre_dict = 0
             for i in range(10000):
@@ -154,31 +153,15 @@ def tf_ocr_train(train_method, train_step, result_process, method='train'):
                     str = 'cnt: %d' % i + '\n'
                     # print(label_t_val)
                     cross_sess = sess.run(cross, feed_dict={xs: img_in_val, ys: img_out_val, keep_prob: 1})
-                    accuracy_sess = compare_accuracy(img_in_val, img_out_val)
                     print("cross_sess: %f" % cross_sess)
-                    print("train accuracy: %f" % accuracy_sess)
-                    str += "cross_sess: %f" %cross_sess + '\n'
-                    str += "train accuracy: %f" %accuracy_sess + '\n'
-                    if accuracy_sess > 0.99:
-                        break
-                    if i % 500 == 0:
-                        print("pre cross: %f and current cross: %f" % (pre_dict, cross_sess))
-                        str += "pre cross: %f and current cross: %f" %(pre_dict, cross_sess) + '\n'
-                        if i != 0:
-                            if pre_dict >= cross_sess + 0.002:
-                                pre_dict = cross_sess
-                            else:
-                                pre_dict = cross_sess
-                        else:
-                            pre_dict = cross_sess
-                    result_process(i, cross_sess, accuracy_sess)
-                    fp.write(str)
-                    fp.flush()
-                if i%100 == 0:
+                    #result_process(i, cross_sess, accuracy_sess)
+                    #fp.write(str)
+                    #fp.flush()
+                if i%1000 == 0:
                     saver.save(sess, model_path, global_step=i, write_meta_graph=False)
             coord.request_stop()
             coord.join(threads)
-            fp.close()
+            #fp.close()
     elif method == 'test':
         with tf.Session() as sess:
             coord = tf.train.Coordinator()
